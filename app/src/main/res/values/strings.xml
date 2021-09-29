@@ -5,8 +5,8 @@
     <string name="simple">Simple</string>
     <string name="investing">investing.</string>
     <string name="stocks">Stocks</string>
-    <string name="by_procedding_i_agree_to_the">By procedding, I agree to the </string>
-    <string name="t_amp_c"><![CDATA[T&C]]></string>
+    <string name="by_procedding_i_agree_to_the">By proceeding, I agree to the </string>
+    <string name="t_amp_c">T&amp;C</string>
     <string name="continue_with_google">Continue with Google</string>
     <string name="continue_with_other_email">Continue With Other Email</string>
     <string name="direct_mutual_funds">Direct Mutual Funds</string>
@@ -29,10 +29,28 @@
     <string name="enter_the_otp_sent_to">Enter the OTP sent to  </string>
     <string name="_918830466523">  +918830466523</string>
     <string name="otp">OTP</string>
-    <string name="default_web_client_id1" translatable="false">1063229107968-lt2ok43g53h26goji7k58u7m608aq3eb.apps.googleusercontent.com</string>
     <string name="resend_otp">Resend OTP</string>
     <string name="verify_pan">Verify PAN</string>
     <string name="pan_is_compulsory_for_investing_in_india">PAN is compulsory for investing in India</string>
     <string name="enter_your_pan_number_here">Enter your PAN number here</string>
     <string name="create_account">CREATE ACCOUNT</string>
+    <string name="already_invested_somewhere">Already invested somewhere?</string>
+    <string name="merge_analyse_and_switch_to_direct_funds">Merge, analyse and switch to Direct Funds</string>
+    <string name="import_your_funds">IMPORT YOUR FUNDS</string>
+    <string name="i_don_t_have_investment_elsewhere">I don\'t have investment elsewhere</string>
+    <string name="popular_funds">Popular Funds</string>
+    <string name="collections">Collections</string>
+    <string name="quick_access">Quick Access</string>
+    <string name="all_mutual_funds">All Mutual Funds</string>
+    <string name="filter_sort">FILTER-SORT</string>
+    <string name="_3y_returns">3Y Returns</string>
+    <string name="icici_prudential_technology">ICICI Prudential Technology</string>
+    <string name="direct_plan_growth">Direct Plan Growth</string>
+    <string name="nfo_live">NFO Live</string>
+    <string name="invest_in_new_fund_offering">Invest in New Fund Offering</string>
+    <string name="hi_aditya_ravindra_cheke">Hi, Aditya Ravindra Cheke</string>
+    <string name="aditya_ravindra_cheke">Aditya Ravindra Cheke</string>
+    <string name="adityacheke291_gmaiil_com">adityacheke291@gmaiil.com</string>
+    <string name="logout">Logout</string>
+    <string name="enter_groww_pin">Enter Groww PIN</string>
 </resources>

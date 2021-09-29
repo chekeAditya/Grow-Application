@@ -64,6 +64,9 @@
         <action
             android:id="@+id/action_splashScreen3_to_enterEmail2"
             app:destination="@id/enterEmail" />
+        <action
+            android:id="@+id/action_splashScreen3_to_signupEnterEmail"
+            app:destination="@id/signupEnterEmail" />
     </fragment>
     <fragment
         android:id="@+id/enterEmail"
@@ -118,12 +121,20 @@
         <action
             android:id="@+id/action_signupEnterOTP_to_signupEnterMobileNumber"
             app:destination="@id/signupEnterMobileNumber" />
+        <argument
+            android:name="emailId"
+            app:argType="string"
+            app:nullable="true" />
     </fragment>
     <fragment
         android:id="@+id/signupVerifyPAN"
         android:name="com.example.groww.loginSignup.signup.SignupVerifyPAN"
         android:label="Verify PAN"
-        tools:layout="@layout/fragment_signup_verify_p_a_n" />
+        tools:layout="@layout/fragment_signup_verify_p_a_n" >
+        <action
+            android:id="@+id/action_signupVerifyPAN_to_fingerPrintVerification"
+            app:destination="@id/fingerPrintVerification" />
+    </fragment>
     <fragment
         android:id="@+id/fingerPrintVerification"
         android:name="com.example.groww.loginSignup.login.FingerPrintVerification"

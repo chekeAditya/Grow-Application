@@ -8,9 +8,7 @@ import com.example.groww.R
 import kotlinx.android.synthetic.main.fragment_signup_enter_email.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.joinAll
 import kotlinx.coroutines.launch
-import kotlin.system.exitProcess
 
 class SignupEnterEmail : Fragment(R.layout.fragment_signup_enter_email) {
 
@@ -19,7 +17,9 @@ class SignupEnterEmail : Fragment(R.layout.fragment_signup_enter_email) {
 
         CoroutineScope(Dispatchers.Main).launch {
             btnSPNext.setOnClickListener {
-                Navigation.findNavController(it).navigate(R.id.action_signupEnterEmail_to_signupEnterOTP)
+                val action = SignupEnterEmailDirections.actionSignupEnterEmailToSignupEnterOTP(etSPEmailAddress.text.toString())
+                Navigation.findNavController(it)
+                    .navigate(action)
             }
         }
     }

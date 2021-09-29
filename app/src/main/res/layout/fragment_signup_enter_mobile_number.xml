@@ -27,13 +27,14 @@
         <TextView
             android:id="@+id/spTv91"
             style="@style/TextViewEnterMobileNumber"
-            android:layout_marginTop="@dimen/dp_48"
             android:layout_below="@+id/spTvMobileNumber"
+            android:layout_marginTop="@dimen/dp_48"
             android:text="@string/_91" />
 
         <EditText
             android:id="@+id/etSPEmailAddress"
             android:layout_width="wrap_content"
+            android:fontFamily="@font/roboto_bold"
             android:layout_height="wrap_content"
             android:layout_toEndOf="@+id/spTv91"
             android:layout_below="@id/spTvMobileNumber"

@@ -67,5 +67,24 @@
 
         </LinearLayout>
 
+        <Button
+            android:id="@+id/btnContinueWithGoogle2"
+            style="@style/ButtonContinueWithGoogle"
+            android:text="@string/continue_with_google"
+            android:drawableStart="@drawable/ic_google_icon"
+            android:padding="10dp"
+            android:background="@drawable/rectangle_continue_with_google"
+            android:textAllCaps="false"/>
+
+        <TextView
+           android:id="@+id/btnContinueWithEmail2"
+            android:layout_gravity="center_horizontal"
+            style="@style/TextViewBelow_GreenLine"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/light_green"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_37"
+            android:text="@string/continue_with_other_email"/>
+
     </LinearLayout>
 </FrameLayout>
