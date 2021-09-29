@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BothSideEqualMargin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginSignup.LoginSplashScreenActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <androidx.fragment.app.FragmentContainerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/containerView"/>
+
+        <Button
+            android:id="@+id/btnContinueWithGoogle"
+            style="@style/ButtonContinueWithGoogle"
+            android:background="@drawable/rectangle_continue_with_google"
+            android:drawableStart="@drawable/ic_google_icon"
+            android:padding="10dp"
+            android:text="@string/continue_with_google"
+            android:textAllCaps="false" />
+
+        <TextView
+            android:id="@+id/btnContinueWithEmail"
+            style="@style/TextViewBelow_GreenLine"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_37"
+            android:text="@string/continue_with_other_email"
+            android:textColor="@color/light_green"
+            android:textSize="@dimen/sp_14" />
+    </LinearLayout>
+
+</FrameLayout>

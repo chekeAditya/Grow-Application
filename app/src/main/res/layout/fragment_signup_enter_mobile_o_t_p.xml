@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    style="@style/BothSideEqualMargin"
+    tools:context=".loginSignup.signup.SignupEnterMobileOTP">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/spVerifyMobileNumber"
+            style="@style/TextViewEnterMobileNumber"
+            android:layout_marginTop="@dimen/dp_102"
+            android:text="@string/verify_your_mobile_number" />
+
+        <TextView
+            android:id="@+id/spTvMobileNumber"
+            style="@style/EditTextEmailAddress_Login"
+            android:layout_below="@+id/spVerifyMobileNumber"
+            android:layout_marginTop="@dimen/sp_18"
+            android:text="@string/enter_the_otp_sent_to"
+            android:textColor="@color/light_black" />
+
+        <TextView
+            style="@style/EditTextEmailAddress_Login"
+            android:layout_marginTop="@dimen/sp_18"
+            android:id="@+id/spTvMobileNumberReceived"
+            android:textColor="@color/light_black"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_toEndOf="@+id/spTvMobileNumber"
+            android:drawablePadding="10dp"
+            android:layout_below="@+id/spVerifyMobileNumber"
+            android:text="@string/_918830466523"
+            app:drawableEndCompat="@drawable/ic_edit_pencil" />
+
+
+        <EditText
+            android:id="@+id/etSPOTP"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/spTvMobileNumber"
+            android:background="@android:color/transparent"
+            android:hint="@string/otp"
+            android:layout_marginTop="@dimen/dp_48"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/sp_18"
+            tools:ignore="TextFields" />
+
+        <Button
+            android:layout_width="@dimen/dp_111"
+            android:layout_height="@dimen/dp_33"
+            android:layout_below="@+id/etSPOTP"
+            android:textColor="@color/dark_grey"
+            android:textAllCaps="false"
+            android:background="@drawable/resend_otp_bg"
+            android:layout_marginTop="@dimen/dp_48"
+            android:text="@string/resend_otp"/>
+
+
+        <Button
+            android:id="@+id/btnSpVerifyOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:background="@drawable/rectangle_next_enter"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/enter"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+</FrameLayout>

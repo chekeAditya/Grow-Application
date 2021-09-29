@@ -11,7 +11,17 @@
         android:theme="@style/Theme.Groww">
         <activity
             android:name=".AddMoney.Explore.HomeActivity"
-            android:exported="true" >
+            android:exported="true"/>
+    <activity
+        android:name=".mutualFunds.MutualFundBaseActivity"
+        android:exported="true"/>
+
+        <activity
+            android:name=".loginSignup.LoginSplashScreenActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -25,9 +35,6 @@
 
 
         </activity>
-        <activity
-            android:name=".MainActivity"
-            android:exported="true"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

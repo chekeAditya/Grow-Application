@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BothSideEqualMargin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginSignup.SplashScreen1">
+
+    <LinearLayout
+        android:gravity="bottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/GrowImageLogo"
+            android:src="@drawable/grow_logo_name"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            android:layout_marginTop="@dimen/dp_50"
+            style="@style/TextViewSimple_SplashScreen"
+            android:text="@string/simple" />
+
+        <TextView
+            style="@style/TextViewSimple_SplashScreen"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/investing"
+            android:textSize="@dimen/sp_52" />
+
+        <ImageView
+            style="@style/GrowImageLogo"
+            android:layout_marginTop="@dimen/dp_25"
+            android:layout_marginBottom="@dimen/dp_25"
+            android:background="@drawable/green_line"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/TextViewBelow_GreenLine"
+            android:text="@string/stocks"
+            android:id="@+id/tvStock" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dp_35"
+            android:layout_marginBottom="@dimen/dp_30"
+            android:layout_gravity="center_horizontal"
+            android:layout_height="wrap_content">
+
+            <TextView
+                style="@style/TextViewBelow_GreenLine"
+                android:textSize="@dimen/sp_12"
+                android:text="@string/by_procedding_i_agree_to_the"/>
+
+            <TextView
+                style="@style/TextViewBelow_GreenLine"
+                android:textSize="@dimen/sp_12"
+                android:textColor="@color/light_green"
+                android:text="@string/t_amp_c"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnContinueWithGoogle"
+            style="@style/ButtonContinueWithGoogle"
+            android:text="@string/continue_with_google"
+            android:padding="10dp"
+            android:drawableStart="@drawable/ic_google_icon"
+            android:background="@drawable/rectangle_continue_with_google"
+            android:textAllCaps="false"/>
+
+        <TextView
+            android:id="@+id/btnContinueWithEmail"
+            android:layout_gravity="center_horizontal"
+            style="@style/TextViewBelow_GreenLine"
+            android:textSize="@dimen/sp_14"
+            android:textColor="@color/light_green"
+            android:layout_marginTop="@dimen/dp_30"
+            android:layout_marginBottom="@dimen/dp_37"
+            android:text="@string/continue_with_other_email"/>
+
+    </LinearLayout>
+
+</FrameLayout>
