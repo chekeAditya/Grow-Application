@@ -13,6 +13,7 @@ class FingerPrintVerification : Fragment(R.layout.fragment_finger_print_verifica
         //TODO Check 1 :- Android version should be greater or equal to Marshmallow
         //TODO Check 2 :- Device has fingerprint Scanner
         //TODO Check 3 :- Device has fingerprint Scanner
+        //TODO Chekc 4:-
     }
 
 }
