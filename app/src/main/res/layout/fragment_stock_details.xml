@@ -7,6 +7,15 @@
     android:background="@color/white"
     tools:context=".search.StockDetailsFragment">
 
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
     <ImageView
         android:id="@+id/ivBack"
         android:layout_width="wrap_content"
@@ -103,6 +112,7 @@
         android:layout_margin="15dp"/>
 
     <LinearLayout
+        android:id="@+id/layoutGraphCategory"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
@@ -187,13 +197,42 @@
 
     </LinearLayout>
 
-    <View
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/stockDetailsTabLayout"
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/light_gray"
+        android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
-        android:layout_marginBottom="10dp"
-        app:layout_constraintBottom_toTopOf="@+id/btnSell"/>
+        app:tabIndicatorHeight="5dp"
+        app:tabIndicatorColor="@color/primary_green"
+        app:layout_constraintTop_toBottomOf="@+id/layoutGraphCategory"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/stockDetailsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stockDetailsTabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottom"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/light_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSell"/>
 
     <Button
         android:id="@+id/btnSell"
@@ -224,5 +263,7 @@
         app:layout_constraintStart_toEndOf="@+id/btnSell"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

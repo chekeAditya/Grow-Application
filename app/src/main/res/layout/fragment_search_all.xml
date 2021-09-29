@@ -16,6 +16,7 @@
         android:layout_height="50dp"
         android:background="@drawable/bg_searchbox"
         android:textColor="@color/primary_black_text"
+        android:textStyle="bold"
         android:paddingStart="50dp"
         android:hint="Try Stocks, MFs &amp; more"
         android:textSize="20sp"
@@ -32,6 +33,11 @@
         android:layout_marginStart="38dp"/>
 
     </FrameLayout>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="none">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -85,5 +91,19 @@
             android:background="@drawable/bg_searchbox"/>
 
     </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <include layout="@layout/search_item_view"
+        android:id="@+id/randomSearchView"/>
+
+    <include layout="@layout/search_item_view"/>
+
+    <include layout="@layout/search_item_view"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/search_item_view"/>
 
 </LinearLayout>
