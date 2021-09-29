@@ -1,5 +1,25 @@
 <resources>
     <string name="app_name">Groww</string>
+    <string name="abhimanyu_mishra">Abhimanyu Mishra</string>
+    <string name="help_amp_support"><![CDATA[Help & Support]]></string>
+
+    <string name="notification">Notification</string>
+    <string name="bank_and_autoplay">Bank and Autoplay</string>
+    <string name="account_details">Account Details</string>
+    <string name="my_account">My Account</string>
+    <string name="reports">Reports</string>
+    <string name="sips">Sips</string>
+    <string name="all_orders">All Orders</string>
+    <string name="my_investment">My Investment</string>
+    <string name="add_money">ADD MONEY</string>
+    <string name="_0_00">0.00</string>
+    <string name="rs">Rs</string>
+    <string name="available_to_invest">Available to invest</string>
+    <string name="todo">TODO</string>
+    <string name="abhimanyumishra130_gmail_com">abhimanyumishra130@gmail.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="pricing">Pricing</string>
+    <string name="about_us">About Us</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="simple">Simple</string>

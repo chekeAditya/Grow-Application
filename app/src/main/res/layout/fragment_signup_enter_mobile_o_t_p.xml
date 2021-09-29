@@ -54,7 +54,7 @@
             android:layout_width="@dimen/dp_111"
             android:layout_height="@dimen/dp_33"
             android:layout_below="@+id/etSPOTP"
-            android:textColor="@color/dark_grey"
+
             android:textAllCaps="false"
             android:background="@drawable/resend_otp_bg"
             android:layout_marginTop="@dimen/dp_48"

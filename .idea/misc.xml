@@ -3,38 +3,40 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/drawable-v24/rectangle_filter_sort_.xml" value="0.403125" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/drawable/ic_edit_pencil.xml" value="0.403125" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/drawable/ic_emptydash.xml" value="0.403125" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/drawable/ic_fingerprint_bg.xml" value="0.403125" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/drawable/rectangle_continue_with_google.xml" value="0.403125" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/drawable/rectangle_create_account.xml" value="0.403125" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/drawable/rectangle_next_enter.xml" value="0.403125" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/drawable/resend_otp_bg.xml" value="0.403125" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/activity_login_splash_screen.xml" value="0.22447916666666667" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/activity_main.xml" value="0.22447916666666667" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/activity_mutual_fund_base.xml" value="0.38697916666666665" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_dashboard.xml" value="0.38697916666666665" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_enter_email.xml" value="0.33" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_enter_password.xml" value="0.33" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_explore.xml" value="0.22" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_finger_print_verification.xml" value="0.33" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_loading.xml" value="0.38697916666666665" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_signup_enter_email.xml" value="0.25" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_signup_enter_mobile_number.xml" value="0.33" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_signup_enter_mobile_o_t_p.xml" value="0.38697916666666665" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_signup_enter_o_t_p.xml" value="0.38697916666666665" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_signup_verify_p_a_n.xml" value="0.38697916666666665" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_splash_screen1.xml" value="0.22" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_splash_screen2.xml" value="0.25" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/fragment_splash_screen3.xml" value="0.25" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/item_layout_popularfunds.xml" value="0.25" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/layout/item_layout_quickaccess.xml" value="0.33" />
-        <entry key="..\:/Android Development/Projects/Grow Applicaiton Clone/Groww Application/app/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" value="0.403125" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/add_money_explore_bg.xml" value="0.22962962962962963" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/addmoney1_bg.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/arrow_back.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_addmoney1.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_all_orders.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_bg_addmoney1.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_mutual_funds.xml" value="0.2388888888888889" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_mutual_funds_b.xml" value="0.2388888888888889" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_rec_grey_bg.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_stocks.xml" value="0.2388888888888889" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_stocks_g.xml" value="0.2388888888888889" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/pic_bg.xml" value="0.2351851851851852" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_add_money.xml" value="0.22453703703703703" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_explore.xml" value="0.2375" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_home.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_login_splash_screen.xml" value="0.22453703703703703" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_profile.xml" value="0.176" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_add_money1.xml" value="0.2111111111111111" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_dash_board.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_explore.xml" value="0.2526041666666667" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_explore_abhi.xml" value="0.22453703703703703" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_signup_enter_mobile_o_t_p.xml" value="0.11435185185185186" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/item_list_layout.xml" value="0.22453703703703703" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/item_watchlist.xml" value="0.22453703703703703" />
+        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14479166666666668" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">
