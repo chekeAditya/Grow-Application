@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav.xml"
+    app:startDestination="@id/loading">
+
+    <fragment
+        android:id="@+id/loading"
+        android:name="com.example.groww.loginSignup.Loading"
+        android:label="Loading"
+        tools:layout="@layout/fragment_loading" >
+        <action
+            android:id="@+id/action_loading_to_splashScreen1"
+            app:destination="@id/splashScreen1" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen1"
+        android:name="com.example.groww.loginSignup.SplashScreen1"
+        android:label="Splash Screen 1"
+        tools:layout="@layout/fragment_splash_screen1" >
+        <action
+            android:id="@+id/action_splashScreen1_to_splashScreen2"
+            app:destination="@id/splashScreen2" />
+        <action
+            android:id="@+id/action_splashScreen1_to_fingerPrintVerification"
+            app:destination="@id/fingerPrintVerification" />
+        <action
+            android:id="@+id/action_splashScreen1_to_enterEmail"
+            app:destination="@id/enterEmail" />
+        <action
+            android:id="@+id/action_splashScreen1_to_signupEnterEmail"
+            app:destination="@id/signupEnterEmail" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen2"
+        android:name="com.example.groww.loginSignup.SplashScreen2"
+        android:label="Splash Screen 2"
+        tools:layout="@layout/fragment_splash_screen2" >
+        <action
+            android:id="@+id/action_splashScreen2_to_splashScreen3"
+            app:destination="@id/splashScreen3" />
+        <action
+            android:id="@+id/action_splashScreen2_to_fingerPrintVerification"
+            app:destination="@id/fingerPrintVerification" />
+        <action
+            android:id="@+id/action_splashScreen2_to_enterEmail"
+            app:destination="@id/enterEmail" />
+    </fragment>
+    <fragment
+        android:id="@+id/splashScreen3"
+        android:name="com.example.groww.loginSignup.SplashScreen3"
+        android:label="Splash Screen 3"
+        tools:layout="@layout/fragment_splash_screen3" >
+        <action
+            android:id="@+id/action_splashScreen3_to_enterEmail"
+            app:destination="@id/enterEmail" />
+        <action
+            android:id="@+id/action_splashScreen3_to_splashScreen1"
+            app:destination="@id/splashScreen1" />
+        <action
+            android:id="@+id/action_splashScreen3_to_fingerPrintVerification"
+            app:destination="@id/fingerPrintVerification" />
+        <action
+            android:id="@+id/action_splashScreen3_to_enterEmail2"
+            app:destination="@id/enterEmail" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterEmail"
+        android:name="com.example.groww.loginSignup.login.EnterEmail"
+        android:label="Enter Email"
+        tools:layout="@layout/fragment_enter_email" >
+        <action
+            android:id="@+id/action_enterEmail_to_enterPassword"
+            app:destination="@id/enterPassword" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupEnterEmail"
+        android:name="com.example.groww.loginSignup.signup.SignupEnterEmail"
+        android:label="Signup Enter Email"
+        tools:layout="@layout/fragment_signup_enter_email" >
+        <action
+            android:id="@+id/action_signupEnterEmail_to_signupEnterOTP"
+            app:destination="@id/signupEnterOTP" />
+    </fragment>
+    <fragment
+        android:id="@+id/enterPassword"
+        android:name="com.example.groww.loginSignup.login.EnterPassword"
+        android:label="Enter Password"
+        tools:layout="@layout/fragment_enter_password" >
+        <action
+            android:id="@+id/action_enterPassword_to_fingerPrintVerification"
+            app:destination="@id/fingerPrintVerification" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupEnterMobileNumber"
+        android:name="com.example.groww.loginSignup.signup.SignupEnterMobileNumber"
+        android:label="Enter Mobile Number"
+        tools:layout="@layout/fragment_signup_enter_mobile_number" >
+        <action
+            android:id="@+id/action_signupEnterMobileNumber_to_signupEnterMobileOTP"
+            app:destination="@id/signupEnterMobileOTP" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupEnterMobileOTP"
+        android:name="com.example.groww.loginSignup.signup.SignupEnterMobileOTP"
+        android:label="Enter Mobile OTP"
+        tools:layout="@layout/fragment_signup_enter_mobile_o_t_p" >
+        <action
+            android:id="@+id/action_signupEnterMobileOTP_to_signupVerifyPAN"
+            app:destination="@id/signupVerifyPAN" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupEnterOTP"
+        android:name="com.example.groww.loginSignup.signup.SignupEnterOTP"
+        android:label="Enter OTP"
+        tools:layout="@layout/fragment_signup_enter_o_t_p" >
+        <action
+            android:id="@+id/action_signupEnterOTP_to_signupEnterMobileNumber"
+            app:destination="@id/signupEnterMobileNumber" />
+    </fragment>
+    <fragment
+        android:id="@+id/signupVerifyPAN"
+        android:name="com.example.groww.loginSignup.signup.SignupVerifyPAN"
+        android:label="Verify PAN"
+        tools:layout="@layout/fragment_signup_verify_p_a_n" />
+    <fragment
+        android:id="@+id/fingerPrintVerification"
+        android:name="com.example.groww.loginSignup.login.FingerPrintVerification"
+        android:label="fragment_finger_print_verification"
+        tools:layout="@layout/fragment_finger_print_verification" />
+</navigation>

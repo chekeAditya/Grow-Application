@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BothSideEqualMargin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginSignup.signup.SignupEnterMobileNumber">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/spEnterMobileNumber"
+            style="@style/TextViewEnterMobileNumber"
+            android:layout_marginTop="@dimen/dp_102"
+            android:text="@string/enter_mobile_number" />
+
+        <TextView
+            style="@style/EditTextEmailAddress_Login"
+            android:layout_marginTop="@dimen/sp_18"
+            android:id="@+id/spTvMobileNumber"
+            android:textColor="@color/light_black"
+            android:layout_below="@+id/spEnterMobileNumber"
+            android:text="@string/mobile_number_is_required_to_invest_in_india" />
+
+        <TextView
+            android:id="@+id/spTv91"
+            style="@style/TextViewEnterMobileNumber"
+            android:layout_marginTop="@dimen/dp_48"
+            android:layout_below="@+id/spTvMobileNumber"
+            android:text="@string/_91" />
+
+        <EditText
+            android:id="@+id/etSPEmailAddress"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/spTv91"
+            android:layout_below="@id/spTvMobileNumber"
+            android:background="@android:color/transparent"
+            android:hint="8830"
+            android:layout_marginTop="@dimen/dp_48"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/sp_18"
+            tools:ignore="TextFields" />
+
+
+        <Button
+            android:id="@+id/btnSpSendOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:background="@drawable/rectangle_next_enter"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/send_otp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+
+
+</FrameLayout>
