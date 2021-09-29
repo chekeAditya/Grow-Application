@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:descendantFocusability="blocksDescendants"
+    tools:context=".search.StockDetailsFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/layoutBottom"
+        android:paddingBottom="100dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:src="@drawable/backsearch"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/ivStockPic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/randomstockpic"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack"
+        android:layout_margin="20dp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvStockName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tata Steel"
+        app:layout_constraintTop_toBottomOf="@+id/ivStockPic"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_margin="20dp"
+        android:textColor="@color/primary_black_text"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/tvStockPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 86.25"
+        android:textColor="@color/primary_black_text"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        app:layout_constraintTop_toBottomOf="@+id/tvStockName"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvStockPercentage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1.50 (1.77%) 1D"
+        android:textSize="10sp"
+        android:textColor="@color/primary_green"
+        app:layout_constraintTop_toBottomOf="@+id/tvStockPrice"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Metals &amp; Mining"
+        android:textSize="10sp"
+        android:padding="2dp"
+        android:background="@drawable/bg_searchbox"
+        app:layout_constraintTop_toBottomOf="@+id/tvStockPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="20dp" />
+
+    <ImageView
+        android:id="@+id/ivGraph"
+        android:layout_width="match_parent"
+        android:layout_height="200sp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/tvStockPercentage"
+        app:layout_constraintStart_toStartOf="parent"
+        android:src="@drawable/randomgraph"/>
+
+    <ImageView
+        android:id="@+id/ivShareWtsp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sharewtsp"
+        android:background="@drawable/bg_search_item_view"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="5dp"
+        android:layout_margin="15dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/markflag"
+        android:background="@drawable/bg_search_item_view"
+        android:padding="5dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivBack"
+        app:layout_constraintEnd_toStartOf="@+id/ivShareWtsp"
+        android:layout_margin="15dp"/>
+
+    <LinearLayout
+        android:id="@+id/layoutGraphCategory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/ivGraph">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="NSE"
+        android:textSize="15sp"
+        android:textColor="@color/primary_green"
+        android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1D"
+            android:textSize="15sp"
+            android:background="@drawable/bg_selected"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/primary_green"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1W"
+            android:textSize="15sp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/dark_gray"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1M"
+            android:textSize="15sp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/dark_gray"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1Y"
+            android:textSize="15sp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/dark_gray"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3Y"
+            android:textSize="15sp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/dark_gray"
+            android:layout_margin="5dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5Y"
+            android:textSize="15sp"
+            android:paddingVertical="5dp"
+            android:paddingHorizontal="10dp"
+            android:textColor="@color/dark_gray"
+            android:layout_margin="5dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/changegraph"
+            android:layout_margin="5dp"/>
+
+    </LinearLayout>
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/stockDetailsTabLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:tabTextColor="@color/primary_black_text"
+        app:tabSelectedTextColor="@color/primary_green"
+        app:tabIndicatorHeight="5dp"
+        app:tabRippleColor="@android:color/transparent"
+        app:tabIndicatorColor="@color/primary_green"
+        app:layout_constraintTop_toBottomOf="@+id/layoutGraphCategory"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/stockDetailsViewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/stockDetailsTabLayout" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutBottom"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/light_gray"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginBottom="10dp"
+            app:layout_constraintBottom_toTopOf="@+id/btnSell"/>
+
+    <Button
+        android:id="@+id/btnSell"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_sell"
+        android:text="SELL"
+        android:textSize="18sp"
+        android:textColor="@color/primary_green"
+        android:layout_marginVertical="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/btnBuy"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:id="@+id/btnBuy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_buy"
+        android:textColor="@color/white"
+        android:text="BUY"
+        android:textSize="18sp"
+        android:layout_marginVertical="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/btnSell"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

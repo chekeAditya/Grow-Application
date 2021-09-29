@@ -1,0 +1,140 @@
+Index: .idea/.gitignore
+===================================================================
+--- .idea/.gitignore	(revision 4c9babffa8633b2d37601bd8105d362ed191fc20)
++++ .idea/.gitignore	(revision 4c9babffa8633b2d37601bd8105d362ed191fc20)
+@@ -1,3 +0,0 @@
+-# Default ignored files
+-/shelf/
+-/workspace.xml
+Index: .idea/deploymentTargetDropDown.xml
+===================================================================
+--- .idea/deploymentTargetDropDown.xml	(revision 4c9babffa8633b2d37601bd8105d362ed191fc20)
++++ .idea/deploymentTargetDropDown.xml	(revision 4c9babffa8633b2d37601bd8105d362ed191fc20)
+@@ -1,17 +0,0 @@
+-<?xml version="1.0" encoding="UTF-8"?>
+-<project version="4">
+-  <component name="deploymentTargetDropDown">
+-    <targetSelectedWithDropDown>
+-      <Target>
+-        <type value="QUICK_BOOT_TARGET" />
+-        <deviceKey>
+-          <Key>
+-            <type value="VIRTUAL_DEVICE_PATH" />
+-            <value value="C:\Users\dell\.android\avd\Pixel_3a_API_29.avd" />
+-          </Key>
+-        </deviceKey>
+-      </Target>
+-    </targetSelectedWithDropDown>
+-    <timeTargetWasSelectedWithDropDown value="2021-09-28T11:06:15.629787500Z" />
+-  </component>
+-</project>
+\ No newline at end of file
+Index: .idea/misc.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"DesignSurface\">\r\n    <option name=\"filePathToZoomLevelMap\">\r\n      <map>\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable-v24/ic_launcher_foreground.xml\" value=\"0.2351851851851852\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/add_money_explore_bg.xml\" value=\"0.22962962962962963\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/addmoney1_bg.xml\" value=\"0.2351851851851852\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/arrow_back.xml\" value=\"0.2351851851851852\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_addmoney1.xml\" value=\"0.2351851851851852\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_all_orders.xml\" value=\"0.2351851851851852\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_bg_addmoney1.xml\" value=\"0.2351851851851852\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_launcher_background.xml\" value=\"0.2351851851851852\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_mutual_funds.xml\" value=\"0.2388888888888889\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_mutual_funds_b.xml\" value=\"0.2388888888888889\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_rec_grey_bg.xml\" value=\"0.2351851851851852\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_stocks.xml\" value=\"0.2388888888888889\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_stocks_g.xml\" value=\"0.2388888888888889\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/pic_bg.xml\" value=\"0.2351851851851852\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_add_money.xml\" value=\"0.22453703703703703\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_explore.xml\" value=\"0.2375\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_home.xml\" value=\"0.2526041666666667\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_login_splash_screen.xml\" value=\"0.22453703703703703\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_main.xml\" value=\"0.2526041666666667\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_profile.xml\" value=\"0.176\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_add_money1.xml\" value=\"0.2111111111111111\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_dash_board.xml\" value=\"0.2526041666666667\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_explore.xml\" value=\"0.2526041666666667\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_explore_abhi.xml\" value=\"0.22453703703703703\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_signup_enter_mobile_o_t_p.xml\" value=\"0.11435185185185186\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/item_list_layout.xml\" value=\"0.22453703703703703\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/item_watchlist.xml\" value=\"0.22453703703703703\" />\r\n        <entry key=\"..\\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml\" value=\"0.14479166666666668\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"ProjectRootManager\" version=\"2\" languageLevel=\"JDK_11\" default=\"true\" project-jdk-name=\"JDK\" project-jdk-type=\"JavaSDK\">\r\n    <output url=\"file://$PROJECT_DIR$/build/classes\" />\r\n  </component>\r\n  <component name=\"ProjectType\">\r\n    <option name=\"id\" value=\"Android\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/misc.xml	(revision 4c9babffa8633b2d37601bd8105d362ed191fc20)
++++ .idea/misc.xml	(date 1632931802265)
+@@ -1,40 +1,6 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="DesignSurface">
+-    <option name="filePathToZoomLevelMap">
+-      <map>
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" value="0.2351851851851852" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/add_money_explore_bg.xml" value="0.22962962962962963" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/addmoney1_bg.xml" value="0.2351851851851852" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/arrow_back.xml" value="0.2351851851851852" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_addmoney1.xml" value="0.2351851851851852" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_all_orders.xml" value="0.2351851851851852" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_bg_addmoney1.xml" value="0.2351851851851852" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_launcher_background.xml" value="0.2351851851851852" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_mutual_funds.xml" value="0.2388888888888889" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_mutual_funds_b.xml" value="0.2388888888888889" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_rec_grey_bg.xml" value="0.2351851851851852" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_stocks.xml" value="0.2388888888888889" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/ic_stocks_g.xml" value="0.2388888888888889" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/drawable/pic_bg.xml" value="0.2351851851851852" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_add_money.xml" value="0.22453703703703703" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_explore.xml" value="0.2375" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_home.xml" value="0.2526041666666667" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_login_splash_screen.xml" value="0.22453703703703703" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_main.xml" value="0.2526041666666667" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/activity_profile.xml" value="0.176" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_add_money1.xml" value="0.2111111111111111" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_dash_board.xml" value="0.2526041666666667" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_explore.xml" value="0.2526041666666667" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_explore_abhi.xml" value="0.22453703703703703" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/fragment_signup_enter_mobile_o_t_p.xml" value="0.11435185185185186" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/item_list_layout.xml" value="0.22453703703703703" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/layout/item_watchlist.xml" value="0.22453703703703703" />
+-        <entry key="..\:/Users/dell/AndroidStudioProjects/Grow-Application/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.14479166666666668" />
+-      </map>
+-    </option>
+-  </component>
+-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="JDK" project-jdk-type="JavaSDK">
++  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK">
+     <output url="file://$PROJECT_DIR$/build/classes" />
+   </component>
+   <component name="ProjectType">
+Index: .idea/runConfigurations.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/runConfigurations.xml	(date 1632931802351)
++++ .idea/runConfigurations.xml	(date 1632931802351)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="RunConfigurationProducerService">
++    <option name="ignoredProducers">
++      <set>
++        <option value="com.android.tools.idea.compose.preview.runconfiguration.ComposePreviewRunConfigurationProducer" />
++      </set>
++    </option>
++  </component>
++</project>
+\ No newline at end of file
+Index: build.gradle
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>// Top-level build file where you can add configuration options common to all sub-projects/modules.\r\nbuildscript {\r\n    repositories {\r\n        google()\r\n        mavenCentral()\r\n    }\r\n    dependencies {\r\n        classpath \"com.android.tools.build:gradle:7.0.2\"\r\n        classpath \"org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31\"\r\n        classpath 'com.google.gms:google-services:4.3.10'\r\n        //addSafeGuard\r\n        classpath \"androidx.navigation:navigation-safe-args-gradle-plugin:2.3.5\"\r\n\r\n        // NOTE: Do not place your application dependencies here; they belong\r\n        // in the individual module build.gradle files\r\n    }\r\n}\r\n\r\ntask clean(type: Delete) {\r\n    delete rootProject.buildDir\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- build.gradle	(revision 4c9babffa8633b2d37601bd8105d362ed191fc20)
++++ build.gradle	(date 1632931713316)
+@@ -5,7 +5,7 @@
+         mavenCentral()
+     }
+     dependencies {
+-        classpath "com.android.tools.build:gradle:7.0.2"
++        classpath 'com.android.tools.build:gradle:4.2.2'
+         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.5.31"
+         classpath 'com.google.gms:google-services:4.3.10'
+         //addSafeGuard
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\r\n  <component name=\"GradleSettings\">\r\n    <option name=\"linkedExternalProjectsSettings\">\r\n      <GradleProjectSettings>\r\n        <option name=\"testRunner\" value=\"GRADLE\" />\r\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\r\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\r\n        <option name=\"modules\">\r\n          <set>\r\n            <option value=\"$PROJECT_DIR$\" />\r\n            <option value=\"$PROJECT_DIR$/app\" />\r\n          </set>\r\n        </option>\r\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\r\n      </GradleProjectSettings>\r\n    </option>\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision 4c9babffa8633b2d37601bd8105d362ed191fc20)
++++ .idea/gradle.xml	(date 1632931802338)
+@@ -1,10 +1,9 @@
+ <?xml version="1.0" encoding="UTF-8"?>
+ <project version="4">
+-  <component name="GradleMigrationSettings" migrationVersion="1" />
+   <component name="GradleSettings">
+     <option name="linkedExternalProjectsSettings">
+       <GradleProjectSettings>
+-        <option name="testRunner" value="GRADLE" />
++        <option name="testRunner" value="PLATFORM" />
+         <option name="distributionType" value="DEFAULT_WRAPPED" />
+         <option name="externalProjectPath" value="$PROJECT_DIR$" />
+         <option name="modules">
