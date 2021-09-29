@@ -12,16 +12,11 @@ import kotlinx.coroutines.launch
 
 class Loading : Fragment(R.layout.fragment_loading) {
 
-    var handler: Handler? = null
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-        CoroutineScope(Dispatchers.Main).launch {
-            handler = Handler()
-            handler!!.postDelayed({
-                Navigation.findNavController(requireView())
-                    .navigate(R.id.action_loading_to_splashScreen1)
-            },2000)
-        }
+        Handler().postDelayed({
+           Navigation.findNavController(requireView()).navigate(R.id.action_loading_to_splashScreen1)
+        }, 2000)
     }
 }

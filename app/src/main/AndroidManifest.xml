@@ -10,13 +10,13 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Groww">
         <activity
+            android:name=".mutualFunds.MutualFundBaseActivity"
+            android:exported="true">
+        </activity>
+        <activity
             android:name=".loginSignup.LoginSplashScreenActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity
             android:name=".MainActivity"

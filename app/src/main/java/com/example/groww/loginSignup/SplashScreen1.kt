@@ -4,7 +4,9 @@ import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
+import android.view.LayoutInflater
 import android.view.View
+import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
@@ -28,26 +30,38 @@ class SplashScreen1 : Fragment(R.layout.fragment_splash_screen1) {
         private const val RC_SIGN_IN = 1
     }
 
-    var handler: Handler? = null
     private lateinit var mAuth: FirebaseAuth
     private lateinit var googleSignInClient: GoogleSignInClient
     private var accout: GoogleSignInAccount? = null
     private var acct: GoogleSignInAccount? = null
 
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        Handler().postDelayed({
+            Navigation.findNavController(requireView())
+                .navigate(R.id.action_splashScreen1_to_splashScreen2)
+        }, 1500)
+        return super.onCreateView(inflater, container, savedInstanceState)
+
+    }
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        CoroutineScope(Dispatchers.Main).launch {
-            googleSignIn()
-        }
+//        CoroutineScope(Dispatchers.Main).launch {
+//            googleSignIn()
+//        }
 
 //        btnContinueWithGoogle.setOnClickListener {
 //            CoroutineScope(Dispatchers.Main).launch {
 //                signInMethod()
 //            }
 //        }
-//
+
 //        btnContinueWithEmail.setOnClickListener {
 //            CoroutineScope(Dispatchers.Main).launch {
 //                Navigation.findNavController(it)
@@ -56,23 +70,15 @@ class SplashScreen1 : Fragment(R.layout.fragment_splash_screen1) {
 //        }
     }
 
-    private fun fun3() {
-        handler!!.postDelayed({
-            Navigation.findNavController(requireView())
-                .navigate(R.id.action_splashScreen1_to_splashScreen2)
-        }, 1000)
-    }
-
-
-    private fun googleSignIn() {
-        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(getString(R.string.default_web_client_id))
-            .requestEmail()
-            .build()
-
-        googleSignInClient = GoogleSignIn.getClient(requireActivity(), gso)
-        mAuth = FirebaseAuth.getInstance()
-    }
+//    private fun googleSignIn() {
+//        val gso = GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+//            .requestIdToken(getString(R.string.default_web_client_id))
+//            .requestEmail()
+//            .build()
+//
+//        googleSignInClient = GoogleSignIn.getClient(requireActivity(), gso)
+//        mAuth = FirebaseAuth.getInstance()
+//    }
 
     private fun signInMethod() {
         val signInIntent = googleSignInClient.signInIntent

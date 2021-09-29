@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".mutualFunds.ExploreFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                style="@style/TextViewEnterMobileNumber"
+                android:textSize="@dimen/sp_16"
+                android:layout_marginTop="@dimen/dp_23"
+                android:text="@string/popular_funds"/>
+
+            <TextView
+                android:layout_alignParentEnd="true"
+                style="@style/TextViewBelow_GreenLine"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/rectangle_filter_sort_"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="7dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="2dp"
+                android:text="@string/all_mutual_funds"
+                android:textColor="@color/light_green"
+                android:textSize="@dimen/sp_12" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_16"
+            android:id="@+id/rvPopularFunds"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/TextViewEnterMobileNumber"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="@dimen/dp_32"
+            android:text="@string/collections"/>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/sp_12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnHighReturn"
+                android:src="@drawable/ic_highr_return"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnTaxSaving"
+                android:src="@drawable/ic_tax_saving"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnBetterThanFd"
+                android:src="@drawable/ic_better_than_fd"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnTopCompanies"
+                android:src="@drawable/ic_top_companies"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSectorBets"
+                android:src="@drawable/ic_sector_beds"/>
+
+            <ImageView
+                android:layout_weight="1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSIPWith"
+                android:src="@drawable/ic_sip_with"/>
+
+        </LinearLayout>
+
+        <TextView
+            style="@style/TextViewEnterMobileNumber"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="@dimen/dp_32"
+            android:text="@string/quick_access"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/dp_16"
+            android:id="@+id/rvQuickAccess"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            style="@style/TextViewEnterMobileNumber"
+            android:textSize="@dimen/sp_16"
+            android:layout_marginTop="@dimen/dp_32"
+            android:text="@string/all_mutual_funds"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/btnSPResendOTP"
+                style="@style/TextViewBelow_GreenLine"
+                android:layout_marginTop="@dimen/dp_16"
+                android:background="@drawable/rectangle_filter_sort_"
+                android:fontFamily="@font/roboto"
+                android:paddingStart="7dp"
+                android:paddingTop="2dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="2dp"
+                android:text="@string/filter_sort"
+                android:textColor="@color/light_green"
+                android:textSize="@dimen/sp_12" />
+
+            <TextView
+                android:layout_marginEnd="8dp"
+                android:layout_alignParentEnd="true"
+                android:id="@+id/btn3YReturns"
+                style="@style/TextViewBelow_GreenLine"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto_bold"
+                android:layout_marginTop="@dimen/dp_16"
+                android:text="@string/_3y_returns"
+                android:textColor="@color/light_green"
+                android:textSize="@dimen/sp_12"
+                app:drawableEndCompat="@drawable/ic_both_sided_arrow" />
+
+        </RelativeLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="@dimen/dp_13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/rvAllMutualFunds"/>
+
+    </LinearLayout>
+
+</ScrollView>

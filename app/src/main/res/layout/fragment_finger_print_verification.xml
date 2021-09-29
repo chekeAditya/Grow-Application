@@ -1,14 +1,90 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BothSideEqualMargin"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".loginSignup.login.FingerPrintVerification">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/epGrowLogoName"
+            style="@style/GrowImageLogo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_102"
+            android:src="@drawable/ic_grow_icon_medium"
+            tools:ignore="ContentDescription" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/llWelcomeName"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/epGrowLogoName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_17">
+
+            <TextView
+                android:id="@+id/spEnterMobileNumber"
+                style="@style/TextViewEnterMobileNumber"
+                android:layout_gravity="center_horizontal"
+                android:text="Hi, " />
+
+            <TextView
+                android:id="@+id/tvVerifyName"
+                style="@style/TextViewEnterMobileNumber"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/aditya_ravindra_cheke" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llWelcomeName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dp_17">
+
+            <TextView
+                android:id="@+id/tvVerifyEmailid"
+                style="@style/TextViewEnterMobileNumber"
+                android:textSize="@dimen/sp_14"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/adityacheke291_gmaiil_com" />
+            <TextView
+                android:id="@+id/tvLogout"
+                android:textColor="@color/light_green"
+                style="@style/TextViewEnterMobileNumber"
+                android:layout_marginStart="@dimen/dp_10"
+                android:textSize="@dimen/sp_14"
+                android:layout_gravity="center_horizontal"
+                android:text="@string/logout" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/ivFingerPrintLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/fingerprint"
+            android:layout_centerInParent="true"/>
+
+        <TextView
+            android:id="@+id/tvEnterPin"
+            android:textColor="@color/light_green"
+            style="@style/TextViewEnterMobileNumber"
+            android:layout_below="@+id/ivFingerPrintLight"
+            android:layout_marginTop="84dp"
+            android:layout_centerHorizontal="true"
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/enter_groww_pin" />
+
+    </RelativeLayout>
+
 
 </FrameLayout>

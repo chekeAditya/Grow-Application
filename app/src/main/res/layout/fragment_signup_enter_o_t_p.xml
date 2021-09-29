@@ -24,10 +24,11 @@
             android:layout_below="@+id/epGrowLogoName"
             android:text="@string/email_address" />
 
-        <EditText
+        <TextView
             android:id="@+id/etEPEmailAddress"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_40"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dp_10"
             android:layout_below="@id/epEmailAddress"
             android:background="@android:color/transparent"
             android:hint="@string/eg_me_yahoo_com"

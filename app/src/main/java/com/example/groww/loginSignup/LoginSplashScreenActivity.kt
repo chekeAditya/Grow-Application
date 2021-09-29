@@ -24,7 +24,7 @@ class LoginSplashScreenActivity : AppCompatActivity() {
         supportFragmentManager.commit {
             replace(R.id.containerView, fragment)
         }
-        showSplashScreen2()
+//        showSplashScreen2()
     }
 
     private suspend fun showSplashScreen2() {
@@ -33,7 +33,7 @@ class LoginSplashScreenActivity : AppCompatActivity() {
         supportFragmentManager.commit {
             replace(R.id.containerView, fragment)
         }
-        showSplashScreen3()
+//        showSplashScreen3()
     }
 
     private suspend fun showSplashScreen3() {
