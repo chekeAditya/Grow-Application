@@ -4,6 +4,6 @@ import androidx.fragment.app.Fragment
 import com.example.groww.R
 
 
-class Explore : Fragment(R.layout.fragment_explore) {
+class Explore : Fragment(R.layout.fragment_explore_abhi) {
 
 }
