@@ -10,15 +10,17 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Groww">
         <activity
+            android:name=".AddMoney.AddMoney"
+            android:exported="true" />
+        <activity
             android:name=".AddMoney.Explore.HomeActivity"
-            android:exported="true"/>
-    <activity
-        android:name=".mutualFunds.MutualFundBaseActivity"
-        android:exported="true"/>
-
+            android:exported="true" />
+        <activity
+            android:name=".mutualFunds.MutualFundBaseActivity"
+            android:exported="true" />
         <activity
             android:name=".loginSignup.LoginSplashScreenActivity"
-            android:exported="true"/>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
             android:exported="true">
@@ -27,14 +29,10 @@
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
         <activity
             android:name=".AddMoney.ProfileActivity"
-            android:exported="true">
-
-
-        </activity>
+            android:exported="true"></activity>
 
         <meta-data
             android:name="preloaded_fonts"

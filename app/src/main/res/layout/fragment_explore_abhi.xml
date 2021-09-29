@@ -85,7 +85,7 @@
                 <TextView
                     android:background="@color/light_green"
                     android:text="All Stocks"
-                    android:textColor="@color/green"
+                    android:textColor="@color/white"
                     android:paddingVertical="5dp"
                     android:paddingHorizontal="9dp"
                     android:layout_width="wrap_content"
@@ -282,7 +282,7 @@
                 <TextView
                     android:background="@color/light_green"
                     android:text="Market News"
-                    android:textColor="@color/green"
+                    android:textColor="@color/white"
                     android:paddingVertical="5dp"
                     android:paddingHorizontal="9dp"
                     android:layout_width="wrap_content"
@@ -319,7 +319,7 @@
                 <TextView
                     android:background="@color/light_green"
                     android:text="Market Price"
-                    android:textColor="@color/green"
+                    android:textColor="@color/white"
                     android:paddingVertical="5dp"
                     android:paddingHorizontal="9dp"
                     android:layout_width="wrap_content"
