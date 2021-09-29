@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1063229107968",
+    "project_id": "groww-e0310",
+    "storage_bucket": "groww-e0310.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063229107968:android:3a54165d32b6039a6acde5",
+        "android_client_info": {
+          "package_name": "com.example.groww"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063229107968-lt2ok43g53h26goji7k58u7m608aq3eb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDyZ3ho8PoagWtuZXYzk1ipY0iQO1PBkeM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063229107968-lt2ok43g53h26goji7k58u7m608aq3eb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

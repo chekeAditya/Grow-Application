@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/BothSideEqualMargin"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".loginSignup.signup.SignupVerifyPAN">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            style="@style/GrowImageLogo"
+            android:layout_marginTop="@dimen/dp_102"
+            android:src="@drawable/ic_grow_icon_medium"
+            tools:ignore="ContentDescription" />
+
+        <TextView
+            style="@style/TextViewEnterMobileNumber"
+            android:layout_marginTop="@dimen/dp_30"
+            android:text="@string/verify_pan" />
+
+        <TextView
+            style="@style/EditTextEmailAddress_Login"
+            android:layout_marginTop="@dimen/sp_18"
+            android:text="@string/pan_is_compulsory_for_investing_in_india"
+            android:textColor="@color/light_black" />
+
+        <EditText
+            android:id="@+id/etSpEnterPanNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp_24"
+            android:background="@drawable/resend_otp_bg"
+            android:hint="@string/enter_your_pan_number_here"
+            android:padding="@dimen/sp_18"
+            android:textColor="@color/light_black"
+            android:textSize="@dimen/sp_18" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_2"
+            android:background="@color/light_green" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnSPCreateAccount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@drawable/rectangle_create_account"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/create_account"
+        android:textColor="@color/white" />
+
+</FrameLayout>
