@@ -17,5 +17,14 @@
         android:id="@+id/addMoney22"
         android:name="com.example.groww.AddMoney.AddMoneyFragments.AddMoney2"
         android:label="fragment_add_money2"
-        tools:layout="@layout/fragment_add_money2" />
+        tools:layout="@layout/fragment_add_money2" >
+        <action
+            android:id="@+id/action_addMoney22_to_addMoney3"
+            app:destination="@id/addMoney3" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMoney3"
+        android:name="com.example.groww.AddMoney.AddMoneyFragments.AddMoney3"
+        android:label="fragment_add_money3"
+        tools:layout="@layout/fragment_add_money3" />
 </navigation>

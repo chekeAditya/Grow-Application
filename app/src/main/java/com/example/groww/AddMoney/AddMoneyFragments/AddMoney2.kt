@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.Navigation
 import com.example.groww.R
 import kotlinx.android.synthetic.main.fragment_add_money2.*
 
@@ -14,6 +15,8 @@ class AddMoney2 : Fragment(R.layout.fragment_add_money2) {
         super.onViewCreated(view, savedInstanceState)
 
         visibility()
+
+        Navigation.findNavController(requireView()).navigate(R.id.action_addMoney22_to_addMoney3)
 
     }
 
