@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:layout_margin="20dp"
-    tools:context=".buy.BuyShareSuccessFragment">
+    tools:context=".ui.buy.BuyShareSuccessFragment">
 
     <ImageView
         android:id="@+id/ivSuccess"

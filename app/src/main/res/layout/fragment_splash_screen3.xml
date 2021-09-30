@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/BothSideEqualMargin"
-    tools:context=".loginSignup.SplashScreen3">
+    tools:context=".ui.loginSignup.SplashScreen3">
 
     <LinearLayout
         android:gravity="bottom"

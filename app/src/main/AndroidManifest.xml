@@ -9,22 +9,24 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
+        android:name=".growApp.GrowApp"
         android:supportsRtl="true"
+        android:usesCleartextTraffic="true"
         android:theme="@style/Theme.Groww">
         <activity
-            android:name=".AddMoney.AddMoney"
+            android:name="com.example.groww.ui.addMoney.AddMoney"
             android:exported="true" />
         <activity
-            android:name=".AddMoney.Explore.HomeActivity"
+            android:name="com.example.groww.ui.addMoney.Explore.HomeActivity"
             android:exported="true" />
         <activity
-            android:name=".mutualFunds.MutualFundBaseActivity"
+            android:name="com.example.groww.ui.mutualFunds.MutualFundBaseActivity"
             android:exported="true" />
         <activity
-            android:name=".loginSignup.LoginSplashScreenActivity"
+            android:name="com.example.groww.ui.loginSignup.LoginSplashScreenActivity"
             android:exported="true" />
         <activity
-            android:name=".MainActivity"
+            android:name=".ui.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,7 +35,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".AddMoney.ProfileActivity"
+            android:name="com.example.groww.ui.addMoney.ProfileActivity"
             android:exported="true"/>
 
         <meta-data

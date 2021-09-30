@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddMoney.Explore.fragments.DashBoard">
+    tools:context=".ui.addMoney.Explore.fragments.DashBoard">
 
     <LinearLayout
         android:layout_width="match_parent"

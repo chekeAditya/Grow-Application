@@ -10,7 +10,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".search.StockDetailsNewsFragment"
+    tools:context=".ui.search.StockDetailsNewsFragment"
     android:orientation="vertical">
 
     <include layout="@layout/news_item_view"

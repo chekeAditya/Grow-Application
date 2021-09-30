@@ -11,11 +11,13 @@ import com.example.groww.remote.responses.StockAndMfApi
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import javax.inject.Inject
 
-class Repository(private val growDao: GrowDao) {
+class Repository @Inject constructor(private val growDao: GrowDao,val api: APIClient) {
 
-    private val api: APIClient = Network.getRetrofit().create(APIClient::class.java)
-    private val responseHandler = ResponseHandler()
+
+    /**
+    private lateinit var responseHandler: ResponseHandler
 
     suspend fun getResponseFromAPI(): Resource<ResponseModel> {
         return try {
@@ -26,6 +28,7 @@ class Repository(private val growDao: GrowDao) {
             responseHandler.handleException(e)
         }
     }
+    */
 
     fun getRemoteResponseFromAPI(){
         CoroutineScope(Dispatchers.IO).launch {
