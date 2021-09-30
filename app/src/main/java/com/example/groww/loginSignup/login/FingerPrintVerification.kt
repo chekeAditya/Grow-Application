@@ -5,6 +5,7 @@ import android.os.Bundle
 import android.os.Handler
 import android.view.View
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import com.example.groww.AddMoney.Explore.HomeActivity
 import com.example.groww.R
 
@@ -17,12 +18,14 @@ class FingerPrintVerification : Fragment(R.layout.fragment_finger_print_verifica
         //TODO Check 2 :- Device has fingerprint Scanner
         //TODO Check 3 :- Device has fingerprint Scanner
 
-        Handler().postDelayed({
+//        Handler().postDelayed({
+//
+//            val intent = Intent(activity,HomeActivity::class.java)
+//            startActivity(intent)
+//        },3000
+//        )
 
-            val intent = Intent(activity,HomeActivity::class.java)
-            startActivity(intent)
-        },3000
-        )
+        Navigation.findNavController(view).navigate(R.id.action_fingerPrintVerification_to_exploreFragment)
     }
 
 }

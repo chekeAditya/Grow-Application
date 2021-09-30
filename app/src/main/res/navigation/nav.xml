@@ -13,6 +13,9 @@
         <action
             android:id="@+id/action_loading_to_splashScreen1"
             app:destination="@id/splashScreen1" />
+        <action
+            android:id="@+id/action_loading_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
     </fragment>
     <fragment
         android:id="@+id/splashScreen1"
@@ -139,5 +142,14 @@
         android:id="@+id/fingerPrintVerification"
         android:name="com.example.groww.loginSignup.login.FingerPrintVerification"
         android:label="fragment_finger_print_verification"
-        tools:layout="@layout/fragment_finger_print_verification" />
+        tools:layout="@layout/fragment_finger_print_verification" >
+        <action
+            android:id="@+id/action_fingerPrintVerification_to_exploreFragment"
+            app:destination="@id/exploreFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/exploreFragment"
+        android:name="com.example.groww.mutualFunds.ExploreFragment"
+        android:label="fragment_explore"
+        tools:layout="@layout/fragment_explore" />
 </navigation>
