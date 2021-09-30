@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/add_money_nav"
+    app:startDestination="@id/addMoney12">
+    <fragment
+        android:id="@+id/addMoney12"
+        android:name="com.example.groww.AddMoney.AddMoneyFragments.AddMoney1"
+        android:label="fragment_add_money1"
+        tools:layout="@layout/fragment_add_money1" >
+        <action
+            android:id="@+id/action_addMoney12_to_addMoney22"
+            app:destination="@id/addMoney22" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMoney22"
+        android:name="com.example.groww.AddMoney.AddMoneyFragments.AddMoney2"
+        android:label="fragment_add_money2"
+        tools:layout="@layout/fragment_add_money2" />
+</navigation>

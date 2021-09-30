@@ -75,14 +75,14 @@
 
         <TextView
             android:id="@+id/tvEnterPin"
-            android:textColor="@color/light_green"
             style="@style/TextViewEnterMobileNumber"
             android:layout_below="@+id/ivFingerPrintLight"
-            android:layout_marginTop="84dp"
             android:layout_centerHorizontal="true"
-            android:textSize="@dimen/sp_14"
             android:layout_gravity="center_horizontal"
-            android:text="@string/enter_groww_pin" />
+            android:layout_marginTop="84dp"
+            android:text="@string/enter_groww_pin"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sp_14" />
 
     </RelativeLayout>
 
