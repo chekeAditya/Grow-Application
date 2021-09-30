@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     style="@style/BothSideEqualMargin"
-    tools:context=".loginSignup.signup.SignupEnterEmail">
+    tools:context=".ui.loginSignup.signup.SignupEnterEmail">
 
     <RelativeLayout
         android:layout_width="match_parent"

@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.search.StockDetailsEventsFragment"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="none">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:paddingHorizontal="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="2dp"
+            android:paddingHorizontal="25dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/primary_green"
+            android:background="@drawable/bg_selected"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bonus, Right &amp; Split"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="2dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/dark_gray"
+            android:background="@drawable/bg_searchbox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Dividend"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="2dp"
+            android:paddingHorizontal="15dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/dark_gray"
+            android:background="@drawable/bg_searchbox"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Annual"
+            android:textSize="15sp"
+            android:layout_marginHorizontal="2dp"
+            android:paddingHorizontal="20dp"
+            android:paddingVertical="10dp"
+            android:textColor="@color/dark_gray"
+            android:background="@drawable/bg_searchbox"/>
+
+    </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <include layout="@layout/event_item_view"
+        android:id="@+id/randomEventView"/>
+
+    <include layout="@layout/event_item_view"/>
+
+    <include layout="@layout/event_item_view"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:listitem="@layout/event_item_view"/>
+
+</LinearLayout>
+
+</androidx.core.widget.NestedScrollView>

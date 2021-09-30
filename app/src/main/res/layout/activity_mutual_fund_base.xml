@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     style="@style/BothSideEqualMargin"
     android:layout_height="match_parent"
-    tools:context=".mutualFunds.MutualFundBaseActivity">
+    tools:context=".ui.mutualFunds.MutualFundBaseActivity">
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.buy.BuyShareFragment"
+    android:layout_margin="20dp">
+
+    <ImageView
+        android:id="@+id/ivBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/backsearch"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvBuyShareName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Buy Tata Steel BSL"
+        android:textColor="@color/primary_black_text"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/ivBack"
+        android:layout_marginStart="20dp"/>
+
+    <TextView
+        android:id="@+id/tvBuySharePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹86.10"
+        android:textSize="15sp"
+        android:textColor="@color/primary_black_text"
+        app:layout_constraintStart_toEndOf="@+id/ivBack"
+        app:layout_constraintTop_toBottomOf="@+id/tvBuyShareName"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="  Depth"
+        android:textSize="15sp"
+        android:textColor="@color/primary_green"
+        app:layout_constraintStart_toEndOf="@+id/tvBuySharePrice"
+        app:layout_constraintTop_toBottomOf="@+id/tvBuyShareName"
+        android:layout_marginTop="5dp"/>
+
+    <TextView
+        android:id="@+id/tvTypeDelivery"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Type Delivery"
+        android:textSize="15sp"
+        android:textColor="@color/primary_black_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvBuySharePrice"
+        android:layout_marginTop="30dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/showmore"
+        app:layout_constraintTop_toBottomOf="@+id/tvBuySharePrice"
+        app:layout_constraintStart_toEndOf="@+id/tvTypeDelivery"
+        android:layout_marginTop="38dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvQtyNse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Qty NSE"
+        android:textSize="15sp"
+        android:textColor="@color/primary_black_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTypeDelivery"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/showmore"
+        app:layout_constraintTop_toBottomOf="@+id/tvTypeDelivery"
+        app:layout_constraintStart_toEndOf="@+id/tvQtyNse"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="10dp"/>
+
+    <EditText
+        android:id="@+id/etInputQty"
+        android:layout_width="100dp"
+        android:layout_height="30dp"
+        android:background="@color/light_primary_green"
+        android:textColor="@color/primary_green"
+        android:inputType="numberDecimal"
+        android:textSize="20sp"
+        android:cursorVisible="false"
+        android:textAlignment="viewEnd"
+        android:maxLength="5"
+        android:layout_marginTop="15dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvTypeDelivery"/>
+
+    <TextView
+        android:id="@+id/tvPriceMarket"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price Market"
+        android:textSize="15sp"
+        android:textColor="@color/primary_black_text"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvQtyNse"
+        android:layout_marginTop="20dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/showmore"
+        app:layout_constraintTop_toBottomOf="@+id/tvQtyNse"
+        app:layout_constraintStart_toEndOf="@+id/tvPriceMarket"
+        android:layout_marginTop="28dp"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:id="@+id/tvBuyShareAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹ 86.10"
+        android:textColor="@color/primary_black_text"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@+id/etInputQty"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="2sp"
+        android:background="@color/light_gray"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvPriceMarket"
+        android:layout_marginTop="20dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Advanced Options"
+        android:textColor="@color/primary_green"
+        android:textSize="15sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Balance  "
+        android:textSize="15sp"
+        android:textColor="@color/dark_gray"
+        android:drawableStart="@drawable/wallet"
+        android:drawablePadding="5dp"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/tvBalanceAmount"
+        app:layout_constraintTop_toBottomOf="@+id/view"/>
+
+    <TextView
+        android:id="@+id/tvBalanceAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="₹1,000.00"
+        android:textColor="@color/dark_gray"
+        android:textSize="15sp"
+        app:layout_constraintTop_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:id="@+id/btnShareBuy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="BUY"
+        android:textSize="15sp"
+        android:textColor="@color/white"
+        android:background="@drawable/bg_buy_unselected"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
