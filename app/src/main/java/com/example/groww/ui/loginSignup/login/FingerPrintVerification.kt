@@ -15,6 +15,8 @@ class FingerPrintVerification : Fragment(R.layout.fragment_finger_print_verifica
         //TODO Check 2 :- Device has fingerprint Scanner
         //TODO Check 3 :- Device has fingerprint Scanner
 
+
+
 //        Handler().postDelayed({
 //
 //            val intent = Intent(activity,HomeActivity::class.java)
@@ -22,7 +24,7 @@ class FingerPrintVerification : Fragment(R.layout.fragment_finger_print_verifica
 //        },3000
 //        )
 
-        Navigation.findNavController(view).navigate(R.id.action_fingerPrintVerification_to_exploreFragment)
+        Navigation.findNavController(view).navigate(R.id.action_fingerPrintVerification_to_homeActivity)
     }
 
 }

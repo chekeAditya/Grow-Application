@@ -14,8 +14,8 @@
             android:id="@+id/action_loading_to_splashScreen1"
             app:destination="@id/splashScreen1" />
         <action
-            android:id="@+id/action_loading_to_exploreFragment"
-            app:destination="@id/exploreFragment" />
+            android:id="@+id/action_loading_to_searchAllFragment2"
+            app:destination="@id/searchAllFragment2" />
     </fragment>
     <fragment
         android:id="@+id/splashScreen1"
@@ -144,12 +144,31 @@
         android:label="fragment_finger_print_verification"
         tools:layout="@layout/fragment_finger_print_verification" >
         <action
-            android:id="@+id/action_fingerPrintVerification_to_exploreFragment"
-            app:destination="@id/exploreFragment" />
+            android:id="@+id/action_fingerPrintVerification_to_homeActivity"
+            app:destination="@id/homeActivity" />
     </fragment>
     <fragment
         android:id="@+id/exploreFragment"
         android:name="com.example.groww.ui.mutualFunds.ExploreFragment"
         android:label="fragment_explore"
         tools:layout="@layout/fragment_explore" />
+    <activity
+        android:id="@+id/homeActivity"
+        android:name="com.example.groww.ui.addMoney.Explore.HomeActivity"
+        android:label="activity_home"
+        tools:layout="@layout/activity_home" />
+    <fragment
+        android:id="@+id/searchAllFragment2"
+        android:name="com.example.groww.ui.search.SearchAllFragment"
+        android:label="fragment_search_all"
+        tools:layout="@layout/fragment_search_all" >
+        <action
+            android:id="@+id/action_searchAllFragment2_to_stockDetailsFragment2"
+            app:destination="@id/stockDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockDetailsFragment2"
+        android:name="com.example.groww.ui.search.StockDetailsFragment"
+        android:label="fragment_stock_details"
+        tools:layout="@layout/fragment_stock_details" />
 </navigation>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/search_nav"
+    app:startDestination="@id/searchAllFragment">
+
+    <fragment
+        android:id="@+id/searchAllFragment"
+        android:name="com.example.groww.ui.search.SearchAllFragment"
+        android:label="fragment_search_all"
+        tools:layout="@layout/fragment_search_all" >
+        <action
+            android:id="@+id/action_searchAllFragment_to_stockDetailsFragment"
+            app:destination="@id/stockDetailsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/stockDetailsFragment"
+        android:name="com.example.groww.ui.search.StockDetailsFragment"
+        android:label="fragment_stock_details"
+        tools:layout="@layout/fragment_stock_details" >
+        <action
+            android:id="@+id/action_stockDetailsFragment_to_buyShareFragment"
+            app:destination="@id/buyShareFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyShareFragment"
+        android:name="com.example.groww.ui.buy.BuyShareFragment"
+        android:label="fragment_buy_share"
+        tools:layout="@layout/fragment_buy_share" >
+        <action
+            android:id="@+id/action_buyShareFragment_to_buyShareSuccessFragment"
+            app:destination="@id/buyShareSuccessFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/buyShareSuccessFragment"
+        android:name="com.example.groww.ui.buy.BuyShareSuccessFragment"
+        android:label="fragment_buy_share_success"
+        tools:layout="@layout/fragment_buy_share_success" />
+</navigation>

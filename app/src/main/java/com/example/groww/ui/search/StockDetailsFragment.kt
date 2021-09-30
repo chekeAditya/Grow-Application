@@ -3,6 +3,7 @@ package com.example.groww.ui.search
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
+import androidx.navigation.Navigation
 import com.example.groww.R
 import com.example.groww.ui.search.adapter.StockDetailsFragmentAdapter
 import com.google.android.material.tabs.TabLayoutMediator
@@ -14,6 +15,12 @@ class StockDetailsFragment : Fragment(R.layout.fragment_stock_details) {
         super.onViewCreated(view, savedInstanceState)
 
         setupFragmentViewPager()
+
+        val navController = Navigation.findNavController(requireView())
+
+        btnBuy.setOnClickListener {
+            navController.navigate(R.id.action_stockDetailsFragment_to_buyShareFragment)
+        }
 
     }
 

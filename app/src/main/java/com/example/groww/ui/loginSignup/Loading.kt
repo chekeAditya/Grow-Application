@@ -13,7 +13,7 @@ class Loading : Fragment(R.layout.fragment_loading) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         Handler().postDelayed({
-           Navigation.findNavController(requireView()).navigate(R.id.action_loading_to_exploreFragment)
+           Navigation.findNavController(requireView()).navigate(R.id.action_loading_to_searchAllFragment2)
         }, 2000)
     }
 }
