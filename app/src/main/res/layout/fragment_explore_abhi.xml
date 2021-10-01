@@ -17,10 +17,10 @@
             android:layout_marginVertical="25dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+                android:id="@+id/rlAddMoneyLayout"
             app:cardCornerRadius="10dp">
 
             <RelativeLayout
-                android:id="@+id/rlAddMoneyLayout"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:orientation="horizontal"

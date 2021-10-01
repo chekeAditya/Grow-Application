@@ -5,11 +5,10 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
 import com.google.gson.annotations.SerializedName
-
+import java.io.Serializable
 
 @Entity(tableName = "grow_explore_fragment")
 data class StockAndMfApi(
-
     @ColumnInfo(name = "company_current_price")
     @SerializedName("company_current_price")
     val companyCurrentPrice: String,
@@ -69,8 +68,8 @@ data class StockAndMfApi(
     @ColumnInfo(name = "qa_heading")
     @SerializedName("qa_heading")
     val qaHeading: String
-){
+) {
     @PrimaryKey(autoGenerate = true)
     @ColumnInfo(name = "id")
-    var id : Int? = null
+    var id: Int? = null
 }

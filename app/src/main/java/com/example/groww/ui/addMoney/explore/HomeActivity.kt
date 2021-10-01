@@ -11,6 +11,7 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_home.*
 
 
+@AndroidEntryPoint
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +24,7 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun onEdittextClicked() {
-        etActivityHome.setOnClickListener{
+        cardViewSearch.setOnClickListener{
             val intent = Intent(this@HomeActivity, SearchActivity::class.java)
             startActivity(intent)
         }
