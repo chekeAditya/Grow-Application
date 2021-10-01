@@ -14,11 +14,13 @@
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
+
             <TextView
+                android:layout_marginStart="@dimen/dp_20"
                 style="@style/TextViewEnterMobileNumber"
-                android:textSize="@dimen/sp_16"
                 android:layout_marginTop="@dimen/dp_23"
-                android:text="@string/popular_funds"/>
+                android:text="@string/popular_funds"
+                android:textSize="@dimen/sp_16" />
 
             <TextView
                 android:layout_alignParentEnd="true"
@@ -43,6 +45,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:layout_marginStart="@dimen/dp_20"
             style="@style/TextViewEnterMobileNumber"
             android:textSize="@dimen/sp_16"
             android:layout_marginTop="@dimen/dp_32"
@@ -105,6 +108,7 @@
         </LinearLayout>
 
         <TextView
+            android:layout_marginStart="@dimen/dp_20"
             style="@style/TextViewEnterMobileNumber"
             android:textSize="@dimen/sp_16"
             android:layout_marginTop="@dimen/dp_32"
@@ -117,6 +121,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:layout_marginStart="@dimen/dp_20"
             style="@style/TextViewEnterMobileNumber"
             android:textSize="@dimen/sp_16"
             android:layout_marginTop="@dimen/dp_32"
@@ -129,6 +134,7 @@
 
             <TextView
                 android:id="@+id/btnSPResendOTP"
+                android:layout_marginStart="@dimen/dp_20"
                 style="@style/TextViewBelow_GreenLine"
                 android:layout_marginTop="@dimen/dp_16"
                 android:background="@drawable/rectangle_filter_sort_"

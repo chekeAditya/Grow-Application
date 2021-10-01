@@ -20,5 +20,4 @@ class SignupEnterOTP : Fragment(R.layout.fragment_signup_enter_o_t_p) {
         }
         etEPEmailAddress.text = args.emailId
     }
-
 }

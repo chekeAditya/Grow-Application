@@ -165,4 +165,9 @@
         android:name="com.example.groww.ui.search.SearchActivity"
         android:label="activity_search"
         tools:layout="@layout/activity_search" />
+    <activity
+        android:id="@+id/addMoney2"
+        android:name="com.example.groww.ui.addMoney.AddMoney"
+        android:label="activity_add_money"
+        tools:layout="@layout/activity_add_money" />
 </navigation>

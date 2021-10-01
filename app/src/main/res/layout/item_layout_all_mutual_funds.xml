@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/dp_8"
+    app:cardElevation="5dp">
+
+    <ImageView
+        android:id="@+id/item_mf_Iv_StockLogo"
+        android:layout_width="@dimen/dp_25"
+        android:layout_height="@dimen/dp_25"
+        android:layout_marginStart="@dimen/sp_18"
+        android:layout_centerVertical="true"
+        android:scaleType="centerCrop"
+        android:src="@drawable/icici_logo" />
+
+    <TextView
+        android:layout_toEndOf="@+id/item_mf_Iv_StockLogo"
+        android:id="@+id/item_mf_tv_StockName"
+        style="@style/TextViewEnterMobileNumber"
+        android:layout_marginStart="@dimen/dp_16"
+        android:fontFamily="@font/roboto"
+        android:text="@string/icici_prudential_technology"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/item_mf_tv_StockProfitPercent"
+        style="@style/TextViewEnterMobileNumber"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_toStartOf="@+id/percentSymbol"
+        android:text="39.88"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:id="@+id/percentSymbol"
+        style="@style/TextViewEnterMobileNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="@dimen/dp_11"
+        android:layout_marginEnd="@dimen/dp_13"
+        android:text="%"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_toEndOf="@+id/item_mf_Iv_StockLogo"
+        android:id="@+id/item_mf_tv_StockDesc"
+        style="@style/TextViewEnterMobileNumber"
+        android:layout_below="@+id/item_mf_tv_StockName"
+        android:layout_marginStart="@dimen/dp_16"
+        android:layout_marginTop="@dimen/dp_4"
+        android:fontFamily="@font/roboto"
+        android:text="@string/direct_plan_growth"
+        android:textSize="@dimen/sp_14" />
+
+    <TextView
+        android:layout_toEndOf="@+id/item_mf_Iv_StockLogo"
+        android:id="@+id/item_mf_stockSector"
+        style="@style/EditTextEmailAddress_Login"
+        android:layout_below="@id/item_mf_tv_StockDesc"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="@dimen/sp_16"
+        android:layout_marginTop="@dimen/sp_12"
+        android:layout_marginBottom="@dimen/sp_16"
+        android:text="@string/merge_analyse_and_switch_to_direct_funds"
+        android:textColor="@color/light_grey"
+        android:textSize="@dimen/sp_12" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp_1"
+        android:layout_marginStart="@dimen/dp_5"
+        android:layout_marginEnd="@dimen/dp_5"
+        android:layout_below="@+id/item_mf_stockSector"
+        android:background="@color/cyan"/>
+
+</RelativeLayout>
