@@ -19,4 +19,10 @@ interface GrowDao {
     @Query("delete from grow_explore_fragment")
     fun deleteAllData()
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun insertMoney(userBalance: UserBalance)
+
+    @Query("select * from user_balance")
+    fun getUserMoney(): LiveData<UserBalance>
+
 }

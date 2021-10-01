@@ -5,15 +5,13 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
-import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.groww.R
-import com.example.groww.adapter.ExploreAdapter
+import com.example.groww.adapter.ExplorePopularFundAdapter
+import com.example.groww.adapter.ExploreQuickAccessAdapter
 import com.example.groww.remote.local.GrowDao
 import com.example.groww.remote.local.GrowRoomDatabase
 import com.example.groww.remote.responses.StockAndMfApi
-import com.example.groww.repopsitory.Repository
-import com.example.groww.viewmodel.ViewModelFactory
 import com.example.groww.viewmodel.ViewModelGrow
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_explore.*
@@ -21,7 +19,8 @@ import kotlinx.android.synthetic.main.fragment_explore.*
 @AndroidEntryPoint
 class ExploreFragment : Fragment(R.layout.fragment_explore) {
 
-    lateinit var exploreAdapter: ExploreAdapter
+    lateinit var explorePopularFundAdapter: ExplorePopularFundAdapter
+    lateinit var exploreQuickAccessAdapter: ExploreQuickAccessAdapter
     private var stockAndMfApi = mutableListOf<StockAndMfApi>()
      private val viewModelGrow: ViewModelGrow by viewModels()
     lateinit var growDao: GrowDao
@@ -59,14 +58,21 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
         })
          */
 
-        exploreAdapter = ExploreAdapter(requireContext(),stockAndMfApi)
+        //popular fund Adapter
+        explorePopularFundAdapter = ExplorePopularFundAdapter(requireContext(),stockAndMfApi)
         rvPopularFunds.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
-        rvPopularFunds.adapter = exploreAdapter
+        rvPopularFunds.adapter = explorePopularFundAdapter
+
+        //quick access adapter
+        exploreQuickAccessAdapter = ExploreQuickAccessAdapter(requireContext(),stockAndMfApi)
+        rvQuickAccess.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
+        rvQuickAccess.adapter = exploreQuickAccessAdapter
 
         viewModelGrow.getDataFromDB().observe(viewLifecycleOwner, Observer {
             stockAndMfApi.clear()
             stockAndMfApi.addAll(it)
-            exploreAdapter.notifyDataSetChanged()
+            explorePopularFundAdapter.notifyDataSetChanged()
+            exploreQuickAccessAdapter.notifyDataSetChanged()
         })
         viewModelGrow.getDataFromAPI()
     }
