@@ -34,6 +34,7 @@
         android:layout_height="wrap_content"/>
     <TextView
         android:text="₹0.00"
+        android:id="@+id/tvBalanceInAddMoneyFragment"
         android:layout_marginTop="@dimen/dp_4"
         android:textColor="@color/black"
         android:textSize="26dp"
@@ -116,13 +117,14 @@
                         android:layout_height="wrap_content"/>
 
                     <EditText
-                        android:text="5000"
-                        android:backgroundTint="@color/transparent"
-                        android:textColor="@color/green"
-                        android:fontFamily="@font/roboto_bold"
+                        android:id="@+id/etMoneyAddAmt"
                         android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/transparent"
+                        android:fontFamily="@font/roboto_bold"
                         android:inputType="number"
-                        android:layout_height="wrap_content"/>
+                        android:text="5000"
+                        android:textColor="@color/green" />
 
                 </LinearLayout>
 

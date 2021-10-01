@@ -10,10 +10,10 @@ import com.example.groww.R
 import com.example.groww.remote.responses.StockAndMfApi
 import kotlinx.android.synthetic.main.item_layout_popularfunds.view.*
 
-class ExploreAdapter(
+class ExplorePopularFundAdapter(
     private val context: Context,
     private val stockAndMfApiList: List<StockAndMfApi>
-) : RecyclerView.Adapter<ExploreAdapter.ExploreViewHolder>() {
+) : RecyclerView.Adapter<ExplorePopularFundAdapter.ExploreViewHolder>() {
 
 
     //viewHolder
