@@ -19,7 +19,7 @@
             android:name=".ui.addMoney.AddMoney"
             android:exported="true" />
         <activity
-            android:name=".ui.addMoney.Explore.HomeActivity"
+            android:name=".ui.addMoney.explore.HomeActivity"
             android:exported="true" />
         <activity
             android:name=".ui.mutualFunds.MutualFundBaseActivity"

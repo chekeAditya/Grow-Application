@@ -1,4 +1,4 @@
-package com.example.groww.ui.addMoney.AddMoneyFragments
+package com.example.groww.ui.addMoney.addMoneyFragments
 
 import android.os.Bundle
 import android.view.View

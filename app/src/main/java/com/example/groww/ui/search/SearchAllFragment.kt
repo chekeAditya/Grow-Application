@@ -13,7 +13,6 @@ class SearchAllFragment : Fragment(R.layout.fragment_search_all) {
         super.onViewCreated(view, savedInstanceState)
 
         val navController = Navigation.findNavController(requireView())
-
         randomSearchView.setOnClickListener {
             navController.navigate(R.id.action_searchAllFragment_to_stockDetailsFragment)
         }

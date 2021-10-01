@@ -28,6 +28,9 @@ class SplashScreen3 : Fragment(R.layout.fragment_splash_screen3) {
             Navigation.findNavController(it)
                 .navigate(R.id.action_splashScreen3_to_signupEnterEmail)
         }
+        btnContinueWithGoogle3.setOnClickListener {
+            Navigation.findNavController(it).navigate(R.id.action_splashScreen3_to_fingerPrintVerification)
+        }
     }
 
 }

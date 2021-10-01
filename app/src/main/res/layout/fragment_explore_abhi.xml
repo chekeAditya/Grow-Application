@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ui.addMoney.Explore.fragments.Explore">
+    tools:context=".ui.addMoney.explore.fragments.Explore">
 
     <LinearLayout
 
@@ -207,34 +207,6 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
-        <LinearLayout
-            android:weightSum="2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <TextView
-                android:id="@+id/stocksHome"
-                android:drawableTop="@drawable/ic_stocks"
-                android:text="Stocks"
-                android:gravity="center"
-                android:padding="10dp"
-                android:textColor="@color/blue"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"/>
-
-            <TextView
-                android:id="@+id/mutualFundsHome"
-                android:drawableTop="@drawable/ic_mutual_funds"
-                android:text="Stocks"
-                android:gravity="center"
-                android:padding="10dp"
-                android:layout_weight="1"
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"/>
-
-        </LinearLayout>
 
         <LinearLayout
             android:layout_marginTop="21dp"

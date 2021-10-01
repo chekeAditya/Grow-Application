@@ -1,11 +1,11 @@
-package com.example.groww.ui.addMoney.Explore
+package com.example.groww.ui.addMoney.explore
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.lifecycle.Lifecycle
 import androidx.viewpager2.adapter.FragmentStateAdapter
-import com.example.groww.ui.addMoney.Explore.fragments.DashBoard
-import com.example.groww.ui.addMoney.Explore.fragments.Explore
+import com.example.groww.ui.addMoney.explore.fragments.DashBoard
+import com.example.groww.ui.addMoney.explore.fragments.Explore
 
 class ViewPagerAdapter(fragmentManager: FragmentManager, lifecycle: Lifecycle):
     FragmentStateAdapter(fragmentManager, lifecycle) {
