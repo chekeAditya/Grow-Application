@@ -15,10 +15,10 @@ class Loading : Fragment(R.layout.fragment_loading) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-//        goToLoginSignUpActivity()
-        goToExploreHomeActivity()
+    //     goToLoginSignUpActivity()
+//        goToExploreHomeActivity()
 //        goToProfileActivity()
-//        goToSearchActivity()
+       goToSearchActivity()
     }
 
     private fun goToSearchActivity() {

@@ -13,14 +13,8 @@
     tools:context=".ui.search.StockDetailsNewsFragment"
     android:orientation="vertical">
 
-    <include layout="@layout/news_item_view"
-        android:id="@+id/randomNewsView"/>
-
-    <include layout="@layout/news_item_view"/>
-
-    <include layout="@layout/news_item_view"/>
-
     <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/newsRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         tools:listitem="@layout/news_item_view"/>
