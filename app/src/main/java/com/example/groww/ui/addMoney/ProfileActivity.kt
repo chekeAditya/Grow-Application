@@ -1,5 +1,6 @@
 package com.example.groww.ui.addMoney
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -23,5 +24,11 @@ class ProfileActivity : AppCompatActivity() {
                 userBalanceProfile.text = it.addMoney.toString()
             } else userBalanceProfile.text = "0.00"
         })
+
+        addMoneyProfile.setOnClickListener {
+            val intent = Intent(this,AddMoney::class.java)
+            startActivity(intent)
+        }
+
     }
 }
