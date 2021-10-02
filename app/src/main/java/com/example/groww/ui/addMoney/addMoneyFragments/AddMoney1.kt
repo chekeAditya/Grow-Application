@@ -20,14 +20,20 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
+
+        val addingMoney = etMoneyAddAmt.text
+        val userModel = UserBalance(id = 1, addMoney = addingMoney.toString().toDouble())
         addMoney1Btn.setOnClickListener {
+            Navigation.findNavController(requireView())
+                .navigate(R.id.action_addMoney12_to_addMoney3)
+            viewModelGrow.insertMoney(userModel)
+        }
+        selectOptionAddMoney1.setOnClickListener {
             Navigation.findNavController(requireView())
                 .navigate(R.id.action_addMoney12_to_addMoney22)
         }
 
-        val addingMoney = etMoneyAddAmt.text
-        val userModel = UserBalance(id = 1, addMoney = addingMoney.toString().toDouble())
-        viewModelGrow.insertMoney(userModel)
 
         viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {
             if (it != null){

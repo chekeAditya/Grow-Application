@@ -12,6 +12,9 @@
         <action
             android:id="@+id/action_addMoney12_to_addMoney22"
             app:destination="@id/addMoney22" />
+        <action
+            android:id="@+id/action_addMoney12_to_addMoney3"
+            app:destination="@id/addMoney3" />
     </fragment>
     <fragment
         android:id="@+id/addMoney22"
