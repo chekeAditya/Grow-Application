@@ -10,7 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
 import com.example.groww.R
-import com.example.groww.remote.local.Dashboard
+import com.example.groww.remote.local.DashboardModel
 import com.example.groww.remote.local.UserBalance
 import com.example.groww.viewmodel.ViewModelGrow
 import dagger.hilt.android.AndroidEntryPoint
@@ -60,7 +60,7 @@ class BuyShareFragment : Fragment(R.layout.fragment_buy_share) {
 
                     val stockName = tvBuyShareName.text.toString().substring(4,
                         tvBuyShareName.text.toString().length)
-                    val dashboard = Dashboard(stockName,sharePrice,inputAmount.toInt())
+                    val dashboard = DashboardModel(stockName,sharePrice,inputAmount.toInt())
                     viewModel.setDataInDashboard(dashboard)
 
                     val bundle = Bundle()

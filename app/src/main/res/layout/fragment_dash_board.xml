@@ -12,20 +12,17 @@
             android:orientation="vertical"
             style="@style/BothSideEqualMargin"
             android:layout_height="wrap_content">
-
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:src="@drawable/ic_emptydash"/>
-
             <TextView
                 style="@style/TextViewEnterMobileNumber"
                 android:textSize="@dimen/sp_18"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/dp_37"
                 android:text="@string/already_invested_somewhere"/>
-
             <TextView
                 style="@style/EditTextEmailAddress_Login"
                 android:textColor="@color/light_black"
@@ -33,7 +30,6 @@
                 android:textSize="@dimen/sp_14"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/merge_analyse_and_switch_to_direct_funds"/>
-
             <Button
                 android:id="@+id/btnSpSendOTP"
                 android:layout_width="match_parent"
@@ -43,7 +39,6 @@
                 android:layout_marginTop="28dp"
                 android:text="@string/import_your_funds"
                 android:textColor="@color/white" />
-
             <TextView
                 style="@style/TextViewEnterMobileNumber"
                 android:textSize="@dimen/sp_14"

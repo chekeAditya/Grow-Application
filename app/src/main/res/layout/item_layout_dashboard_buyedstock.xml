@@ -1,13 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="wrap_content">
 
-<!--    <TextView-->
-<!--        android:id="@+id/tvCompanyNameDashboard"-->
-<!--        android:text="Trident"-->
-<!--        style="@style/TextViewBelow_GreenLine"-->
-<!--        android:fontFamily="@font/roboto"-->
-<!--        android:textColor="@color/black"-->
+    <TextView
+        android:id="@+id/tvCompanyNameDashboard"
+        android:text="Trident"
+        style="@style/TextViewBelow_GreenLine"
+        android:fontFamily="@font/roboto"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvCompanyShareQuantityDashboard"
+        android:text="81 shared"
+        android:layout_below="@+id/tvCompanyNameDashboard"
+        style="@style/TextViewBelow_GreenLine"
+        android:textSize="@dimen/sp_12"
+        android:fontFamily="@font/roboto"
+        android:layout_marginTop="@dimen/dp_15"
+        android:textColor="@color/light_grey"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/stock_graph_img"
+        android:layout_centerInParent="true"/>
+
+    <TextView
+        android:id="@+id/tvStockReturnsPriceDashboard"
+        android:text="₹ 1952.15"
+        android:layout_alignParentEnd="true"
+        style="@style/TextViewBelow_GreenLine"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:fontFamily="@font/roboto_bold"
+        android:textSize="@dimen/sp_14"
+        android:textColor="@color/green"/>
+
+    <TextView
+        android:id="@+id/tvStockCurrentPriceDashboard"
+        android:text="(₹ 1,798.25)"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/tvCompanyNameDashboard"
+        style="@style/TextViewBelow_GreenLine"
+        android:textSize="@dimen/sp_12"
+        android:fontFamily="@font/roboto_bold"
+        android:layout_marginTop="@dimen/dp_15"
+        android:textColor="@color/light_grey"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@color/grey"
+        android:layout_marginTop="@dimen/dp_24"
+        android:layout_below="@+id/tvStockCurrentPriceDashboard"/>
 
 </RelativeLayout>
