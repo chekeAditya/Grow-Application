@@ -25,4 +25,7 @@ interface GrowDao {
     @Query("select * from user_balance")
     fun getUserMoney(): LiveData<UserBalance>
 
+    @Query("select * from grow_explore_fragment where id = :id")
+    fun getParticularResponseFromAPI(id: Int): LiveData<StockAndMfApi>
+
 }

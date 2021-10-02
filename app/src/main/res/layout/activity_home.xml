@@ -8,39 +8,45 @@
     tools:context=".ui.addMoney.explore.HomeActivity">
 
     <androidx.cardview.widget.CardView
-        android:id="@+id/cardViewSearch"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="10dp"
+        android:id="@+id/reActivityHome"
         app:cardCornerRadius="40dp">
 
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/cardViewSearch"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:backgroundTint="@color/transparent"
+                android:drawableStart="@drawable/ic_grow_logo"
+                android:drawablePadding="10dp"
+                android:hint="Search Grow"
+                android:inputType="text"
+                android:paddingHorizontal="10dp"
+                android:paddingVertical="16dp"
+                android:textSize="18sp" />
+            
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="100dp"
+                android:id="@+id/profileHome"
+                android:layout_alignParentEnd="true"
+                android:layout_centerVertical="true"
+                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:background="@drawable/circle_bg_search"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/aditya_pic" />
+            </androidx.cardview.widget.CardView>
 
 
-        <EditText
-            android:id="@+id/etActivityHome"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="@color/transparent"
-            android:drawableStart="@drawable/ic_grow_logo"
-            android:drawablePadding="10dp"
-            android:hint="Search Grow"
-            android:inputType="text"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="16dp"
-            android:textSize="18sp" />
-
-        <ImageView
-            android:layout_width="@dimen/dp_30"
-            android:src="@drawable/aditya_pic"
-            android:scaleType="centerCrop"
-            android:background="@drawable/circle_bg_search"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="@dimen/dp_20"
-            android:layout_alignParentEnd="true"
-            android:layout_height="@dimen/dp_30"/>
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
@@ -49,7 +55,7 @@
         android:id="@+id/viewInHomeActivity"
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_below="@+id/cardViewSearch"
+        android:layout_below="@+id/reActivityHome"
         android:layout_marginTop="2dp" />
 
 
@@ -75,10 +81,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:id="@+id/llHomeActivity"
         app:cardElevation="10dp">
 
         <LinearLayout
-            android:id="@+id/llHomeActivity"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:weightSum="2">

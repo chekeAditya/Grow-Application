@@ -7,6 +7,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.groww.R
+import com.example.groww.adapter.ExploreAllMutualFundsAdapter
 import com.example.groww.adapter.ExplorePopularFundAdapter
 import com.example.groww.adapter.ExploreQuickAccessAdapter
 import com.example.groww.remote.local.GrowDao
@@ -21,6 +22,8 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
 
     lateinit var explorePopularFundAdapter: ExplorePopularFundAdapter
     lateinit var exploreQuickAccessAdapter: ExploreQuickAccessAdapter
+    lateinit var exploreAllMutualFundAdapter: ExploreAllMutualFundsAdapter
+
     private var stockAndMfApi = mutableListOf<StockAndMfApi>()
      private val viewModelGrow: ViewModelGrow by viewModels()
     lateinit var growDao: GrowDao
@@ -58,21 +61,28 @@ class ExploreFragment : Fragment(R.layout.fragment_explore) {
         })
          */
 
-        //popular fund Adapter
+        //popular fund Adapter(horizontal scroll)
         explorePopularFundAdapter = ExplorePopularFundAdapter(requireContext(),stockAndMfApi)
         rvPopularFunds.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
         rvPopularFunds.adapter = explorePopularFundAdapter
 
-        //quick access adapter
+        //quick access adapter(horizontal Scroll)
         exploreQuickAccessAdapter = ExploreQuickAccessAdapter(requireContext(),stockAndMfApi)
         rvQuickAccess.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
         rvQuickAccess.adapter = exploreQuickAccessAdapter
+
+        //mutual fund adapter (vertical Scroll)
+        exploreAllMutualFundAdapter = ExploreAllMutualFundsAdapter(requireContext(),stockAndMfApi)
+        rvAllMutualFunds.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.VERTICAL,false)
+        rvAllMutualFunds.adapter = exploreAllMutualFundAdapter
 
         viewModelGrow.getDataFromDB().observe(viewLifecycleOwner, Observer {
             stockAndMfApi.clear()
             stockAndMfApi.addAll(it)
             explorePopularFundAdapter.notifyDataSetChanged()
             exploreQuickAccessAdapter.notifyDataSetChanged()
+            exploreAllMutualFundAdapter.notifyDataSetChanged()
+
         })
         viewModelGrow.getDataFromAPI()
     }

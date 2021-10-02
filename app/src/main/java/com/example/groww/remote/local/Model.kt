@@ -13,3 +13,12 @@ data class UserBalance(
     @ColumnInfo(name = "id")
     var id: Int? = null
 )
+
+@Entity(tableName = "boughtStock")
+data class boughtStock(
+    @PrimaryKey
+    @ColumnInfo(name = "id") val id:Int? = null,
+
+//    @ColumnInfo(name = "")
+
+)

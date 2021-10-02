@@ -11,8 +11,7 @@ import com.example.groww.remote.responses.StockAndMfApi
 abstract class GrowRoomDatabase : RoomDatabase() {
 
     abstract fun getResponseGrowDao(): GrowDao
-
-
+/**
     companion object {
         private var INSTANCE: GrowRoomDatabase? = null
 
@@ -31,4 +30,5 @@ abstract class GrowRoomDatabase : RoomDatabase() {
             }
         }
     }
+    */
 }

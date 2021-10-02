@@ -37,4 +37,8 @@ class ViewModelGrow @Inject constructor(val repo: Repository) : ViewModel() {
     fun insertMoney(userBalance: UserBalance){
         repo.insertMoney(userBalance)
     }
+
+    fun getParticularStock(id: Int): LiveData<StockAndMfApi>{
+        return repo.getParticularStock(id)
+    }
 }

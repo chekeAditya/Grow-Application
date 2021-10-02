@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_stockDetailsFragment_to_buyShareFragment"
             app:destination="@id/buyShareFragment" />
+        <action
+            android:id="@+id/action_stockDetailsFragment_to_searchAllFragment"
+            app:destination="@id/searchAllFragment" />
     </fragment>
     <fragment
         android:id="@+id/buyShareFragment"
@@ -31,6 +34,9 @@
         <action
             android:id="@+id/action_buyShareFragment_to_buyShareSuccessFragment"
             app:destination="@id/buyShareSuccessFragment" />
+        <action
+            android:id="@+id/action_buyShareFragment_to_stockDetailsFragment"
+            app:destination="@id/stockDetailsFragment" />
     </fragment>
     <fragment
         android:id="@+id/buyShareSuccessFragment"

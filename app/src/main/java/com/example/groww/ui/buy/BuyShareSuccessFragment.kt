@@ -13,11 +13,17 @@ class BuyShareSuccessFragment : Fragment(R.layout.fragment_buy_share_success) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setData()
 
         btnDone.setOnClickListener {
             startActivity(Intent(context,HomeActivity::class.java))
         }
 
+    }
+
+    private fun setData() {
+        tvPurchasedShareName.text = arguments?.getString("company")
+        tvNoSharePurchased.text = arguments?.getString("share")
     }
 
 }

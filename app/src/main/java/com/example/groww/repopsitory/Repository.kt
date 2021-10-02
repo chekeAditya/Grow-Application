@@ -55,4 +55,8 @@ class Repository @Inject constructor(private val growDao: GrowDao, val api: APIC
         return growDao.getUserMoney()
     }
 
+    fun getParticularStock(id: Int): LiveData<StockAndMfApi>{
+        return growDao.getParticularResponseFromAPI(id)
+    }
+
 }

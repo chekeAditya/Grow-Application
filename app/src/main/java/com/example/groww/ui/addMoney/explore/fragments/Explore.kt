@@ -20,6 +20,7 @@ class Explore : Fragment(R.layout.fragment_explore_abhi) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         addMoneyExplore.setOnClickListener {
             val intent = Intent(activity, AddMoney::class.java)
             startActivity(intent)
@@ -29,9 +30,8 @@ class Explore : Fragment(R.layout.fragment_explore_abhi) {
             if (it == null) {
                 rlAddMoneyLayout.visibility = View.VISIBLE
             }else{
-                rlAddMoneyLayout.visibility = View.INVISIBLE
+                rlAddMoneyLayout.visibility = View.VISIBLE
             }
         })
     }
-
 }

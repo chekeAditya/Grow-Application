@@ -1,96 +1,55 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.addMoney.explore.fragments.DashBoard">
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
-
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center"
-        android:orientation="vertical">
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        style="@style/BothSideEqualMargin"
+        android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerInParent="true"
-            android:src="@drawable/ic_dashboardnull" />
+            android:layout_gravity="center"
+            android:src="@drawable/ic_emptydash"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginVertical="10dp"
-            android:text="Already invested somewhere?"
-            android:textColor="@color/black"
-            android:textSize="20sp" />
+            style="@style/TextViewEnterMobileNumber"
+            android:textSize="@dimen/sp_18"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_37"
+            android:text="@string/already_invested_somewhere"/>
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Merge, analyse and switch to Direct Funds"
-            android:textColor="@color/black"
-            android:textSize="13sp" />
+            style="@style/EditTextEmailAddress_Login"
+            android:textColor="@color/light_black"
+            android:layout_marginTop="@dimen/sp_12"
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/merge_analyse_and_switch_to_direct_funds"/>
 
-        <androidx.cardview.widget.CardView
+        <Button
+            android:id="@+id/btnSpSendOTP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginHorizontal="20dp"
-            android:layout_marginTop="28dp">
-
-            <Button
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@color/green"
-                android:text="Import Your Funds"
-                android:textColor="@color/white" />
-
-        </androidx.cardview.widget.CardView>
+            android:background="@drawable/rectangle_next_enter"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="28dp"
+            android:text="@string/import_your_funds"
+            android:textColor="@color/white" />
 
         <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="I don’t have investments elsewhere"
-            android:textColor="@color/black" />
-
+            style="@style/TextViewEnterMobileNumber"
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:text="@string/i_don_t_have_investment_elsewhere"/>
     </LinearLayout>
 
-    </RelativeLayout>
 
-
-    <!--    <LinearLayout-->
-<!--        android:weightSum="2"-->
-<!--        android:layout_alignParentBottom="true"-->
-<!--        android:layout_width="match_parent"-->
-<!--        android:layout_height="wrap_content">-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/stocksHome"-->
-<!--            android:drawableTop="@drawable/ic_stocks_g"-->
-<!--            android:text="Stocks"-->
-<!--            android:gravity="center"-->
-<!--            android:padding="10dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"/>-->
-
-<!--        <TextView-->
-<!--            android:id="@+id/mutualFundsHome"-->
-<!--            android:drawableTop="@drawable/ic_mutual_funds_b"-->
-<!--            android:text="Mutual Funds"-->
-<!--            android:textColor="@color/blue"-->
-<!--            android:gravity="center"-->
-<!--            android:padding="10dp"-->
-<!--            android:layout_weight="1"-->
-<!--            android:layout_width="0dp"-->
-<!--            android:layout_height="wrap_content"/>-->
-
-<!--    </LinearLayout>-->
-
-
-</ScrollView>
+</FrameLayout>

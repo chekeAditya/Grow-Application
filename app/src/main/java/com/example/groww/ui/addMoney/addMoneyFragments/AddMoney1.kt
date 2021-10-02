@@ -17,27 +17,37 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
 
     val viewModelGrow: ViewModelGrow by viewModels()
 
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        llPaymentOptions.setOnClickListener {
+            val passEmail = AddMoney1Directions.actionAddMoney1ToAddMoney22(etMoneyAddAmt.text.toString())
+            Navigation.findNavController(it)
+                .navigate(passEmail)
 
 
-        val addingMoney = etMoneyAddAmt.text
-        val userModel = UserBalance(id = 1, addMoney = addingMoney.toString().toDouble())
+//            val addingMoney = etMoneyAddAmt.text
+//            val userModel = UserBalance(id = 1, addMoney = addingMoney.toString().toDouble())
+//            viewModelGrow.insertMoney(userModel)
+        }
+
+
+
         addMoney1Btn.setOnClickListener {
-            Navigation.findNavController(requireView())
-                .navigate(R.id.action_addMoney12_to_addMoney3)
+
+            val passEmail = AddMoney1Directions.actionAddMoney1ToAddMoney3(etMoneyAddAmt.text.toString())
+            Navigation.findNavController(it)
+                .navigate(passEmail)
+
+            val addingMoney = etMoneyAddAmt.text
+            val userModel = UserBalance(id = 1, addMoney = addingMoney.toString().toDouble())
             viewModelGrow.insertMoney(userModel)
         }
-        selectOptionAddMoney1.setOnClickListener {
-            Navigation.findNavController(requireView())
-                .navigate(R.id.action_addMoney12_to_addMoney22)
-        }
-
 
         viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {
             if (it != null){
-                tvBalanceInAddMoneyFragment.text = "₹$it"
+                tvBalanceInAddMoneyFragment.text = "₹${it.addMoney}"
             }else{
                 tvBalanceInAddMoneyFragment.text = "₹0.00"
             }
