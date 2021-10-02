@@ -33,4 +33,7 @@ interface GrowDao {
 
     @Query("select * from dashboard_stock")
     fun getDataForDashboard() : LiveData<List<DashboardModel>>
+
+    @Query("select sum(stockPrice) as total from dashboard_stock")
+    fun currentPriceSum() : LiveData<Double>
 }

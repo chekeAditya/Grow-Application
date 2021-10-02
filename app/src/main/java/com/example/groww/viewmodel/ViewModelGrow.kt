@@ -50,4 +50,8 @@ class ViewModelGrow @Inject constructor(val repo: Repository) : ViewModel() {
     fun getDataINDashboard():LiveData<List<DashboardModel>>{
         return repo.getDataForDashboard()
     }
+
+    fun getCurrentPriceSum():LiveData<Double>{
+        return repo.currentPriceSum()
+    }
 }

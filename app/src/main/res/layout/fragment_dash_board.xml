@@ -116,6 +116,7 @@
                             android:textSize="@dimen/sp_12" />
 
                         <TextView
+                            android:id="@+id/tvInvestedAmount2"
                             style="@style/TextViewEnterMobileNumber"
                             android:layout_marginTop="@dimen/dp_8"
                             android:text="₹11,342.35"
@@ -138,6 +139,7 @@
                             android:textSize="@dimen/sp_12" />
 
                         <TextView
+                            android:id="@+id/tvcurrentMoneyInDashBoard2"
                             style="@style/TextViewEnterMobileNumber"
                             android:layout_marginTop="@dimen/dp_8"
                             android:text="₹10,242.35"
@@ -160,6 +162,7 @@
                             android:textSize="@dimen/sp_12" />
 
                         <TextView
+                            android:id="@+id/tvtotalReturns2"
                             style="@style/TextViewEnterMobileNumber"
                             android:layout_marginTop="@dimen/dp_8"
                             android:text="₹842.35"

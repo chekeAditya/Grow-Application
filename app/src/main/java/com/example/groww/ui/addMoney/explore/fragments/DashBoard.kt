@@ -23,6 +23,7 @@ class DashBoard : Fragment(R.layout.fragment_dash_board) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+
         dashboardAdapter = DashboardAdapter(requireContext(), dashboardModelList)
         rvShowedPurchacedStock.layoutManager = LinearLayoutManager(requireContext())
         rvShowedPurchacedStock.adapter = dashboardAdapter
@@ -32,15 +33,40 @@ class DashBoard : Fragment(R.layout.fragment_dash_board) {
             dashboardModelList.clear()
             dashboardModelList.addAll(it)
             dashboardAdapter.notifyDataSetChanged()
-            if (dashboardModelList.size == 0) {
-                llShowWhenItsEmpty.visibility = View.VISIBLE
-                rlShowWhenFull.visibility  = View.GONE
-            }else{
-                llShowWhenItsEmpty.visibility = View.GONE
-                rlShowWhenFull.visibility = View.VISIBLE
-            }
+            settingVisibility()
+
         })
         viewModelGrow.getDataINDashboard()
+    }
+
+    private fun settingVisibility() {
+        if (dashboardModelList.size == 0) {
+            llShowWhenItsEmpty.visibility = View.VISIBLE
+            rlShowWhenFull.visibility = View.GONE
+        } else {
+            llShowWhenItsEmpty.visibility = View.GONE
+            rlShowWhenFull.visibility = View.VISIBLE
+            calculateData()
+        }
+    }
+
+    private fun calculateData() {
+        var current2 = 0.00;
+        var totalReturns2 = 0.00;
+        var invested2 = 0.00;
+
+        viewModelGrow.getCurrentPriceSum().observe(viewLifecycleOwner, Observer {
+            if (it != null) {
+                current2 = it + (it * (1.36 / 100))
+                invested2 = it
+                totalReturns2 = current2 - invested2
+
+
+                tvInvestedAmount2.text = String.format("₹ %.1f", invested2)
+                tvcurrentMoneyInDashBoard2.text = String.format("₹ %.1f", current2)
+                tvtotalReturns2.text = String.format("₹ %.1f", totalReturns2)
+            }
+        })
     }
 
 }

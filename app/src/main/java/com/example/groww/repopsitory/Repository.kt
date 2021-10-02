@@ -70,4 +70,8 @@ class Repository @Inject constructor(private val growDao: GrowDao, val api: APIC
         return growDao.getDataForDashboard()
     }
 
+    fun currentPriceSum():LiveData<Double>{
+        return growDao.currentPriceSum()
+    }
+
 }
