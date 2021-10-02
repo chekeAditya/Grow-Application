@@ -12,6 +12,8 @@ import com.example.groww.remote.local.UserBalance
 import com.example.groww.viewmodel.ViewModelGrow
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_add_money2.*
+
+
 @AndroidEntryPoint
 class AddMoney2 : Fragment(R.layout.fragment_add_money2) {
 
@@ -38,21 +40,23 @@ class AddMoney2 : Fragment(R.layout.fragment_add_money2) {
     }
 
     private fun addMOney(money:String) {
+        var userBalance = 0.0
+        viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {
+            if (it != null){
+                userBalance = it.addMoney
+            }else{
+                userBalance = 0.0
+            }
+        })
+
         phonePayAdd.setOnClickListener {
 
             val passEmail1 = AddMoney2Directions.actionAddMoney22ToAddMoney3(money.toString())
             Navigation.findNavController(it).navigate(passEmail1)
 
-            var addingMoney = money.toDouble()
-            viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer{
-                if (it != null){
-                    addingMoney+=it.addMoney.toString().toDouble()
-                }else{
-                    addingMoney+=0.0
-                }
-            })
 
-            val userModel = UserBalance(id = 1, addMoney = addingMoney)
+
+            val userModel = UserBalance(id = 1, addMoney = money.toDouble()+userBalance)
             viewModelGrow.insertMoney(userModel)
         }
 
@@ -60,16 +64,9 @@ class AddMoney2 : Fragment(R.layout.fragment_add_money2) {
             val passEmail1 = AddMoney2Directions.actionAddMoney22ToAddMoney3(money.toString())
             Navigation.findNavController(it).navigate(passEmail1)
 
-            var addingMoney = money.toDouble()
-            viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer{
-                if (it != null){
-                    addingMoney+=it.addMoney.toString().toDouble()
-                }else{
-                    addingMoney+=0.0
-                }
-            })
 
-            val userModel = UserBalance(id = 1, addMoney = addingMoney)
+
+            val userModel = UserBalance(id = 1, addMoney = money.toDouble()+userBalance)
             viewModelGrow.insertMoney(userModel)
         }
 
@@ -77,16 +74,9 @@ class AddMoney2 : Fragment(R.layout.fragment_add_money2) {
             val passEmail1 = AddMoney2Directions.actionAddMoney22ToAddMoney3(money.toString())
             Navigation.findNavController(it).navigate(passEmail1)
 
-            var addingMoney = money.toDouble()
-            viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer{
-                if (it != null){
-                    addingMoney+=it.addMoney.toString().toDouble()
-                }else{
-                    addingMoney+=0.0
-                }
-            })
 
-            val userModel = UserBalance(id = 1, addMoney = addingMoney)
+
+            val userModel = UserBalance(id = 1, addMoney = money.toDouble()+userBalance)
             viewModelGrow.insertMoney(userModel)
         }
 
@@ -94,16 +84,9 @@ class AddMoney2 : Fragment(R.layout.fragment_add_money2) {
             val passEmail1 = AddMoney2Directions.actionAddMoney22ToAddMoney3(money.toString())
             Navigation.findNavController(it).navigate(passEmail1)
 
-            var addingMoney = money.toDouble()
-            viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer{
-                if (it != null){
-                    addingMoney+=it.addMoney.toString().toDouble()
-                }else{
-                    addingMoney+=0.0
-                }
-            })
 
-            val userModel = UserBalance(id = 1, addMoney = addingMoney)
+
+            val userModel = UserBalance(id = 1, addMoney = money.toDouble()+userBalance)
             viewModelGrow.insertMoney(userModel)
         }
 
@@ -111,16 +94,9 @@ class AddMoney2 : Fragment(R.layout.fragment_add_money2) {
             val passEmail1 = AddMoney2Directions.actionAddMoney22ToAddMoney3(money.toString())
             Navigation.findNavController(it).navigate(passEmail1)
 
-            var addingMoney = money.toDouble()
-            viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer{
-                if (it != null){
-                    addingMoney+=it.addMoney.toString().toDouble()
-                }else{
-                    addingMoney+=0.0
-                }
-            })
 
-            val userModel = UserBalance(id = 1, addMoney = addingMoney)
+
+            val userModel = UserBalance(id = 1, addMoney = money.toDouble()+userBalance)
             viewModelGrow.insertMoney(userModel)
         }
     }

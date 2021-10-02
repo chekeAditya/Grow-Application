@@ -166,6 +166,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent">
                     <TextView
+                        android:id="@+id/userBalanceAddMoney3"
                         android:text="₹1,000"
                         android:textColor="@color/black"
                         android:layout_gravity="end"
@@ -185,11 +186,14 @@
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <androidx.cardview.widget.CardView
+            android:id="@+id/doneAddMoney3"
             android:layout_gravity="bottom"
             app:cardCornerRadius="@dimen/dp_10"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-            <Button
+            <TextView
+                android:paddingVertical="@dimen/dp_15"
+                android:gravity="center"
                 android:textColor="@color/white"
                 android:text="Done"
                 android:background="@color/green"

@@ -31,7 +31,14 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
             etMoneyAddAmt.setText("1000")
         }
 
-
+        var userBalance = 0.0
+        viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {
+            if (it != null){
+                userBalance = it.addMoney
+            }else{
+                userBalance = 0.0
+            }
+        })
 
         addMoney1Btn.setOnClickListener {
 
@@ -41,15 +48,8 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
 
 
             var addingMoney = etMoneyAddAmt.text.toString().toDouble()
-            viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {
-                if (it != null){
-                    addingMoney+=it.addMoney.toString().toDouble()
-                }else{
-                    addingMoney+=0.0
-                }
-            })
 
-            val userModel = UserBalance(id = 1, addMoney = addingMoney)
+            val userModel = UserBalance(id = 1, addMoney = (addingMoney+userBalance))
             viewModelGrow.insertMoney(userModel)
         }
 
