@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.example.groww.R
+import com.example.groww.ui.addMoney.ProfileActivity
 import com.example.groww.ui.mutualFunds.MutualFundBaseActivity
 import com.example.groww.ui.search.SearchActivity
 import com.google.android.material.tabs.TabLayoutMediator
@@ -38,8 +39,8 @@ class HomeActivity : AppCompatActivity() {
     }
 
     private fun onCardClicked() {
-        cardViewSearch.setOnClickListener {
-            startActivity(Intent(this,SearchActivity::class.java))
+        profileHome.setOnClickListener {
+            startActivity(Intent(this,ProfileActivity::class.java))
         }
     }
 
@@ -51,7 +52,7 @@ class HomeActivity : AppCompatActivity() {
                 0->{
                     tab.text = "Explore"
                 }
-            1-> tab.text = "DashBoard"
+                 1-> tab.text = "DashBoard"
             }
         }.attach()
     }

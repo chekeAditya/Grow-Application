@@ -20,7 +20,7 @@ class ProfileActivity : AppCompatActivity() {
 
         viewModelGrow.getUserBalance().observe(this, Observer {
             if (it != null) {
-                userBalanceProfile.text = it.toString()
+                userBalanceProfile.text = it.addMoney.toString()
             } else userBalanceProfile.text = "0.00"
         })
     }

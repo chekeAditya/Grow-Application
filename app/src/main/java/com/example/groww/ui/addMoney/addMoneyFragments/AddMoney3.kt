@@ -5,7 +5,6 @@ import android.view.View
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.navArgs
 import com.example.groww.R
-import com.example.groww.ui.addMoney.addMoneyFragments.AddMoney2Args
 import kotlinx.android.synthetic.main.fragment_add_money3.*
 
 class AddMoney3 : Fragment(R.layout.fragment_add_money3) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     tools:context=".ui.addMoney.addMoneyFragments.AddMoney2">
 
@@ -75,19 +75,24 @@
             android:text="Google Pay"
             android:textAlignment="viewStart"
             android:textAllCaps="false" />
+
         <androidx.cardview.widget.CardView
-            android:visibility="gone"
             android:id="@+id/googlePayAdd"
-            app:cardCornerRadius="@dimen/dp_10"
-            android:layout_marginHorizontal="@dimen/dp_25"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:text="Add Money"
-                android:textAllCaps="false"
-                android:background="@color/green"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_25"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/dp_10">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingVertical="@dimen/dp_15"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:text="Add Money"
+                android:textAllCaps="false" />
 
         </androidx.cardview.widget.CardView>
 
@@ -105,19 +110,24 @@
             android:text="Phone pay"
             android:textAlignment="viewStart"
             android:textAllCaps="false" />
+
         <androidx.cardview.widget.CardView
-            android:visibility="gone"
             android:id="@+id/phonePayAdd"
-            app:cardCornerRadius="@dimen/dp_10"
-            android:layout_marginHorizontal="@dimen/dp_25"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:text="Add Money"
-                android:textAllCaps="false"
-                android:background="@color/green"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_25"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/dp_10">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingVertical="@dimen/dp_15"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:text="Add Money"
+                android:textAllCaps="false" />
 
         </androidx.cardview.widget.CardView>
 
@@ -135,19 +145,24 @@
             android:text="Other UPI Apps"
             android:textAlignment="viewStart"
             android:textAllCaps="false" />
+
         <androidx.cardview.widget.CardView
-            android:visibility="gone"
             android:id="@+id/otherUpiAdd"
-            app:cardCornerRadius="@dimen/dp_10"
-            android:layout_marginHorizontal="@dimen/dp_25"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:text="Add Money"
-                android:textAllCaps="false"
-                android:background="@color/green"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_25"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/dp_10">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingVertical="@dimen/dp_15"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:text="Add Money"
+                android:textAllCaps="false" />
 
         </androidx.cardview.widget.CardView>
 
@@ -165,19 +180,24 @@
             android:text="Net Banking "
             android:textAlignment="viewStart"
             android:textAllCaps="false" />
+
         <androidx.cardview.widget.CardView
-            android:visibility="gone"
             android:id="@+id/netBankAdd"
-            app:cardCornerRadius="@dimen/dp_10"
-            android:layout_marginHorizontal="@dimen/dp_25"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:text="Add Money"
-                android:textAllCaps="false"
-                android:background="@color/green"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_25"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/dp_10">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingVertical="@dimen/dp_15"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:text="Add Money"
+                android:textAllCaps="false" />
 
         </androidx.cardview.widget.CardView>
 
@@ -195,19 +215,24 @@
             android:text="Enter UPI Id"
             android:textAlignment="viewStart"
             android:textAllCaps="false" />
+
         <androidx.cardview.widget.CardView
-            android:visibility="gone"
             android:id="@+id/upiIdAdd"
-            app:cardCornerRadius="@dimen/dp_10"
-            android:layout_marginHorizontal="@dimen/dp_25"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-            <Button
-                android:text="Add Money"
-                android:textAllCaps="false"
-                android:background="@color/green"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="@dimen/dp_25"
+            android:visibility="gone"
+            app:cardCornerRadius="@dimen/dp_10">
+
+            <TextView
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:paddingVertical="@dimen/dp_15"
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"/>
+                android:layout_height="wrap_content"
+                android:background="@color/green"
+                android:text="Add Money"
+                android:textAllCaps="false" />
 
         </androidx.cardview.widget.CardView>
 

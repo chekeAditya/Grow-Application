@@ -9,13 +9,13 @@
         android:name="com.example.groww.ui.addMoney.addMoneyFragments.AddMoney2"
         android:label="fragment_add_money2"
         tools:layout="@layout/fragment_add_money2" >
-        <action
-            android:id="@+id/action_addMoney22_to_addMoney3"
-            app:destination="@id/addMoney3" />
         <argument
             android:name="amountAddMoney"
             app:argType="string"
             app:nullable="true" />
+        <action
+            android:id="@+id/action_addMoney22_to_addMoney3"
+            app:destination="@id/addMoney3" />
     </fragment>
     <fragment
         android:id="@+id/addMoney3"

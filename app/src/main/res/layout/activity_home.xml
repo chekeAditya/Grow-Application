@@ -29,17 +29,24 @@
                 android:paddingHorizontal="10dp"
                 android:paddingVertical="16dp"
                 android:textSize="18sp" />
-
-            <ImageView
+            
+            <androidx.cardview.widget.CardView
+                app:cardCornerRadius="100dp"
                 android:id="@+id/profileHome"
-                android:layout_width="@dimen/dp_30"
-                android:layout_height="@dimen/dp_30"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
                 android:layout_marginEnd="@dimen/dp_20"
-                android:background="@drawable/circle_bg_search"
-                android:scaleType="centerCrop"
-                android:src="@drawable/search" />
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="@dimen/dp_30"
+                    android:layout_height="@dimen/dp_30"
+                    android:background="@drawable/circle_bg_search"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/aditya_pic" />
+            </androidx.cardview.widget.CardView>
+
+
 
         </RelativeLayout>
     </androidx.cardview.widget.CardView>
@@ -74,7 +81,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
-            android:id="@+id/llHomeActivity"
+        android:id="@+id/llHomeActivity"
         app:cardElevation="10dp">
 
         <LinearLayout
