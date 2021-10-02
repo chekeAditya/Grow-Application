@@ -73,4 +73,6 @@
     <string name="adityacheke291_gmaiil_com">adityacheke291@gmaiil.com</string>
     <string name="logout">Logout</string>
     <string name="enter_groww_pin">Enter Groww PIN</string>
+    <string name="holdings">Holdings</string>
+    <string name="verify_holdings">Verify Holdings</string>
 </resources>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.addMoney.explore.fragments.DashBoard">
+<!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        style="@style/BothSideEqualMargin"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_emptydash"/>
+
+        <TextView
+            style="@style/TextViewEnterMobileNumber"
+            android:textSize="@dimen/sp_18"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="@dimen/dp_37"
+            android:text="@string/already_invested_somewhere"/>
+
+        <TextView
+            style="@style/EditTextEmailAddress_Login"
+            android:textColor="@color/light_black"
+            android:layout_marginTop="@dimen/sp_12"
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/merge_analyse_and_switch_to_direct_funds"/>
+
+        <Button
+            android:id="@+id/btnSpSendOTP"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_next_enter"
+            android:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="28dp"
+            android:text="@string/import_your_funds"
+            android:textColor="@color/white" />
+
+        <TextView
+            style="@style/TextViewEnterMobileNumber"
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="22dp"
+            android:text="@string/i_don_t_have_investment_elsewhere"/>
+    </LinearLayout>
+    -->
+
+    <RelativeLayout
+        android:layout_marginTop="@dimen/dp_36"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+           style="@style/GrowImageLogo"
+            android:id="@+id/ivVerticalLine"
+            android:src="@drawable/ic_verticalline"/>
+
+        <TextView
+            android:layout_marginStart="@dimen/dp_20"
+            style="@style/TextViewEnterMobileNumber"
+            android:textSize="@dimen/sp_16"
+            android:id="@+id/tvHoldingDashboard"
+            android:text="@string/holdings"/>
+
+        <TextView
+            android:id="@+id/btn3YReturns"
+            style="@style/TextViewBelow_GreenLine"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/verify_holdings"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sp_16" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_below="@+id/tvHoldingDashboard"
+            android:layout_marginTop="@dimen/dp_24"
+            android:layout_width="match_parent"
+            android:outlineAmbientShadowColor="@color/light_black"
+            android:outlineSpotShadowColor="@color/light_black"
+            android:layout_height="wrap_content">
+
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</FrameLayout>
