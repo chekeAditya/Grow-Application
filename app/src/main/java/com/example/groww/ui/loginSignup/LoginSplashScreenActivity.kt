@@ -14,7 +14,7 @@ import kotlinx.coroutines.launch
 class LoginSplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_logi   n_splash_screen)
+        setContentView(R.layout.activity_login_splash_screen)
 
         CoroutineScope(Dispatchers.Main).launch {
             Handler().postDelayed({

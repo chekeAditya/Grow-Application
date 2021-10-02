@@ -23,15 +23,26 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
 
         llPaymentOptions.setOnClickListener {
             val passEmail = AddMoney1Directions.actionAddMoney1ToAddMoney22(etMoneyAddAmt.text.toString())
-            Navigation.findNavController(requireView())
+            Navigation.findNavController(it)
                 .navigate(passEmail)
+
+
+//            val addingMoney = etMoneyAddAmt.text
+//            val userModel = UserBalance(id = 1, addMoney = addingMoney.toString().toDouble())
+//            viewModelGrow.insertMoney(userModel)
         }
 
 
 
         addMoney1Btn.setOnClickListener {
-            showMoneyToText()
-            Navigation.findNavController(it).navigate(R.id.action_addMoney1_to_addMoney3)
+
+            val passEmail = AddMoney1Directions.actionAddMoney1ToAddMoney3(etMoneyAddAmt.text.toString())
+            Navigation.findNavController(it)
+                .navigate(passEmail)
+
+            val addingMoney = etMoneyAddAmt.text
+            val userModel = UserBalance(id = 1, addMoney = addingMoney.toString().toDouble())
+            viewModelGrow.insertMoney(userModel)
         }
 
         viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {
@@ -41,12 +52,6 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
                 tvBalanceInAddMoneyFragment.text = "₹0.00"
             }
         })
-    }
-
-    private fun showMoneyToText() {
-        val addingMoney = etMoneyAddAmt.text
-        val userModel = UserBalance(id = 1, addMoney = addingMoney.toString().toDouble())
-        viewModelGrow.insertMoney(userModel)
     }
 
 }

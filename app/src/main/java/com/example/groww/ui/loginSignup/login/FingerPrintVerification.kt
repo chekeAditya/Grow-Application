@@ -1,5 +1,6 @@
 package com.example.groww.ui.loginSignup.login
 
+import android.content.Intent
 import android.hardware.biometrics.BiometricManager
 import android.os.Bundle
 import android.os.Handler
@@ -10,6 +11,7 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.groww.R
+import com.example.groww.ui.addMoney.explore.HomeActivity
 import kotlinx.android.synthetic.main.fragment_finger_print_verification.*
 import java.util.concurrent.Executor
 
@@ -50,18 +52,18 @@ class FingerPrintVerification : Fragment(R.layout.fragment_finger_print_verifica
         })
 
 
-        promptInfo = BiometricPrompt.PromptInfo.Builder ()
-            .setTitle("Biometric Authentication")
-            .setSubtitle("Verify Using Fingerprint Authentication")
-            .build()
-        biometricPrompt.authenticate(promptInfo)
+//        promptInfo = BiometricPrompt.PromptInfo.Builder ()
+//            .setTitle("Biometric Authentication")
+//            .setSubtitle("Verify Using Fingerprint Authentication")
+//            .build()
+//        biometricPrompt.authenticate(promptInfo)
 
-//        Handler().postDelayed({
-//
-//            val intent = Intent(activity,HomeActivity::class.java)
-//            startActivity(intent)
-//        },3000
-//        )
+        Handler().postDelayed({
+
+            val intent = Intent(activity, HomeActivity::class.java)
+            startActivity(intent)
+        },3000
+        )
     }
 
 }
