@@ -3,52 +3,239 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".ui.mutualFunds.DashboardFragment">
 
     <LinearLayout
-        style="@style/BothSideEqualMargin"
+        android:id="@+id/llShowWhenItsEmpty1"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:orientation="vertical">
-
+        android:orientation="vertical"
+        style="@style/BothSideEqualMargin"
+        android:layout_height="wrap_content">
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:src="@drawable/ic_emptydash" />
-
+            android:src="@drawable/ic_emptydash"/>
         <TextView
             style="@style/TextViewEnterMobileNumber"
+            android:textSize="@dimen/sp_18"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="@dimen/dp_37"
-            android:text="@string/already_invested_somewhere"
-            android:textSize="@dimen/sp_18" />
-
+            android:text="@string/already_invested_somewhere"/>
         <TextView
             style="@style/EditTextEmailAddress_Login"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="@dimen/sp_12"
-            android:text="@string/merge_analyse_and_switch_to_direct_funds"
             android:textColor="@color/light_black"
-            android:textSize="@dimen/sp_14" />
-
+            android:layout_marginTop="@dimen/sp_12"
+            android:textSize="@dimen/sp_14"
+            android:layout_gravity="center_horizontal"
+            android:text="@string/merge_analyse_and_switch_to_direct_funds"/>
         <Button
             android:id="@+id/btnSpSendOTP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="28dp"
             android:background="@drawable/rectangle_next_enter"
             android:fontFamily="@font/roboto_bold"
+            android:layout_marginTop="28dp"
             android:text="@string/import_your_funds"
             android:textColor="@color/white" />
-
         <TextView
             style="@style/TextViewEnterMobileNumber"
+            android:textSize="@dimen/sp_14"
             android:layout_gravity="center_horizontal"
             android:layout_marginTop="22dp"
-            android:text="@string/i_don_t_have_investment_elsewhere"
-            android:textSize="@dimen/sp_14" />
+            android:text="@string/i_don_t_have_investment_elsewhere"/>
     </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlShowWhenFull1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/dp_36">
+
+        <ImageView
+            android:id="@+id/ivVerticalLine"
+            style="@style/GrowImageLogo"
+            android:src="@drawable/ic_verticalline" />
+
+        <TextView
+            android:id="@+id/tvHoldingDashboard"
+            style="@style/TextViewEnterMobileNumber"
+            android:layout_marginStart="@dimen/dp_20"
+            android:text="@string/holdings"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            android:id="@+id/btn3YReturns"
+            style="@style/TextViewBelow_GreenLine"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center"
+            android:layout_marginEnd="8dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="@string/verify_holdings"
+            android:textColor="@color/green"
+            android:textSize="@dimen/sp_16" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cvHoldingDashboard"
+            style="@style/BothSideEqualMargin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvHoldingDashboard"
+            android:layout_marginTop="@dimen/dp_24"
+            android:outlineAmbientShadowColor="@color/light_black"
+            android:outlineSpotShadowColor="@color/light_black"
+            app:cardCornerRadius="@dimen/dp_10"
+            tools:ignore="UnusedAttribute">
+
+            <RelativeLayout
+                style="@style/BothSideEqualMargin"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <LinearLayout
+                    android:id="@+id/llCardViewTop"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dp_20">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/sp_18"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/EditTextEmailAddress_Login"
+                            android:layout_margin="0dp"
+                            android:text="Invested"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/tvInvestedAmount"
+                            style="@style/TextViewEnterMobileNumber"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:text="₹11,342.35"
+                            android:textSize="@dimen/sp_12" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/sp_18"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/EditTextEmailAddress_Login"
+                            android:layout_margin="0dp"
+                            android:text="Current"
+                            android:textSize="@dimen/sp_12" />
+
+                        <TextView
+                            android:id="@+id/currentMoneyInDashBoard1"
+                            style="@style/TextViewEnterMobileNumber"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:text="₹10,242.35"
+                            android:textSize="@dimen/sp_12" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/sp_18"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            style="@style/EditTextEmailAddress_Login"
+                            android:layout_margin="0dp"
+                            android:text="Total Returns"
+                            android:textSize="@dimen/sp_12" />
+
+
+                        <TextView
+                            android:id="@+id/totalReturns1"
+                            style="@style/TextViewEnterMobileNumber"
+                            android:layout_marginTop="@dimen/dp_8"
+                            android:text="₹842.35"
+                            android:textSize="@dimen/sp_12" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <View
+                    android:id="@+id/view1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/llCardViewTop"
+                    android:background="@color/green" />
+
+                <TextView
+                    android:id="@+id/tvOneDayReturns"
+                    style="@style/EditTextEmailAddress_Login"
+                    android:layout_below="@+id/view1"
+                    android:layout_marginTop="@dimen/sp_16"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="1D Returns +140.60(1.36%)"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/sp_12" />
+
+                <TextView
+                    android:id="@+id/tvAllOrders"
+                    style="@style/EditTextEmailAddress_Login"
+                    android:layout_below="@+id/view1"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="@dimen/sp_16"
+                    android:layout_marginBottom="@dimen/dp_10"
+                    android:fontFamily="@font/roboto_bold"
+                    android:text="All Orders"
+                    android:textColor="@color/green"
+                    android:textSize="@dimen/sp_12" />
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+        <TextView
+            style="@style/EditTextEmailAddress_Login"
+            android:layout_below="@id/cvHoldingDashboard"
+            android:layout_marginStart="@dimen/dp_20"
+            android:layout_marginTop="34dp"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="Company"
+            android:id="@+id/tvCompanyDashboard"
+            android:textSize="@dimen/sp_16" />
+
+        <TextView
+            style="@style/EditTextEmailAddress_Login"
+            android:layout_below="@id/cvHoldingDashboard"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="34dp"
+            android:layout_marginEnd="@dimen/dp_20"
+            android:layout_marginBottom="@dimen/dp_20"
+            android:text="Current (Investeed)"
+            android:textSize="@dimen/sp_16" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            style="@style/BothSideEqualMargin"
+            android:id="@+id/rvShowedPurchacedStock"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvCompanyDashboard" />
+
+
+    </RelativeLayout>
 
 </FrameLayout>

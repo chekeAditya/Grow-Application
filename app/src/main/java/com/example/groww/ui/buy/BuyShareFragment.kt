@@ -10,6 +10,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
 import com.example.groww.R
+import com.example.groww.remote.local.DashboardModel
 import com.example.groww.remote.local.UserBalance
 import com.example.groww.viewmodel.ViewModelGrow
 import dagger.hilt.android.AndroidEntryPoint
@@ -49,11 +50,19 @@ class BuyShareFragment : Fragment(R.layout.fragment_buy_share) {
                 val inputAmount = etInputQty.text.toString().toDouble()
                 val sharePrice = tvSharePrice.substring(2,tvSharePrice.length).toDouble()
                 val balanceAmount = tvBalanceAmount.substring(1,tvBalanceAmount.length).toDouble()
-                if (inputAmount*sharePrice > balanceAmount)
+
+                if (inputAmount*sharePrice > balanceAmount || inputAmount == 0.0) {
                     Toast.makeText(context, "Insufficient amount", Toast.LENGTH_SHORT).show()
+                }
                 else{
                     val userBalance = UserBalance(id = 1,addMoney = balanceAmount-(inputAmount*sharePrice))
                     viewModel.insertMoney(userBalance)
+
+                    val stockName = tvBuyShareName.text.toString().substring(4,
+                        tvBuyShareName.text.toString().length)
+                    val dashboard = DashboardModel(stockName,sharePrice,inputAmount.toInt())
+                    viewModel.setDataInDashboard(dashboard)
+
                     val bundle = Bundle()
                     bundle.putString("company",tvBuyShareName.text.toString())
                     bundle.putString("share",etInputQty.text.toString())

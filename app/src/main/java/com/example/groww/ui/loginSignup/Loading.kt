@@ -19,7 +19,7 @@ class Loading : Fragment(R.layout.fragment_loading) {
 //        goToLoginSignUpActivityWithFragment()
         goToExploreHomeActivity()
 //        goToProfileActivity()
-//        goToSearchActivity()
+//       goToSearchActivity()
     }
 
     private fun gotoLoginUsingActivity() {

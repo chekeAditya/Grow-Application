@@ -28,4 +28,12 @@ interface GrowDao {
     @Query("select * from grow_explore_fragment where id = :id")
     fun getParticularResponseFromAPI(id: Int): LiveData<StockAndMfApi>
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun setDataInDashboard(dashboardModel: DashboardModel)
+
+    @Query("select * from dashboard_stock")
+    fun getDataForDashboard() : LiveData<List<DashboardModel>>
+
+    @Query("select sum(stockPrice) as total from dashboard_stock")
+    fun currentPriceSum() : LiveData<Double>
 }

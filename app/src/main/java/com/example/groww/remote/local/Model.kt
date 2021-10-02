@@ -14,11 +14,16 @@ data class UserBalance(
     var id: Int? = null
 )
 
-@Entity(tableName = "boughtStock")
-data class boughtStock(
-    @PrimaryKey
-    @ColumnInfo(name = "id") val id:Int? = null,
-
-//    @ColumnInfo(name = "")
-
-)
+@Entity(tableName = "dashboard_stock")
+data class DashboardModel(
+    @ColumnInfo(name = "stockName")
+    val stockName: String,
+    @ColumnInfo(name = "stockPrice")
+    val stockPrice: Double,
+    @ColumnInfo(name = "stockQuantity")
+    val stockQuantity: Int
+) {
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
+    var id: Int? = null
+}

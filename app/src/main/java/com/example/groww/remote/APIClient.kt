@@ -6,7 +6,7 @@ import retrofit2.http.GET
 interface APIClient {
 
 
-    @GET("v3/4a421942-2eea-4faa-bd9c-0cf36da0fcdc")
+    @GET("gistfile1.txt")
     suspend fun getAPIResponse(): ResponseModel
 
 }
