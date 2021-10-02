@@ -16,10 +16,10 @@ class Loading : Fragment(R.layout.fragment_loading) {
         super.onViewCreated(view, savedInstanceState)
 
 //        gotoLoginUsingActivity()
-//        goToLoginSignUpActivityWithFragment()
-        goToExploreHomeActivity()
+        goToLoginSignUpActivityWithFragment()
+//        goToExploreHomeActivity()
 //        goToProfileActivity()
-//        goToSearchActivity()
+//       goToSearchActivity()
     }
 
     private fun gotoLoginUsingActivity() {
