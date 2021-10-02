@@ -3,6 +3,7 @@
     package="com.example.groww">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.USE_BIOMETRIC"/>
 
     <application
         android:name=".growApp.GrowApp"
