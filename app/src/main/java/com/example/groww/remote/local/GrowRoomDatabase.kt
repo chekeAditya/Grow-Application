@@ -7,7 +7,7 @@ import androidx.room.RoomDatabase
 import com.example.groww.remote.responses.StockAndMfApi
 
 
-@Database(entities = [StockAndMfApi::class,UserBalance::class], version = 1)
+@Database(entities = [StockAndMfApi::class,UserBalance::class,Dashboard::class], version = 1)
 abstract class GrowRoomDatabase : RoomDatabase() {
 
     abstract fun getResponseGrowDao(): GrowDao

@@ -14,11 +14,17 @@ data class UserBalance(
     var id: Int? = null
 )
 
-@Entity(tableName = "boughtStock")
-data class boughtStock(
+@Entity(tableName = "dashboard_stock")
+data class Dashboard(
     @PrimaryKey
-    @ColumnInfo(name = "id") val id:Int? = null,
-
-//    @ColumnInfo(name = "")
-
+    @ColumnInfo(name = "id")
+    val id: Int? = null,
+    @ColumnInfo(name = "stockName")
+    val stockName: String,
+    @ColumnInfo(name = "stockPrice")
+    val stockPrice: Double,
+    @ColumnInfo(name = "stockQuantity")
+    val stockQuantity: Int
 )
+
+

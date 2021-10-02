@@ -28,4 +28,9 @@ interface GrowDao {
     @Query("select * from grow_explore_fragment where id = :id")
     fun getParticularResponseFromAPI(id: Int): LiveData<StockAndMfApi>
 
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun setDataInDashboard(dashboard: Dashboard)
+
+    @Query("select * from dashboard_stock")
+    fun getDataForDashboard() : LiveData<List<Dashboard>>
 }

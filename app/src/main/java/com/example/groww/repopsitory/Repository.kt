@@ -2,6 +2,7 @@ package com.example.groww.repopsitory
 
 import androidx.lifecycle.LiveData
 import com.example.groww.remote.APIClient
+import com.example.groww.remote.local.Dashboard
 import com.example.groww.remote.local.GrowDao
 import com.example.groww.remote.local.UserBalance
 import com.example.groww.remote.responses.ResponseModel
@@ -57,6 +58,16 @@ class Repository @Inject constructor(private val growDao: GrowDao, val api: APIC
 
     fun getParticularStock(id: Int): LiveData<StockAndMfApi>{
         return growDao.getParticularResponseFromAPI(id)
+    }
+
+    fun setDataInDashboard(dashboard: Dashboard){
+        CoroutineScope(Dispatchers.IO).launch {
+            growDao.setDataInDashboard(dashboard)
+        }
+    }
+
+    fun getDataForDashboard():LiveData<List<Dashboard>>{
+        return growDao.getDataForDashboard()
     }
 
 }
