@@ -24,8 +24,9 @@ class BuyShareFragment : Fragment(R.layout.fragment_buy_share) {
         super.onViewCreated(view, savedInstanceState)
 
         val navController = Navigation.findNavController(requireView())
+        val id = arguments?.getInt("id")
 
-        setData()
+        setData(id)
 
         etInputQty.addTextChangedListener(object: TextWatcher{
             override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
@@ -62,12 +63,13 @@ class BuyShareFragment : Fragment(R.layout.fragment_buy_share) {
         }
 
         ivBack.setOnClickListener {
-            navController.navigate(R.id.action_buyShareFragment_to_stockDetailsFragment)
+            val bundle = Bundle()
+            bundle.putInt("id",id!!)
+            navController.navigate(R.id.action_buyShareFragment_to_stockDetailsFragment,bundle)
         }
     }
 
-    private fun setData() {
-        val id = arguments?.getInt("id")
+    private fun setData(id: Int?) {
         viewModel.getParticularStock(id!!).observe(viewLifecycleOwner, Observer {
             tvBuyShareName.text = "Buy ${it.companyName}"
             tvBuySharePrice.text = "₹${it.companyCurrentPrice}"

@@ -97,7 +97,6 @@
         android:textColor="@color/primary_green"
         android:inputType="number"
         android:textSize="20sp"
-        android:cursorVisible="false"
         android:textAlignment="viewEnd"
         android:maxLength="5"
         android:layout_marginTop="15dp"

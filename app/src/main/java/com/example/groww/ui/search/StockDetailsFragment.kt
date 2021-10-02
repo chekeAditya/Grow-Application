@@ -33,16 +33,18 @@ class StockDetailsFragment : Fragment(R.layout.fragment_stock_details) {
             navController.navigate(R.id.action_stockDetailsFragment_to_buyShareFragment,bundle)
         }
 
-        setStockDetails(id!!)
+        setStockDetails(id)
 
         ivBack.setOnClickListener {
-            navController.navigate(R.id.action_stockDetailsFragment_to_searchAllFragment)
+            val bundle = Bundle()
+            bundle.putInt("id",id!!)
+            navController.navigate(R.id.action_stockDetailsFragment_to_searchAllFragment,bundle)
         }
 
     }
 
-    private fun setStockDetails(id: Int) {
-        viewModel.getParticularStock(id).observe(viewLifecycleOwner, Observer {
+    private fun setStockDetails(id: Int?) {
+        viewModel.getParticularStock(id!!).observe(viewLifecycleOwner, Observer {
             Glide.with(ivStockPic).load(it.companyImage).into(ivStockPic)
             tvStockName.text = it.companyName
             tvStockPrice.text = "₹ ${it.companyCurrentPrice}"

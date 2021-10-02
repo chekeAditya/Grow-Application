@@ -10,9 +10,11 @@ import androidx.core.content.ContextCompat
 import androidx.fragment.app.Fragment
 import androidx.navigation.Navigation
 import com.example.groww.R
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_finger_print_verification.*
 import java.util.concurrent.Executor
 
+@AndroidEntryPoint
 class FingerPrintVerification : Fragment(R.layout.fragment_finger_print_verification) {
 
     private lateinit var executor: Executor
@@ -53,6 +55,7 @@ class FingerPrintVerification : Fragment(R.layout.fragment_finger_print_verifica
         promptInfo = BiometricPrompt.PromptInfo.Builder ()
             .setTitle("Biometric Authentication")
             .setSubtitle("Verify Using Fingerprint Authentication")
+            .setNegativeButtonText("Use Password")
             .build()
         biometricPrompt.authenticate(promptInfo)
 
