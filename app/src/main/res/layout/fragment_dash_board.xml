@@ -5,8 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.addMoney.explore.fragments.DashBoard">
-    <!--
+
         <LinearLayout
+            android:id="@+id/llShowWhenItsEmpty"
             android:layout_width="match_parent"
             android:layout_gravity="center"
             android:orientation="vertical"
@@ -46,9 +47,10 @@
                 android:layout_marginTop="22dp"
                 android:text="@string/i_don_t_have_investment_elsewhere"/>
         </LinearLayout>
-        -->
+
 
     <RelativeLayout
+        android:id="@+id/rlShowWhenFull"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginTop="@dimen/dp_36">
@@ -223,10 +225,11 @@
             android:textSize="@dimen/sp_16" />
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_below="@+id/tvCompanyDashboard"
+            style="@style/BothSideEqualMargin"
             android:id="@+id/rvShowedPurchacedStock"
             android:layout_width="match_parent"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_below="@+id/tvCompanyDashboard" />
 
 
     </RelativeLayout>

@@ -19,11 +19,11 @@ class DashboardAdapter(
         fun setData(dashboardModel: DashboardModel) {
             itemView.apply {
                 tvCompanyNameDashboard.text = dashboardModel.stockName
-                tvCompanyShareQuantityDashboard.text =
-                    "$dashboardModel.stockQuantity.toString() shares"
+                tvCompanyShareQuantityDashboard.text = "${dashboardModel.stockQuantity.toString()} shares"
                 tvStockCurrentPriceDashboard.text = "₹ ${dashboardModel.stockPrice}"
-                val returnMoney = dashboardModel.stockPrice * 1.35 / 100
-                tvStockReturnsPriceDashboard.text = returnMoney.toString()
+                val returnMoney =
+                    dashboardModel.stockPrice + dashboardModel.stockPrice * (1.35 / 100)
+                tvStockReturnsPriceDashboard.text = String.format("%.2f", returnMoney)
             }
         }
     }

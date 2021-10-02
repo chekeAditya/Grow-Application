@@ -18,7 +18,8 @@ import javax.inject.Singleton
 @InstallIn(SingletonComponent::class)
 object GrowModule {
 
-    private const val BASE_URL = "https://run.mocky.io/"
+    //URl :- https://gist.githubusercontent.com/chekeAditya/26a7978a5bdbf95f22751f77bf1f7055/raw/b8699d9587820b607f01deeeb8e4b1efdaa90238/gistfile1.txt
+    private const val BASE_URL = "https://gist.githubusercontent.com/chekeAditya/26a7978a5bdbf95f22751f77bf1f7055/raw/b8699d9587820b607f01deeeb8e4b1efdaa90238/"
 
     @Provides
     fun provideAPISERVICE(): APIClient {
