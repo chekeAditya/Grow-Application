@@ -52,7 +52,7 @@ class HomeActivity : AppCompatActivity() {
                 0->{
                     tab.text = "Explore"
                 }
-            1-> tab.text = "DashBoard"
+                 1-> tab.text = "DashBoard"
             }
         }.attach()
     }
