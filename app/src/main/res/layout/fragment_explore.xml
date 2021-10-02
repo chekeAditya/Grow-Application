@@ -134,8 +134,8 @@
 
             <TextView
                 android:id="@+id/btnSPResendOTP"
-                android:layout_marginStart="@dimen/dp_20"
                 style="@style/TextViewBelow_GreenLine"
+                android:layout_marginStart="@dimen/dp_20"
                 android:layout_marginTop="@dimen/dp_16"
                 android:background="@drawable/rectangle_filter_sort_"
                 android:fontFamily="@font/roboto"
@@ -144,19 +144,19 @@
                 android:paddingEnd="10dp"
                 android:paddingBottom="2dp"
                 android:text="@string/filter_sort"
-                android:textColor="@color/light_green"
+                android:textColor="@color/green"
                 android:textSize="@dimen/sp_12" />
 
             <TextView
-                android:layout_marginEnd="8dp"
-                android:layout_alignParentEnd="true"
                 android:id="@+id/btn3YReturns"
                 style="@style/TextViewBelow_GreenLine"
+                android:layout_alignParentEnd="true"
                 android:layout_gravity="center"
-                android:fontFamily="@font/roboto_bold"
                 android:layout_marginTop="@dimen/dp_16"
+                android:layout_marginEnd="8dp"
+                android:fontFamily="@font/roboto_bold"
                 android:text="@string/_3y_returns"
-                android:textColor="@color/light_green"
+                android:textColor="@color/green"
                 android:textSize="@dimen/sp_12"
                 app:drawableEndCompat="@drawable/ic_both_sided_arrow" />
 

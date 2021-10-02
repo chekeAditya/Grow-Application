@@ -15,7 +15,7 @@ data class UserBalance(
 )
 
 @Entity(tableName = "dashboard_stock")
-data class Dashboard(
+data class DashboardModel(
     @ColumnInfo(name = "stockName")
     val stockName: String,
     @ColumnInfo(name = "stockPrice")
@@ -27,5 +27,3 @@ data class Dashboard(
     @ColumnInfo(name = "id")
     var id: Int? = null
 }
-
-

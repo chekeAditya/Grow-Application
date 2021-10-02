@@ -25,14 +25,20 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
             val passEmail = AddMoney1Directions.actionAddMoney1ToAddMoney22(etMoneyAddAmt.text.toString())
             Navigation.findNavController(it)
                 .navigate(passEmail)
-
-
-//            val addingMoney = etMoneyAddAmt.text
-//            val userModel = UserBalance(id = 1, addMoney = addingMoney.toString().toDouble())
-//            viewModelGrow.insertMoney(userModel)
         }
 
+        edit_1000.setOnClickListener {
+            etMoneyAddAmt.setText("1000")
+        }
 
+        var userBalance = 0.0
+        viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {
+            if (it != null){
+                userBalance = it.addMoney
+            }else{
+                userBalance = 0.0
+            }
+        })
 
         addMoney1Btn.setOnClickListener {
 
@@ -40,8 +46,10 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
             Navigation.findNavController(it)
                 .navigate(passEmail)
 
-            val addingMoney = etMoneyAddAmt.text
-            val userModel = UserBalance(id = 1, addMoney = addingMoney.toString().toDouble())
+
+            var addingMoney = etMoneyAddAmt.text.toString().toDouble()
+
+            val userModel = UserBalance(id = 1, addMoney = (addingMoney+userBalance))
             viewModelGrow.insertMoney(userModel)
         }
 

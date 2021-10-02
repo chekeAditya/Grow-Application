@@ -27,10 +27,10 @@ class Explore : Fragment(R.layout.fragment_explore_abhi) {
         }
 
         viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {
-            if (it == null) {
+            if (it == null || it.addMoney < 1) {
                 rlAddMoneyLayout.visibility = View.VISIBLE
             }else{
-                rlAddMoneyLayout.visibility = View.VISIBLE
+                rlAddMoneyLayout.visibility = View.GONE
             }
         })
     }
