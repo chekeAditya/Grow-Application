@@ -70,8 +70,8 @@
             android:id="@+id/ivFingerPrintLight"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/fingerprint"
-            android:layout_centerInParent="true"/>
+            android:layout_centerInParent="true"
+            android:src="@drawable/fingerprint" />
 
         <TextView
             android:id="@+id/tvEnterPin"

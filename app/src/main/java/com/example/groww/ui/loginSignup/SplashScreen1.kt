@@ -39,7 +39,6 @@ class SplashScreen1 : Fragment(R.layout.fragment_splash_screen1) {
                 .navigate(R.id.action_splashScreen1_to_splashScreen2)
         }, 1500)
         return super.onCreateView(inflater, container, savedInstanceState)
-
     }
 
 

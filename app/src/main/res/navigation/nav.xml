@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_loading_to_searchActivity"
             app:destination="@id/searchActivity" />
+        <action
+            android:id="@+id/action_loading_to_loginSplashScreenActivity"
+            app:destination="@id/loginSplashScreenActivity" />
     </fragment>
     <fragment
         android:id="@+id/splashScreen1"
@@ -165,4 +168,14 @@
         android:name="com.example.groww.ui.search.SearchActivity"
         android:label="activity_search"
         tools:layout="@layout/activity_search" />
+    <activity
+        android:id="@+id/addMoney2"
+        android:name="com.example.groww.ui.addMoney.AddMoney"
+        android:label="activity_add_money"
+        tools:layout="@layout/activity_add_money" />
+    <activity
+        android:id="@+id/loginSplashScreenActivity"
+        android:name="com.example.groww.ui.loginSignup.LoginSplashScreenActivity"
+        android:label="activity_login_splash_screen"
+        tools:layout="@layout/activity_login_splash_screen" />
 </navigation>

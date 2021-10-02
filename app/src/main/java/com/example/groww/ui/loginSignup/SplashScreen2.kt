@@ -28,4 +28,5 @@ class SplashScreen2 : Fragment(R.layout.fragment_splash_screen2) {
         }, 1500)
         return super.onCreateView(inflater, container, savedInstanceState)
     }
+
 }
