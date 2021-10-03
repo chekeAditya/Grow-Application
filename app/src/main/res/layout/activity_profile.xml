@@ -45,7 +45,6 @@
             </androidx.cardview.widget.CardView>
 
 
-
             <TextView
                 android:id="@+id/nameProfile"
                 android:layout_width="wrap_content"
@@ -53,7 +52,8 @@
                 android:layout_marginTop="15dp"
                 android:layout_toEndOf="@+id/picProfile"
                 android:fontFamily="@font/roboto_bold"
-                android:text="@string/abhimanyu_mishra"
+                android:text="Aditya Cheke"
+                android:textColor="@color/light_black"
                 android:textSize="19sp" />
 
             <TextView
@@ -63,7 +63,7 @@
                 android:layout_below="@id/nameProfile"
                 android:layout_marginTop="5dp"
                 android:layout_toEndOf="@id/picProfile"
-                android:text="@string/abhimanyumishra130_gmail_com" />
+                android:text="@string/adityacheke291_gmail_com" />
         </RelativeLayout>
 
         <View
@@ -135,6 +135,7 @@
                                 android:id="@+id/userBalanceProfile"
                                 android:fontFamily="@font/roboto_bold"
                                 android:layout_width="wrap_content"
+                                android:layout_marginStart="@dimen/dp_5"
                                 android:layout_height="wrap_content"
                                 android:text="@string/_0_00" />
                         </LinearLayout>

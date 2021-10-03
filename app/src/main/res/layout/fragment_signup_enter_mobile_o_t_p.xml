@@ -50,6 +50,13 @@
             android:textSize="@dimen/sp_18"
             tools:ignore="TextFields" />
 
+        <View
+            android:id="@+id/view1"
+            android:layout_width="120dp"
+            android:layout_height="@dimen/dp_2"
+            android:layout_below="@+id/etSPOTP"
+            android:background="@color/green" />
+
         <Button
             android:layout_width="@dimen/dp_111"
             android:layout_height="@dimen/dp_33"
@@ -61,7 +68,9 @@
             android:text="@string/resend_otp"/>
 
 
-        <Button
+        <TextView
+            android:padding="15dp"
+            android:gravity="center"
             android:id="@+id/btnSpVerifyOTP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

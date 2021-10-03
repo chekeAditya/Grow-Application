@@ -45,8 +45,8 @@ class DashboardFragment : Fragment(R.layout.fragment_dashboard) {
             llShowWhenItsEmpty1.visibility = View.VISIBLE
             rlShowWhenFull1.visibility = View.GONE
         } else {
-            llShowWhenItsEmpty1.visibility = View.GONE
-            rlShowWhenFull1.visibility = View.VISIBLE
+            llShowWhenItsEmpty1.visibility = View.VISIBLE
+            rlShowWhenFull1.visibility = View.GONE
             calcutateData()
         }
     }

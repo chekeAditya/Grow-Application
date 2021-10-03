@@ -23,8 +23,8 @@
                 android:textSize="@dimen/sp_16" />
 
             <TextView
-                android:layout_alignParentEnd="true"
                 style="@style/TextViewBelow_GreenLine"
+                android:layout_alignParentEnd="true"
                 android:layout_marginTop="@dimen/dp_16"
                 android:background="@drawable/rectangle_filter_sort_"
                 android:fontFamily="@font/roboto"
@@ -33,7 +33,7 @@
                 android:paddingEnd="10dp"
                 android:paddingBottom="2dp"
                 android:text="@string/all_mutual_funds"
-                android:textColor="@color/light_green"
+                android:textColor="@color/green"
                 android:textSize="@dimen/sp_12" />
 
         </RelativeLayout>
@@ -69,6 +69,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/btnTaxSaving"
+                android:layout_marginTop="@dimen/dp_8"
                 android:src="@drawable/ic_tax_saving"/>
 
             <ImageView
