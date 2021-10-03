@@ -2,7 +2,9 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:elevation="@dimen/dp_5"
+    app:cardElevation="@dimen/dp_5"
     android:background="@color/white">
 
     <LinearLayout
@@ -31,7 +33,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
-        android:background="@color/green"
+        android:background="@color/grey"
         android:layout_marginTop="10dp"/>
 
     </LinearLayout>

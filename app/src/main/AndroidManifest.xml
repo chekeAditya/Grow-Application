@@ -35,6 +35,7 @@
             android:exported="true" />
         <activity
             android:name=".ui.MainActivity"
+            android:theme="@style/Theme.Groww.SplashScreen"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

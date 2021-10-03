@@ -36,12 +36,17 @@
 
     </FrameLayout>
 
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollIndicators="none">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:gravity="center_horizontal">
+        android:gravity="center_horizontal"
+        android:paddingHorizontal="20dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -68,13 +73,13 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Mutual Funds"
+            android:textSize="15sp"
             android:layout_marginHorizontal="2dp"
-            android:background="@drawable/bg_searchbox"
             android:paddingHorizontal="15dp"
             android:paddingVertical="10dp"
-            android:text="Mutual Funds"
             android:textColor="@color/dark_gray"
-            android:textSize="15sp" />
+            android:background="@drawable/bg_searchbox"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -88,6 +93,8 @@
             android:background="@drawable/bg_searchbox"/>
 
     </LinearLayout>
+
+    </HorizontalScrollView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/searchAllRecyclerView"
