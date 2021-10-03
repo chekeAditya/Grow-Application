@@ -60,7 +60,7 @@ class BuyShareFragment : Fragment(R.layout.fragment_buy_share) {
 
                     val stockName = tvBuyShareName.text.toString().substring(4,
                         tvBuyShareName.text.toString().length)
-                    val dashboard = DashboardModel(stockName,sharePrice,inputAmount.toInt())
+                    val dashboard = DashboardModel(stockName,inputAmount.toInt()*sharePrice,inputAmount.toInt())
                     viewModel.setDataInDashboard(dashboard)
 
                     val bundle = Bundle()
