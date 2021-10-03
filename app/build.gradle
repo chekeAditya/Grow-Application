@@ -3,7 +3,6 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
     id 'kotlin-android-extensions'
-    id 'com.google.gms.google-services'
     id 'dagger.hilt.android.plugin'
 }
 apply plugin: "androidx.navigation.safeargs.kotlin"
@@ -35,7 +34,6 @@ android {
         jvmTarget = '1.8'
     }
 }
-
 dependencies {
 
     implementation 'androidx.core:core-ktx:1.6.0'

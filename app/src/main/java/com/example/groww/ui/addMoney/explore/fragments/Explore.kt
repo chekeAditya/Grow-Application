@@ -11,6 +11,7 @@ import com.example.groww.R
 import com.example.groww.adapter.DashboardAdapter
 import com.example.groww.adapter.NewsAndEventsAdapter
 import com.example.groww.adapter.SecondStockOverviewAdapter
+import com.example.groww.adapter.TopLoserAdapter
 import com.example.groww.remote.local.DashboardModel
 import com.example.groww.remote.responses.NewsAndEventsAPI
 import com.example.groww.remote.responses.StockAndMfApi
@@ -29,6 +30,7 @@ class Explore : Fragment(R.layout.fragment_explore_abhi) {
     var newsAndEventsAPIList = mutableListOf<NewsAndEventsAPI>()
     private val stockAndMfApiList = mutableListOf<StockAndMfApi>()
     lateinit var dashboardAdapter: DashboardAdapter
+    lateinit var topLoserAdapter: TopLoserAdapter
     private var dashboardModelList = mutableListOf<DashboardModel>()
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -51,6 +53,7 @@ class Explore : Fragment(R.layout.fragment_explore_abhi) {
         apiCallingTopGainers()
         apiCallingForStockNews()
         apiCallingWatchList()
+        apiCallingForTopLoser()
 
         viewModelGrow.getDataFromDB().observe(viewLifecycleOwner, Observer {
             stockAndMfApiList.clear()
@@ -73,6 +76,13 @@ class Explore : Fragment(R.layout.fragment_explore_abhi) {
             dashboardAdapter.notifyDataSetChanged()
         })
         viewModelGrow.getDataINDashboard()
+    }
+
+    private fun apiCallingForTopLoser() {
+        topLoserAdapter = TopLoserAdapter(stockAndMfApiList)
+        topLosersExplore.layoutManager =
+            LinearLayoutManager(requireContext(), LinearLayoutManager.HORIZONTAL, true)
+        topLosersExplore.adapter = topLoserAdapter
     }
 
     private fun apiCallingWatchList() {

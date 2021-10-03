@@ -14,9 +14,12 @@ import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_add_money1.*
 
 @AndroidEntryPoint
-class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
+class AddMoney1 : Fragment(R.layout.fragment_add_money1){
 
     val viewModelGrow: ViewModelGrow by viewModels()
+
+    var addingMoney = 0.0
+    var userBalance = 0.0
 
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -33,7 +36,7 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
             etMoneyAddAmt.setText("1000")
         }
 
-        var userBalance = 0.0
+
         viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {
             if (it != null){
                 userBalance = it.addMoney
@@ -44,15 +47,19 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
 
         addMoney1Btn.setOnClickListener {
 
+
+
+
+             addingMoney = etMoneyAddAmt.text.toString().toDouble()
+
             val passEmail = AddMoney1Directions.actionAddMoney1ToAddMoney3(etMoneyAddAmt.text.toString())
-            Navigation.findNavController(it)
+            Navigation.findNavController(requireView())
                 .navigate(passEmail)
-
-
-            var addingMoney = etMoneyAddAmt.text.toString().toDouble()
-
             val userModel = UserBalance(id = 1, addMoney = (addingMoney+userBalance))
             viewModelGrow.insertMoney(userModel)
+
+
+
         }
 
         viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {
@@ -63,5 +70,6 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
             }
         })
     }
+
 
 }
