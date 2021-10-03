@@ -5,6 +5,7 @@ import com.example.groww.remote.APIClient
 import com.example.groww.remote.local.DashboardModel
 import com.example.groww.remote.local.GrowDao
 import com.example.groww.remote.local.UserBalance
+import com.example.groww.remote.responses.NewsAndEventsAPI
 import com.example.groww.remote.responses.ResponseModel
 import com.example.groww.remote.responses.StockAndMfApi
 import kotlinx.coroutines.CoroutineScope
@@ -32,6 +33,7 @@ class Repository @Inject constructor(private val growDao: GrowDao, val api: APIC
     fun getRemoteResponseFromAPI() {
         CoroutineScope(Dispatchers.IO).launch {
             saveToDB(api.getAPIResponse())
+            saveNewsDataToDB(api.getAPIResponse())
         }
     }
 
@@ -72,6 +74,17 @@ class Repository @Inject constructor(private val growDao: GrowDao, val api: APIC
 
     fun currentPriceSum():LiveData<Double>{
         return growDao.currentPriceSum()
+    }
+
+    fun saveNewsDataToDB(responseModel: ResponseModel) {
+        val listOfNewsData = ArrayList<NewsAndEventsAPI>()
+        growDao.deleteAllNewsData()
+        listOfNewsData.addAll(responseModel.newsAndEventsAPI)
+        growDao.addNewsDataFROMAPI(listOfNewsData)
+    }
+
+    fun getNewsResponseFromApi() :LiveData<List<NewsAndEventsAPI>>{
+        return growDao.getNewsResponseFromAPI()
     }
 
 }

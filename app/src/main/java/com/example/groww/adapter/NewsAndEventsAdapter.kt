@@ -5,8 +5,14 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.groww.R
+import com.example.groww.remote.responses.NewsAndEventsAPI
+import kotlinx.android.synthetic.main.news_item_view.view.*
 
-class NewsAndEventsAdapter(private val itemViewType: Int): RecyclerView.Adapter<NewsAndEventsAdapter.NewsAndEventsViewHolder>() {
+class NewsAndEventsAdapter(
+    private val listNewsAndEventsAPIList: MutableList<NewsAndEventsAPI>,
+    private val itemViewType: Int
+) :
+    RecyclerView.Adapter<NewsAndEventsAdapter.NewsAndEventsViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NewsAndEventsViewHolder {
         return if (itemViewType == 0) {
@@ -21,14 +27,21 @@ class NewsAndEventsAdapter(private val itemViewType: Int): RecyclerView.Adapter<
     }
 
     override fun onBindViewHolder(holder: NewsAndEventsViewHolder, position: Int) {
+        val newsAndEventsAPI = listNewsAndEventsAPIList[position]
+        holder.setData(newsAndEventsAPI)
     }
 
     override fun getItemCount(): Int {
-        return 10
+        return listNewsAndEventsAPIList.size
     }
 
-    class NewsAndEventsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
-
+    class NewsAndEventsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
+        fun setData(newsAndEventsAPI: NewsAndEventsAPI){
+            itemView.apply {
+                tvNewsHeading.text = newsAndEventsAPI.newsHead
+                tvNewsDesc.text = newsAndEventsAPI.news
+            }
+        }
     }
 
 }

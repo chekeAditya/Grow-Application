@@ -1,0 +1,23 @@
+Index: app/src/main/java/com/example/groww/ui/addMoney/explore/fragments/Explore.kt
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>package com.example.groww.ui.addMoney.explore.fragments\r\n\r\nimport android.content.Intent\r\nimport android.os.Bundle\r\nimport android.view.View\r\nimport androidx.fragment.app.Fragment\r\nimport androidx.fragment.app.viewModels\r\nimport androidx.lifecycle.Observer\r\nimport androidx.recyclerview.widget.LinearLayoutManager\r\nimport com.example.groww.R\r\nimport com.example.groww.adapter.SecondStockOverviewAdapter\r\nimport com.example.groww.ui.addMoney.AddMoney\r\nimport com.example.groww.viewmodel.ViewModelGrow\r\nimport dagger.hilt.android.AndroidEntryPoint\r\nimport kotlinx.android.synthetic.main.fragment_explore_abhi.*\r\n\r\n@AndroidEntryPoint\r\nclass Explore : Fragment(R.layout.fragment_explore_abhi) {\r\n\r\n    val viewModelGrow: ViewModelGrow by viewModels()\r\n    lateinit var secondStockOverviewAdapter: SecondStockOverviewAdapter\r\n\r\n    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {\r\n        super.onViewCreated(view, savedInstanceState)\r\n\r\n\r\n        addMoneyExplore.setOnClickListener {\r\n            val intent = Intent(activity, AddMoney::class.java)\r\n            startActivity(intent)\r\n        }\r\n\r\n        viewModelGrow.getUserBalance().observe(viewLifecycleOwner, Observer {\r\n            if (it == null || it.addMoney < 1) {\r\n                rlAddMoneyLayout.visibility = View.VISIBLE\r\n            } else {\r\n                rlAddMoneyLayout.visibility = View.GONE\r\n            }\r\n        })\r\n\r\n        apiCallingTopGainers()\r\n\r\n    }\r\n\r\n    private fun apiCallingTopGainers() {\r\n        secondStockOverviewAdapter = SecondStockOverviewAdapter()//listName\r\n        topGainersExplore.layoutManager = LinearLayoutManager(requireContext())\r\n        topGainersExplore.adapter = secondStockOverviewAdapter\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/app/src/main/java/com/example/groww/ui/addMoney/explore/fragments/Explore.kt b/app/src/main/java/com/example/groww/ui/addMoney/explore/fragments/Explore.kt
+--- a/app/src/main/java/com/example/groww/ui/addMoney/explore/fragments/Explore.kt	(revision 56f448c3cb9a83ebfd21a10f37913ebef562f429)
++++ b/app/src/main/java/com/example/groww/ui/addMoney/explore/fragments/Explore.kt	(date 1633241767088)
+@@ -42,8 +42,8 @@
+     }
+ 
+     private fun apiCallingTopGainers() {
+-        secondStockOverviewAdapter = SecondStockOverviewAdapter()//listName
+-        topGainersExplore.layoutManager = LinearLayoutManager(requireContext())
+-        topGainersExplore.adapter = secondStockOverviewAdapter
++//        secondStockOverviewAdapter = SecondStockOverviewAdapter()//listName
++//        topGainersExplore.layoutManager = LinearLayoutManager(requireContext())
++//        topGainersExplore.adapter = secondStockOverviewAdapter
+     }
+ }
+\ No newline at end of file

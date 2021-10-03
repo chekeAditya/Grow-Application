@@ -19,7 +19,8 @@ import javax.inject.Singleton
 object GrowModule {
 
     //URl :- https://gist.githubusercontent.com/chekeAditya/26a7978a5bdbf95f22751f77bf1f7055/raw/b8699d9587820b607f01deeeb8e4b1efdaa90238/gistfile1.txt
-    private const val BASE_URL = "https://gist.githubusercontent.com/chekeAditya/26a7978a5bdbf95f22751f77bf1f7055/raw/b8699d9587820b607f01deeeb8e4b1efdaa90238/"
+    //URL :- https://gist.githubusercontent.com/chekeAditya/26a7978a5bdbf95f22751f77bf1f7055/raw/b9633db9cc1de349c1b12e816ad697f04bf55ecc/gistfile1.txt
+    private const val BASE_URL = "https://gist.githubusercontent.com/chekeAditya/26a7978a5bdbf95f22751f77bf1f7055/raw/b9633db9cc1de349c1b12e816ad697f04bf55ecc/"
 
     @Provides
     fun provideAPISERVICE(): APIClient {

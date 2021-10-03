@@ -43,8 +43,8 @@ class StockDetailsOverviewFragment : Fragment(R.layout.fragment_stock_details_ov
     private fun setRecyclerViews() {
         viewModel.getDataFromDB().observe(viewLifecycleOwner, Observer {
             val newList = mutableListOf<StockAndMfApi>()
-            for(i in 0..4)
-                newList.add(it[i])
+            for(i in 0..15)
+            newList.add(it[i])
             firstSimilarStocksRecyclerView.adapter = FirstStockOverviewAdapter(newList)
             firstSimilarStocksRecyclerView.layoutManager = LinearLayoutManager(context)
             secondSimilarStocksRecyclerView.adapter = SecondStockOverviewAdapter(newList)

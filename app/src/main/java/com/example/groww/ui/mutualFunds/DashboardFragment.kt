@@ -61,9 +61,9 @@ class DashboardFragment : Fragment(R.layout.fragment_dashboard) {
             totalReturns += (current - invested)
         }
 
-        tvInvestedAmount.text = String.format("%.1f","₹ $invested")
-        currentMoneyInDashBoard1.text = String.format("%.1f","₹ $current")
-        totalReturns1.text = String.format("%.1f","₹ $totalReturns")
+        tvInvestedAmount.text = String.format("₹ %.1f",invested)
+        currentMoneyInDashBoard1.text = String.format("₹ %.1f",current)
+        totalReturns1.text = String.format("₹ %.1f",totalReturns)
     }
 
 }

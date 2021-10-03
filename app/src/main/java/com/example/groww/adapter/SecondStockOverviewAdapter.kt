@@ -9,7 +9,7 @@ import com.example.groww.R
 import com.example.groww.remote.responses.StockAndMfApi
 import kotlinx.android.synthetic.main.stocks_similar_second_item_view.view.*
 
-class SecondStockOverviewAdapter(private val list: List<StockAndMfApi>): RecyclerView.Adapter<SecondStockOverviewAdapter.SecondStockOverviewViewHolder>() {
+class SecondStockOverviewAdapter(private val list: MutableList<StockAndMfApi>): RecyclerView.Adapter<SecondStockOverviewAdapter.SecondStockOverviewViewHolder>() {
 
     override fun onCreateViewHolder(
         parent: ViewGroup,
