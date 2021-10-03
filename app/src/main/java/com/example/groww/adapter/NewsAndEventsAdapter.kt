@@ -27,12 +27,16 @@ class NewsAndEventsAdapter(
     }
 
     override fun onBindViewHolder(holder: NewsAndEventsViewHolder, position: Int) {
-        val newsAndEventsAPI = listNewsAndEventsAPIList[position]
-        holder.setData(newsAndEventsAPI)
+        if (itemViewType == 0) {
+            val newsAndEventsAPI = listNewsAndEventsAPIList[position]
+            holder.setData(newsAndEventsAPI)
+        }
     }
 
     override fun getItemCount(): Int {
-        return listNewsAndEventsAPIList.size
+        return if (itemViewType == 0)
+            listNewsAndEventsAPIList.size
+        else 10
     }
 
     class NewsAndEventsViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
