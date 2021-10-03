@@ -11,28 +11,28 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
-    <EditText
-        android:id="@+id/etSearchAll"
-        android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@drawable/bg_searchbox"
-        android:textColor="@color/primary_black_text"
-        android:textStyle="bold"
-        android:paddingStart="50dp"
-        android:hint="Try Stocks, MFs &amp; more"
-        android:textSize="20sp"
-        android:layout_marginHorizontal="20dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginBottom="10dp"/>
+        <EditText
+            android:id="@+id/etSearchAll"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_searchbox"
+            android:textColor="@color/primary_black_text"
+            android:textStyle="bold"
+            android:paddingStart="50dp"
+            android:hint="Try Stocks, MFs &amp; more"
+            android:textSize="20sp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="10dp"/>
 
-    <ImageButton
-        android:id="@+id/ibBack"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/backsearch"
-        android:background="@color/white"
-        android:layout_marginTop="38dp"
-        android:layout_marginStart="38dp"/>
+        <ImageButton
+            android:id="@+id/ibBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/backsearch"
+            android:background="@color/white"
+            android:layout_marginTop="38dp"
+            android:layout_marginStart="38dp"/>
 
     </FrameLayout>
 
