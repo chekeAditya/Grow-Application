@@ -1,59 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:weightSum="3"
     style="@style/BothSideEqualMargin"
-    android:orientation="vertical"
     tools:context=".ui.addMoney.addMoneyFragments.AddMoney3">
-
-    <RelativeLayout
-        android:layout_weight="1"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
 
         <ImageView
             android:src="@drawable/arrow_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
+    <pl.droidsonroids.gif.GifImageView
+        android:layout_width="100dp"
+        android:id="@+id/gif_image"
+        android:layout_height="100dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dp_111"
+        android:src="@drawable/gif_payment" />
 
-        <pl.droidsonroids.gif.GifImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_centerInParent="true"
-            android:src="@drawable/gif_payment" />
-
-        <TextView
-            android:text="Payment Successful"
-            android:layout_centerHorizontal="true"
-            android:layout_alignParentBottom="true"
-            android:textSize="@dimen/dp_24"
-            android:textColor="@color/black"
-            android:fontFamily="@font/roboto_bold"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/tvPaymentSuccessful"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/gif_image"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Payment Successful"
+        android:textColor="@color/black"
+        android:textSize="@dimen/dp_24" />
 
 
-    <LinearLayout
-        android:layout_weight="1"
-        android:gravity="center"
-        android:layout_width="match_parent"
-        android:layout_height="0dp">
         <androidx.cardview.widget.CardView
-            android:layout_marginTop="@dimen/dp_40"
+            android:layout_centerInParent="true"
             app:cardElevation="@dimen/dp_20"
             app:cardCornerRadius="@dimen/dp_20"
-            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <LinearLayout
                 android:layout_margin="@dimen/dp_8"
                 android:orientation="vertical"
-                android:padding="@dimen/dp_15"
+                android:padding="@dimen/dp_10"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -66,6 +54,7 @@
                         android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+
                     <TextView
                         android:text="₹ 1,000"
                         android:id="@+id/tvAmountInPaymentSuccessfull"
@@ -188,12 +177,11 @@
 
         </androidx.cardview.widget.CardView>
 
-    </LinearLayout>
-
     <LinearLayout
-        android:layout_weight="1"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp_20"
         android:layout_width="match_parent"
-        android:layout_height="0dp">
+        android:layout_height="wrap_content">
         <androidx.cardview.widget.CardView
             android:id="@+id/doneAddMoney3"
             android:layout_gravity="bottom"
@@ -202,7 +190,7 @@
             android:layout_height="wrap_content">
             <TextView
                 android:gravity="center"
-                android:paddingVertical="@dimen/dp_15"
+                android:padding="@dimen/dp_15"
                 android:textColor="@color/white"
                 android:text="Done"
                 android:background="@color/green"
@@ -216,4 +204,4 @@
 
 
 
-</LinearLayout>
+</RelativeLayout>
