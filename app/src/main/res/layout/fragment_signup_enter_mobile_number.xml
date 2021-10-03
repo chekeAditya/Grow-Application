@@ -46,7 +46,9 @@
             tools:ignore="TextFields" />
 
 
-        <Button
+        <TextView
+            android:padding="15dp"
+            android:gravity="center"
             android:id="@+id/btnSpSendOTP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

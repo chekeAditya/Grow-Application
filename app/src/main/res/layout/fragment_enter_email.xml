@@ -42,7 +42,9 @@
             android:layout_below="@+id/etEEEmailAddress"
             android:background="@color/light_green" />
 
-        <Button
+        <TextView
+            android:padding="15dp"
+            android:gravity="center"
             android:id="@+id/btnEENext"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

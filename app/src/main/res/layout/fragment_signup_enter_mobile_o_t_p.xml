@@ -61,7 +61,9 @@
             android:text="@string/resend_otp"/>
 
 
-        <Button
+        <TextView
+            android:padding="15dp"
+            android:gravity="center"
             android:id="@+id/btnSpVerifyOTP"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

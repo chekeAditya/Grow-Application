@@ -47,7 +47,9 @@
 
     </LinearLayout>
 
-    <Button
+    <TextView
+        android:padding="15dp"
+        android:gravity="center"
         android:id="@+id/btnSPCreateAccount"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -56,6 +58,6 @@
         android:background="@drawable/rectangle_create_account"
         android:fontFamily="@font/roboto_bold"
         android:text="@string/create_account"
-        android:textColor="@color/green" />
+        android:textColor="@color/white" />
 
 </FrameLayout>

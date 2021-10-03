@@ -31,7 +31,10 @@
                 android:textSize="@dimen/sp_14"
                 android:layout_gravity="center_horizontal"
                 android:text="@string/merge_analyse_and_switch_to_direct_funds"/>
-            <Button
+
+            <TextView
+                android:padding="15dp"
+                android:gravity="center"
                 android:id="@+id/btnSpSendOTP"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -76,7 +79,7 @@
             android:fontFamily="@font/roboto_bold"
             android:text="@string/verify_holdings"
             android:textColor="@color/green"
-            android:textSize="@dimen/sp_16" />
+            android:textSize="@dimen/sp_14" />
 
         <androidx.cardview.widget.CardView
             android:id="@+id/cvHoldingDashboard"
@@ -177,7 +180,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_below="@+id/llCardViewTop"
-                    android:background="@color/green" />
+                    android:background="" />
 
                 <TextView
                     android:id="@+id/tvOneDayReturns"
@@ -228,8 +231,8 @@
             android:textSize="@dimen/sp_16" />
 
         <androidx.recyclerview.widget.RecyclerView
-            style="@style/BothSideEqualMargin"
             android:id="@+id/rvShowedPurchacedStock"
+            style="@style/BothSideEqualMargin"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_below="@+id/tvCompanyDashboard" />
