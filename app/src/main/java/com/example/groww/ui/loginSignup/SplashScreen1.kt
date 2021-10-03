@@ -19,6 +19,9 @@ import com.google.android.gms.common.api.ApiException
 import com.google.android.gms.tasks.Task
 import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login_splash_screen.*
+import kotlinx.coroutines.CoroutineScope
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.launch
 
 
 class SplashScreen1 : Fragment(R.layout.fragment_splash_screen1) {
@@ -38,6 +41,20 @@ class SplashScreen1 : Fragment(R.layout.fragment_splash_screen1) {
 //        Navigation.findNavController(requireView())
 //            .navigate(R.id.action_splashScreen1_to_splashScreen2)
 //    }
+
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        Handler().postDelayed({
+            CoroutineScope(Dispatchers.Main).launch {
+                Navigation.findNavController(requireView())
+                    .navigate(R.id.action_splashScreen1_to_splashScreen2)
+            }
+        }, 1500)
+        return super.onCreateView(inflater, container, savedInstanceState)
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

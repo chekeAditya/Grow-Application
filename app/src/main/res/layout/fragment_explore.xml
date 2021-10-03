@@ -41,7 +41,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
             android:layout_marginTop="@dimen/dp_16"
-            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_20"
             android:id="@+id/rvPopularFunds"
             android:layout_height="wrap_content"/>
 
@@ -117,7 +117,7 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_marginStart="@dimen/dp_10"
+            android:layout_marginStart="@dimen/dp_20"
             android:layout_marginTop="@dimen/dp_16"
             android:id="@+id/rvQuickAccess"
             android:layout_height="wrap_content"/>
@@ -167,7 +167,7 @@
         <androidx.recyclerview.widget.RecyclerView
             android:layout_marginTop="@dimen/dp_13"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="300dp"
             android:id="@+id/rvAllMutualFunds"/>
 
     </LinearLayout>
