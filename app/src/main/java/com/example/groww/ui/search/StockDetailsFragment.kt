@@ -1,5 +1,6 @@
 package com.example.groww.ui.search
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.View
@@ -39,6 +40,19 @@ class StockDetailsFragment : Fragment(R.layout.fragment_stock_details) {
             navController.navigate(R.id.action_stockDetailsFragment_to_searchAllFragment,bundle)
         }
 
+        ivShareWtsp.setOnClickListener {
+        shareView()
+        }
+    }
+
+    private fun shareView() {
+            val intent = Intent(Intent.ACTION_SEND)
+            intent.type = "type/plain"
+            val shareBody = "Share your Fav Stock"
+            val shareSub = "Research More on this stock to get more Profit"
+            intent.putExtra(Intent.EXTRA_SUBJECT,shareBody)
+            intent.putExtra(Intent.EXTRA_TEXT,shareSub)
+            startActivity(Intent.createChooser(intent,"Share you Stock details"))
     }
 
     private fun setStockDetails(id: Int?) {

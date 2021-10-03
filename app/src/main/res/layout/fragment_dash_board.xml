@@ -180,7 +180,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:layout_below="@+id/llCardViewTop"
-                    android:background="" />
+                    android:background="@color/green" />
 
                 <TextView
                     android:id="@+id/tvOneDayReturns"

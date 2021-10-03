@@ -38,7 +38,7 @@
         <View
             android:id="@+id/view1"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_1"
+            android:layout_height="@dimen/dp_2"
             android:layout_below="@+id/etSPEmailAddress"
             android:background="@color/green" />
 

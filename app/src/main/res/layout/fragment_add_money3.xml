@@ -4,8 +4,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:padding="@dimen/dp_15"
     android:weightSum="3"
+   style="@style/BothSideEqualMargin"
     android:orientation="vertical"
     tools:context=".ui.addMoney.addMoneyFragments.AddMoney3">
 
@@ -22,11 +22,11 @@
             android:layout_height="wrap_content"/>
 
 
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+        <pl.droidsonroids.gif.GifImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
             android:layout_centerInParent="true"
-            android:src="@drawable/successlogo" />
+            android:src="@drawable/gif_payment" />
 
         <TextView
             android:text="Payment Successful"
@@ -37,15 +37,19 @@
             android:fontFamily="@font/roboto_bold"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
-
-
     </RelativeLayout>
+
+
     <androidx.cardview.widget.CardView
         android:layout_weight="1"
+        android:layout_marginTop="@dimen/dp_40"
+        app:cardElevation="@dimen/dp_20"
+        app:cardCornerRadius="@dimen/dp_20"
+        android:layout_margin="5dp"
         android:layout_width="match_parent"
         android:layout_height="0dp">
         <LinearLayout
-            android:layout_marginTop="@dimen/dp_20"
+            android:layout_margin="@dimen/dp_8"
             android:orientation="vertical"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
@@ -60,7 +64,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"/>
                 <TextView
-                    android:text="₹1,000"
+                    android:text="₹ 1,000"
                     android:id="@+id/tvAmountInPaymentSuccessfull"
                     android:textColor="@color/black"
                     android:fontFamily="@font/roboto_bold"
@@ -192,8 +196,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
             <TextView
-                android:paddingVertical="@dimen/dp_15"
                 android:gravity="center"
+                android:paddingVertical="@dimen/dp_15"
                 android:textColor="@color/white"
                 android:text="Done"
                 android:background="@color/green"

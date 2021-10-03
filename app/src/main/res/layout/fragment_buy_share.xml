@@ -177,8 +177,11 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="10dp"/>
 
-    <Button
+    <TextView
+        android:gravity="center"
+        android:padding="@dimen/dp_15"
         android:id="@+id/btnShareBuy"
+        android:fontFamily="@font/roboto_bold"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="BUY"

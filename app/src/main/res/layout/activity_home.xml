@@ -10,24 +10,28 @@
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="10dp"
         android:id="@+id/reActivityHome"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
         app:cardCornerRadius="40dp">
 
         <RelativeLayout
+            android:padding="@dimen/dp_10"
             android:layout_width="match_parent"
             android:layout_height="match_parent">
+
             <TextView
                 android:id="@+id/cardViewSearch"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
                 android:backgroundTint="@color/transparent"
                 android:drawableStart="@drawable/ic_grow_logo"
                 android:drawablePadding="10dp"
                 android:hint="Search Grow"
                 android:inputType="text"
-                android:paddingHorizontal="10dp"
-                android:paddingVertical="16dp"
+                android:paddingStart="@dimen/dp_10"
                 android:textSize="18sp" />
             
             <androidx.cardview.widget.CardView
@@ -35,7 +39,7 @@
                 android:id="@+id/profileHome"
                 android:layout_alignParentEnd="true"
                 android:layout_centerVertical="true"
-                android:layout_marginEnd="@dimen/dp_20"
+                android:layout_marginEnd="@dimen/dp_10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <ImageView
@@ -49,21 +53,14 @@
 
 
         </RelativeLayout>
+
     </androidx.cardview.widget.CardView>
-
-    <View
-        android:id="@+id/viewInHomeActivity"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_below="@+id/reActivityHome"
-        android:layout_marginTop="2dp" />
-
 
     <com.google.android.material.tabs.TabLayout
         android:id="@+id/tabLayoutHome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/viewInHomeActivity"
+        android:layout_below="@+id/reActivityHome"
         app:tabGravity="fill"
         app:tabIndicatorColor="@color/green"
         app:tabMode="fixed"
@@ -98,6 +95,7 @@
                 android:drawableTop="@drawable/ic_stocks"
                 android:gravity="center"
                 android:padding="10dp"
+                android:fontFamily="@font/roboto"
                 android:text="Stocks" />
 
             <TextView
@@ -105,6 +103,7 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:fontFamily="@font/roboto"
                 android:drawableTop="@drawable/ic_mutual_funds"
                 android:gravity="center"
                 android:padding="10dp"
@@ -112,7 +111,6 @@
                 android:textColor="@color/mid_grey" />
 
         </LinearLayout>
-
 
     </androidx.cardview.widget.CardView>
 
