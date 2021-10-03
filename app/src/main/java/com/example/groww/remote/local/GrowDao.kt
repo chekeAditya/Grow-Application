@@ -5,6 +5,7 @@ import androidx.room.Dao
 import androidx.room.Insert
 import androidx.room.OnConflictStrategy
 import androidx.room.Query
+import com.example.groww.remote.responses.NewsAndEventsAPI
 import com.example.groww.remote.responses.StockAndMfApi
 
 @Dao
@@ -36,4 +37,14 @@ interface GrowDao {
 
     @Query("select sum(stockPrice) as total from dashboard_stock")
     fun currentPriceSum() : LiveData<Double>
+
+    @Insert(onConflict = OnConflictStrategy.REPLACE)
+    fun addNewsDataFROMAPI(newsAndEventsAPI: List<NewsAndEventsAPI>)
+
+    @Query("select * from grow_news_database")
+    fun getNewsResponseFromAPI(): LiveData<List<NewsAndEventsAPI>>
+
+    @Query("delete from grow_news_database")
+    fun deleteAllNewsData()
+
 }

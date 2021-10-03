@@ -4,6 +4,7 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
 import com.example.groww.remote.local.DashboardModel
 import com.example.groww.remote.local.UserBalance
+import com.example.groww.remote.responses.NewsAndEventsAPI
 import com.example.groww.remote.responses.StockAndMfApi
 import com.example.groww.repopsitory.Repository
 import dagger.hilt.android.lifecycle.HiltViewModel
@@ -53,5 +54,9 @@ class ViewModelGrow @Inject constructor(val repo: Repository) : ViewModel() {
 
     fun getCurrentPriceSum():LiveData<Double>{
         return repo.currentPriceSum()
+    }
+
+    fun getNewsResponseFromApi():LiveData<List<NewsAndEventsAPI>>{
+        return repo.getNewsResponseFromApi()
     }
 }

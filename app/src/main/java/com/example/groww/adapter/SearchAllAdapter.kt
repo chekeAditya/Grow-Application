@@ -1,4 +1,4 @@
-package com.example.groww.ui.search.adapter
+package com.example.groww.adapter
 
 import android.view.LayoutInflater
 import android.view.View
@@ -9,7 +9,8 @@ import com.example.groww.remote.responses.StockAndMfApi
 import kotlinx.android.synthetic.main.search_item_view.view.*
 
 class SearchAllAdapter(private val list: List<StockAndMfApi>,private val searchTrue: Boolean,
-                       private val onSearchAllItemClickListener: OnSearchAllItemClickListener):
+                       private val onSearchAllItemClickListener: OnSearchAllItemClickListener
+):
     RecyclerView.Adapter<SearchAllAdapter.SearchAllViewHolder>() {
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): SearchAllViewHolder {
@@ -27,7 +28,8 @@ class SearchAllAdapter(private val list: List<StockAndMfApi>,private val searchT
     }
 
     class SearchAllViewHolder(itemView: View,private val onSearchAllItemClickListener:
-    OnSearchAllItemClickListener) : RecyclerView.ViewHolder(itemView){
+    OnSearchAllItemClickListener
+    ) : RecyclerView.ViewHolder(itemView){
 
         fun setData(stockAndMfApi: StockAndMfApi,searchTrue: Boolean){
             if (!searchTrue) itemView.ivSearch.setImageResource(R.drawable.history)

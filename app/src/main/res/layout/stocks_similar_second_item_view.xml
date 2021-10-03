@@ -3,8 +3,10 @@
     android:layout_width="160dp"
     android:layout_height="wrap_content"
     android:layout_marginEnd="20dp"
+    android:elevation="@dimen/dp_8"
+    android:layout_margin="@dimen/dp_5"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    app:cardCornerRadius="6dp">
+    app:cardCornerRadius="@dimen/dp_10">
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:layout_width="match_parent"

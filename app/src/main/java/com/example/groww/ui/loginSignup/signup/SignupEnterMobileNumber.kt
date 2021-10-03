@@ -13,7 +13,12 @@ class SignupEnterMobileNumber : Fragment(R.layout.fragment_signup_enter_mobile_n
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         btnSpSendOTP.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_signupEnterMobileNumber_to_signupEnterMobileOTP)
+            if (etSPPhoneNumber.length() == 10) {
+                Navigation.findNavController(it)
+                    .navigate(R.id.action_signupEnterMobileNumber_to_signupEnterMobileOTP)
+            } else {
+                etSPPhoneNumber.error = "Number should be 10 digit"
+            }
         }
     }
 

@@ -32,15 +32,15 @@
             android:text="@string/_91" />
 
         <EditText
-            android:id="@+id/etSPEmailAddress"
+            android:id="@+id/etSPPhoneNumber"
             android:layout_width="wrap_content"
-            android:fontFamily="@font/roboto_bold"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@+id/spTv91"
             android:layout_below="@id/spTvMobileNumber"
-            android:background="@android:color/transparent"
-            android:hint="8830"
             android:layout_marginTop="@dimen/dp_48"
+            android:layout_toEndOf="@+id/spTv91"
+            android:background="@android:color/transparent"
+            android:fontFamily="@font/roboto_bold"
+            android:hint="8830"
             android:textColor="@color/light_black"
             android:textSize="@dimen/sp_18"
             tools:ignore="TextFields" />

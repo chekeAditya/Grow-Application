@@ -1,4 +1,4 @@
-package com.example.groww.ui.search.adapter
+package com.example.groww.adapter
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

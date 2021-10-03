@@ -43,9 +43,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/spTvMobileNumber"
+            android:layout_marginTop="@dimen/dp_48"
             android:background="@android:color/transparent"
             android:hint="@string/otp"
-            android:layout_marginTop="@dimen/dp_48"
             android:textColor="@color/light_black"
             android:textSize="@dimen/sp_18"
             tools:ignore="TextFields" />

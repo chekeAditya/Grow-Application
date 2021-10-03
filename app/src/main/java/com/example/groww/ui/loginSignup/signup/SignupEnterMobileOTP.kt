@@ -13,9 +13,11 @@ class SignupEnterMobileOTP : Fragment(R.layout.fragment_signup_enter_mobile_o_t_
         super.onViewCreated(view, savedInstanceState)
 
         btnSpVerifyOTP.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_signupEnterMobileOTP_to_signupVerifyPAN)
+            if (etSPOTP.length() > 0) {
+                Navigation.findNavController(it)
+                    .navigate(R.id.action_signupEnterMobileOTP_to_signupVerifyPAN)
+            }
         }
-
     }
 
 }

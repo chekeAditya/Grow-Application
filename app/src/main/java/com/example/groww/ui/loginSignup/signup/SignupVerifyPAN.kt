@@ -11,9 +11,11 @@ class SignupVerifyPAN : Fragment(R.layout.fragment_signup_verify_p_a_n) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
         btnSPCreateAccount.setOnClickListener {
-            Navigation.findNavController(it).navigate(R.id.action_signupVerifyPAN_to_fingerPrintVerification)
+            if (etSpEnterPanNumber.text.length == 10) {
+                Navigation.findNavController(it)
+                    .navigate(R.id.action_signupVerifyPAN_to_fingerPrintVerification)
+            }
         }
     }
 
