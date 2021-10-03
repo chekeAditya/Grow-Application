@@ -1,4 +1,4 @@
-package com.example.groww.ui.search.adapter
+package com.example.groww.adapter
 
 import android.view.LayoutInflater
 import android.view.View

@@ -9,8 +9,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.groww.R
 import com.example.groww.remote.responses.StockAndMfApi
-import com.example.groww.ui.search.adapter.FirstStockOverviewAdapter
-import com.example.groww.ui.search.adapter.SecondStockOverviewAdapter
+import com.example.groww.adapter.FirstStockOverviewAdapter
+import com.example.groww.adapter.SecondStockOverviewAdapter
 import com.example.groww.viewmodel.ViewModelGrow
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_stock_details_overview.*

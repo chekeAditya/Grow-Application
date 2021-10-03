@@ -8,7 +8,7 @@ import androidx.lifecycle.Observer
 import androidx.navigation.Navigation
 import com.bumptech.glide.Glide
 import com.example.groww.R
-import com.example.groww.ui.search.adapter.StockDetailsFragmentAdapter
+import com.example.groww.adapter.StockDetailsFragmentAdapter
 import com.example.groww.viewmodel.ViewModelGrow
 import com.google.android.material.tabs.TabLayoutMediator
 import dagger.hilt.android.AndroidEntryPoint

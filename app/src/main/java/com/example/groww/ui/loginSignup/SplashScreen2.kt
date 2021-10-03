@@ -15,6 +15,7 @@ import kotlinx.coroutines.launch
 
 class SplashScreen2 : Fragment(R.layout.fragment_splash_screen2) {
 
+
     override fun onCreateView(
         inflater: LayoutInflater,
         container: ViewGroup?,
@@ -27,6 +28,11 @@ class SplashScreen2 : Fragment(R.layout.fragment_splash_screen2) {
             }
         }, 1500)
         return super.onCreateView(inflater, container, savedInstanceState)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
     }
 
 }

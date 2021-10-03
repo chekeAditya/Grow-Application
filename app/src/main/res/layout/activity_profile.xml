@@ -73,6 +73,7 @@
             android:background="@color/grey" />
 
         <androidx.cardview.widget.CardView
+            style="@style/BothSideEqualMargin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="20dp"
@@ -165,6 +166,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            style="@style/BothSideEqualMargin"
             android:orientation="vertical">
 
             <TextView
@@ -176,6 +178,11 @@
                 android:text="@string/my_investment"
                 android:textColor="@color/black"
                 android:textSize="15sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -492,4 +499,6 @@
 
 
     </LinearLayout>
+    </LinearLayout>
+
 </ScrollView>

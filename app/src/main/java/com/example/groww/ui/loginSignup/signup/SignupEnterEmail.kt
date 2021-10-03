@@ -12,16 +12,30 @@ import kotlinx.coroutines.launch
 
 class SignupEnterEmail : Fragment(R.layout.fragment_signup_enter_email) {
 
+    private val emailValidation = "[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+"
+
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
         CoroutineScope(Dispatchers.Main).launch {
             btnSPNext.setOnClickListener {
-                val action = SignupEnterEmailDirections.actionSignupEnterEmailToSignupEnterOTP(etSPEmailAddress.text.toString())
-                Navigation.findNavController(it)
-                    .navigate(action)
+                if (isEmailValid()) {
+                    val action = SignupEnterEmailDirections.actionSignupEnterEmailToSignupEnterOTP(
+                        etSPEmailAddress.text.toString()
+                    )
+                    Navigation.findNavController(it)
+                        .navigate(action)
+                }
             }
         }
     }
 
+    private fun isEmailValid(): Boolean {
+        return if (etSPEmailAddress.text.toString().isNotEmpty()) {
+            true
+        } else {
+            etSPEmailAddress.error = "Please enter valid email address"
+            false
+        }
+    }
 }

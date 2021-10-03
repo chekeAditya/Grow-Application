@@ -13,8 +13,8 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.groww.R
 import com.example.groww.remote.responses.StockAndMfApi
 import com.example.groww.ui.addMoney.explore.HomeActivity
-import com.example.groww.ui.search.adapter.OnSearchAllItemClickListener
-import com.example.groww.ui.search.adapter.SearchAllAdapter
+import com.example.groww.adapter.OnSearchAllItemClickListener
+import com.example.groww.adapter.SearchAllAdapter
 import com.example.groww.viewmodel.ViewModelGrow
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.fragment_search_all.*

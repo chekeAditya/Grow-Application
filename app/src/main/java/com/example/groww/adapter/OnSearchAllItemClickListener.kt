@@ -1,4 +1,4 @@
-package com.example.groww.ui.search.adapter
+package com.example.groww.adapter
 
 import com.example.groww.remote.responses.StockAndMfApi
 

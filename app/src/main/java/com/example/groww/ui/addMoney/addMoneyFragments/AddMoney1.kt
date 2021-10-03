@@ -1,5 +1,6 @@
 package com.example.groww.ui.addMoney.addMoneyFragments
 
+import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import androidx.fragment.app.Fragment
@@ -20,6 +21,7 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1) {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
 
         llPaymentOptions.setOnClickListener {
             val passEmail = AddMoney1Directions.actionAddMoney1ToAddMoney22(etMoneyAddAmt.text.toString())
