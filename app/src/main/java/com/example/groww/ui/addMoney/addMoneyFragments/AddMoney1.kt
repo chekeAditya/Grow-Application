@@ -32,8 +32,10 @@ class AddMoney1 : Fragment(R.layout.fragment_add_money1){
                 .navigate(passEmail)
         }
 
+
         edit_1000.setOnClickListener {
-            etMoneyAddAmt.setText("1000")
+            var addThousand = etMoneyAddAmt.text.toString().toInt()+1000
+            etMoneyAddAmt.setText("$addThousand")
         }
 
 

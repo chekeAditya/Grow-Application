@@ -8,7 +8,6 @@ import com.bumptech.glide.Glide
 import com.example.groww.R
 import com.example.groww.remote.responses.StockAndMfApi
 import kotlinx.android.synthetic.main.item_list_layout.view.*
-import kotlinx.android.synthetic.main.stocks_similar_second_item_view.view.*
 
 class TopLoserAdapter(private val list: MutableList<StockAndMfApi>): RecyclerView.Adapter<TopLoserAdapter.TopLoserViewHolder>() {
 

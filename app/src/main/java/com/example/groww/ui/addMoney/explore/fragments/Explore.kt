@@ -26,8 +26,8 @@ class Explore : Fragment(R.layout.fragment_explore_abhi) {
 
     val viewModelGrow: ViewModelGrow by viewModels()
     private lateinit var secondStockOverviewAdapter: SecondStockOverviewAdapter
-    private lateinit var newsAndEventsAdapter: NewsAndEventsAdapter
-    var newsAndEventsAPIList = mutableListOf<NewsAndEventsAPI>()
+    private lateinit var newsAndEventsAdapter: SecondStockOverviewAdapter
+//    var newsAndEventsAPIList = mutableListOf<NewsAndEventsAPI>()
     private val stockAndMfApiList = mutableListOf<StockAndMfApi>()
     lateinit var dashboardAdapter: DashboardAdapter
     lateinit var topLoserAdapter: TopLoserAdapter
@@ -63,11 +63,14 @@ class Explore : Fragment(R.layout.fragment_explore_abhi) {
         })
         viewModelGrow.getDataFromDB()
 
-        viewModelGrow.getNewsResponseFromApi().observe(viewLifecycleOwner, Observer {
-            newsAndEventsAPIList.clear()
-            newsAndEventsAPIList.addAll(it)
-            newsAndEventsAdapter.notifyDataSetChanged()
-        })
+
+//        viewModelGrow.getNewsResponseFromApi().observe(viewLifecycleOwner, Observer {
+//            newsAndEventsAPIList.clear()
+//            newsAndEventsAPIList.addAll(it)
+//            newsAndEventsAdapter.notifyDataSetChanged()
+//        })
+
+
         viewModelGrow.getDataFromAPI()
 
         viewModelGrow.getDataINDashboard().observe(viewLifecycleOwner, Observer {
@@ -92,8 +95,8 @@ class Explore : Fragment(R.layout.fragment_explore_abhi) {
     }
 
     private fun apiCallingForStockNews() {
-        newsAndEventsAdapter = NewsAndEventsAdapter(newsAndEventsAPIList, 0)
-        topNewsExplore.layoutManager = LinearLayoutManager(requireContext())
+        newsAndEventsAdapter = SecondStockOverviewAdapter(stockAndMfApiList)
+        topNewsExplore.layoutManager = LinearLayoutManager(requireContext(),LinearLayoutManager.HORIZONTAL,false)
         topNewsExplore.adapter = newsAndEventsAdapter
     }
 
