@@ -1,0 +1,31 @@
+{
+  "newsAndEventsAPI": [{
+                      "news_head" : "Aditya Birla Sun Life AMC IPO day 3 today",
+                      "news" : "Aditya Birla AMC IPO was subscribed 1.08 times at the end of day 2 of bidding. Retail Individual Investors subscribed to the issue 2.00 times the reserved portion."
+                      },
+                      {
+                      "news_head" : "Paras Defence is listing today at 10:00 a.m.",
+                      "news" : "Paras Defence and Space Technologies listed at Rs 475 per share on the BSE. This is a 171% premium from its issue price of Rs 175 per share."
+                      },
+                      {
+                      "news_head" : "Maruti Suzuki",
+                      "news" : "Maruti Suzuki mentioned that it expects an adverse impact in October on production at its plants in Haryana and Gujarat."
+                      },
+                      {
+                      "news_head" : "Zee Entertainment Enterprises",
+                      "news" : "NCLT has asked Zee Entertainment Enterprises Ltd. (ZEEL) to call an extraordinary general meeting (EGM)."
+                      },
+                      {
+                      "news_head" : "Bharti Airtel",
+                      "news" : "Airtel will invest Rs 5,000 crore over the next 3-4 years in its newly-launched data centre business, ‘Nxtra by Airtel’, to triple capacity."
+                      },
+                      {
+                      "news_head" : "Zydus Cadila",
+                      "news" : "Union Health Secretary Rajesh Bhushan said that Zydus Cadila’s needle-free Covid-19 vaccine ZyCoV-D will be introduced into the nationwide vaccination drive very soon."
+                      },
+                      {
+                      "news_head" : "HDFC Bank",
+                      "news" : "HDFC Bank has raised Rs 739 crore by issuing ‘masala bonds’ in the overseas markets."
+                      }
+                      ]
+}
