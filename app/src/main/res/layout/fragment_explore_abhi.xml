@@ -7,8 +7,8 @@
     tools:context=".ui.addMoney.explore.fragments.Explore">
 
     <LinearLayout
-        android:layout_marginHorizontal="20dp"
         android:layout_width="match_parent"
+        style="@style/BothSideEqualMargin"
         android:layout_height="wrap_content"
         android:orientation="vertical">
 
@@ -84,9 +84,9 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:background="@color/light_green"
+                    android:background="@color/green"
                     android:text="All Stocks"
-                    android:textColor="@color/green"
+                    android:textColor="@color/white"
                     android:paddingVertical="5dp"
                     android:paddingHorizontal="9dp"
                     android:layout_width="wrap_content"
@@ -154,7 +154,7 @@
                     android:layout_height="wrap_content">
 
                     <TextView
-                        android:text="NIFTY 50"
+                        android:text="SENSEX"
                         android:textSize="16sp"
                         android:textColor="@color/black"
                         android:fontFamily="@font/roboto_bold"
@@ -162,13 +162,13 @@
                         android:layout_height="wrap_content"/>
 
                     <TextView
-                        android:text="17,562.00"
+                        android:text="59,005.27"
                         android:layout_marginTop="20dp"
                         android:textColor="@color/black"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
                     <TextView
-                        android:text="+165.10 (0.95%)"
+                        android:text="+213.34 (0.88%)"
                         android:textSize="12sp"
                         android:layout_marginTop="10dp"
                         android:textColor="@color/green"
@@ -181,7 +181,6 @@
             </androidx.cardview.widget.CardView>
 
         </LinearLayout>
-
 
         <LinearLayout
             android:layout_marginTop="@dimen/dp_10"
@@ -253,7 +252,7 @@
                 app:cardCornerRadius="20dp"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:background="@color/light_green"
+                    android:background="@color/green"
                     android:text="Market News"
                     android:textColor="@color/white"
                     android:paddingVertical="5dp"
@@ -270,7 +269,6 @@
             android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"/>
-
 
         <RelativeLayout
             android:layout_marginTop="15dp"
@@ -290,7 +288,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <TextView
-                    android:background="@color/light_green"
+                    android:background="@color/green"
                     android:text="Market Price"
                     android:textColor="@color/white"
                     android:paddingVertical="5dp"

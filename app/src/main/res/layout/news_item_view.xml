@@ -1,18 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:background="@color/white"
-    android:orientation="vertical">
+    android:elevation="@dimen/dp_5"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
 
     <TextView
         android:id="@+id/tvNewsHeading"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="The Economic Times. 2 month ago"
-        android:textColor="@color/mid_gray"
+        android:textColor="@color/light_black"
         android:textSize="12sp"
-        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="20dp"/>
 
     <TextView
@@ -20,15 +24,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Tata Steel BSL Q1 results: Co posts rs 2,478 crore net profit"
-        android:layout_marginHorizontal="20dp"
         android:layout_marginTop="10dp"
         android:textSize="15sp"
-        android:textColor="@color/dark_gray"/>
+        android:textColor="@color/black"/>
 
     <View
         android:layout_width="match_parent"
-        android:layout_height="2dp"
-        android:background="@color/light_gray"
+        android:layout_height="1dp"
+        android:background="@color/green"
         android:layout_marginTop="10dp"/>
 
-</LinearLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>
