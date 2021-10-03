@@ -17,9 +17,6 @@
             android:id="@+id/action_loading_to_homeActivity"
             app:destination="@id/homeActivity" />
         <action
-            android:id="@+id/action_loading_to_profileActivity"
-            app:destination="@id/profileActivity" />
-        <action
             android:id="@+id/action_loading_to_searchActivity"
             app:destination="@id/searchActivity" />
         <action
@@ -158,11 +155,6 @@
         android:name="com.example.groww.ui.addMoney.explore.HomeActivity"
         android:label="activity_home"
         tools:layout="@layout/activity_home" />
-    <activity
-        android:id="@+id/profileActivity"
-        android:name="com.example.groww.ui.addMoney.ProfileActivity"
-        android:label="activity_profile"
-        tools:layout="@layout/activity_profile" />
     <activity
         android:id="@+id/searchActivity"
         android:name="com.example.groww.ui.search.SearchActivity"
