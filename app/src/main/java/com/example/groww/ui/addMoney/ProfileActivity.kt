@@ -5,10 +5,15 @@ import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Observer
+import androidx.navigation.Navigation
+import androidx.navigation.findNavController
 import com.example.groww.R
+import com.example.groww.ui.MainActivity
+import com.example.groww.ui.loginSignup.LoginSplashScreenActivity
 import com.example.groww.viewmodel.ViewModelGrow
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_profile.*
+import kotlinx.android.synthetic.main.fragment_buy_share.*
 
 @AndroidEntryPoint
 class ProfileActivity : AppCompatActivity() {
@@ -30,5 +35,10 @@ class ProfileActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
+        tvLogOut.setOnClickListener {
+            startActivity(Intent(this,MainActivity::class.java))
+        }
+
     }
+
 }

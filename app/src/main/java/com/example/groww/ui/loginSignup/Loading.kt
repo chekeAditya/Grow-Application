@@ -39,9 +39,9 @@ class Loading : Fragment(R.layout.fragment_loading) {
         }, 2000)
     }
 
-    private fun goToProfileActivity() {
-        Navigation.findNavController(requireView()).navigate(R.id.action_loading_to_profileActivity)
-    }
+//    private fun goToProfileActivity() {
+//        Navigation.findNavController(requireView()).navigate(R.id.action_loading_to_profileActivity)
+//    }
 
     private fun goToExploreHomeActivity() {
         Navigation.findNavController(requireView()).navigate(R.id.action_loading_to_homeActivity)
