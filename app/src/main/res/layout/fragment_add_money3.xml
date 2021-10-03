@@ -5,11 +5,9 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:weightSum="3"
-   style="@style/BothSideEqualMargin"
+    style="@style/BothSideEqualMargin"
     android:orientation="vertical"
     tools:context=".ui.addMoney.addMoneyFragments.AddMoney3">
-
-
 
     <RelativeLayout
         android:layout_weight="1"
@@ -40,150 +38,157 @@
     </RelativeLayout>
 
 
-    <androidx.cardview.widget.CardView
+    <LinearLayout
         android:layout_weight="1"
-        android:layout_marginTop="@dimen/dp_40"
-        app:cardElevation="@dimen/dp_20"
-        app:cardCornerRadius="@dimen/dp_20"
-        android:layout_margin="5dp"
+        android:gravity="center"
         android:layout_width="match_parent"
         android:layout_height="0dp">
-        <LinearLayout
-            android:layout_margin="@dimen/dp_8"
-            android:orientation="vertical"
+        <androidx.cardview.widget.CardView
+            android:layout_marginTop="@dimen/dp_40"
+            app:cardElevation="@dimen/dp_20"
+            app:cardCornerRadius="@dimen/dp_20"
+            android:layout_margin="5dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
-
             <LinearLayout
+                android:layout_margin="@dimen/dp_8"
+                android:orientation="vertical"
+                android:padding="@dimen/dp_15"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
-                <TextView
-                    android:text="Amount:"
-                    android:fontFamily="@font/roboto_bold"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                <TextView
-                    android:text="₹ 1,000"
-                    android:id="@+id/tvAmountInPaymentSuccessfull"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/roboto_bold"
-                    android:layout_marginHorizontal="@dimen/dp_15"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:weightSum="4"
-                android:layout_marginVertical="@dimen/dp_10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:text="From"
-                    android:layout_weight="1"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/roboto_bold"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
 
                 <LinearLayout
-                    android:layout_weight="2"
-                   android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content">
-
-                    <TextView
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/roboto_bold"
-                        android:text="UNION BANK OF INDIA"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:text="XXXX8023"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_weight="1"
-                    android:src="@drawable/ic_union_bank_logo"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:weightSum="4"
-                android:layout_marginVertical="@dimen/dp_10"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <TextView
-                    android:layout_weight="1"
-                    android:text="To"
-                    android:textColor="@color/black"
-                    android:fontFamily="@font/roboto_bold"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
-
-                <LinearLayout
-                    android:layout_weight="2"
-                    android:orientation="vertical"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:textColor="@color/black"
-                        android:fontFamily="@font/roboto_bold"
-                        android:text="Groww Balance"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                    <TextView
-                        android:text="TXN ID: DEP2122011486825....."
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"/>
-                </LinearLayout>
-
-                <ImageView
-                    android:layout_weight="1"
-                    android:src="@drawable/ic_addmoney1"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"/>
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_marginTop="@dimen/dp_20"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-                <ImageView
-                    android:src="@drawable/ic_addmoney1"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-
-                <TextView
-                    android:text="Updated Account Balance"
-                    android:layout_marginHorizontal="@dimen/dp_20"
-                    android:textColor="@color/black"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"/>
-                <LinearLayout
-                    android:gravity="end"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="wrap_content">
                     <TextView
-                        android:id="@+id/userBalanceAddMoney3"
-                        android:text="₹1,000"
+                        android:text="Amount:"
+                        android:fontFamily="@font/roboto_bold"
                         android:textColor="@color/black"
-                        android:layout_gravity="end"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"/>
+                    <TextView
+                        android:text="₹ 1,000"
+                        android:id="@+id/tvAmountInPaymentSuccessfull"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:layout_marginHorizontal="@dimen/dp_15"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="4"
+                    android:layout_marginVertical="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:text="From"
+                        android:layout_weight="1"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="UNION BANK OF INDIA"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="XXXX8023"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_union_bank_logo"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:weightSum="4"
+                    android:layout_marginVertical="@dimen/dp_10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_weight="1"
+                        android:text="To"
+                        android:textColor="@color/black"
+                        android:fontFamily="@font/roboto_bold"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+
+                    <LinearLayout
+                        android:layout_weight="2"
+                        android:orientation="vertical"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:textColor="@color/black"
+                            android:fontFamily="@font/roboto_bold"
+                            android:text="Groww Balance"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                        <TextView
+                            android:text="TXN ID: DEP2122011486825....."
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+                    </LinearLayout>
+
+                    <ImageView
+                        android:layout_weight="1"
+                        android:src="@drawable/ic_addmoney1"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_marginTop="@dimen/dp_20"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:src="@drawable/ic_addmoney1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+
+                    <TextView
+                        android:text="Updated Account Balance"
+                        android:layout_marginHorizontal="@dimen/dp_20"
+                        android:textColor="@color/black"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"/>
+                    <LinearLayout
+                        android:gravity="end"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+                        <TextView
+                            android:id="@+id/userBalanceAddMoney3"
+                            android:text="₹1,000"
+                            android:textColor="@color/black"
+                            android:layout_gravity="end"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"/>
+
+                    </LinearLayout>
 
                 </LinearLayout>
 
             </LinearLayout>
 
-        </LinearLayout>
+        </androidx.cardview.widget.CardView>
 
-    </androidx.cardview.widget.CardView>
+    </LinearLayout>
 
     <LinearLayout
         android:layout_weight="1"
