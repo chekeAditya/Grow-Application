@@ -23,8 +23,21 @@ class StockDetailsOverviewFragment : Fragment(R.layout.fragment_stock_details_ov
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
+        setData()
+
         setRecyclerViews()
 
+    }
+
+    private fun setData() {
+        StockDetailsOverviewData.currentOverviewStockPrice.let {
+            tvTodayHighPrice.text = String.format("%.2f",it*1.1)
+            tvTodayLowPrice.text = String.format("%.2f",it*0.5)
+            tv52WeekhighPrice.text = String.format("%.2f",it*1.3)
+            tv52WeekLowPrice.text = String.format("%.2f",it*0.3)
+            tvOpenPrice.text = String.format("%.2f",it*1.01)
+            tvPrevCloseAmount.text = String.format("%.2f",it*.99)
+        }
     }
 
     private fun setRecyclerViews() {

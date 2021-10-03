@@ -22,18 +22,16 @@ class StockDetailsFragment : Fragment(R.layout.fragment_stock_details) {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        setupFragmentViewPager()
-
         val navController = Navigation.findNavController(requireView())
         val id = arguments?.getInt("id")
+
+        setStockDetails(id)
 
         btnBuy.setOnClickListener {
             val bundle = Bundle()
             bundle.putInt("id",id!!)
             navController.navigate(R.id.action_stockDetailsFragment_to_buyShareFragment,bundle)
         }
-
-        setStockDetails(id)
 
         ivBack.setOnClickListener {
             val bundle = Bundle()
@@ -49,6 +47,8 @@ class StockDetailsFragment : Fragment(R.layout.fragment_stock_details) {
             tvStockName.text = it.companyName
             tvStockPrice.text = "₹ ${it.companyCurrentPrice}"
             tvStockPercentage.text = "${it.priceGain} (${it.percentGain}) 1D"
+            StockDetailsOverviewData.currentOverviewStockPrice = it.companyCurrentPrice.toFloat()
+            setupFragmentViewPager()
         })
     }
 
