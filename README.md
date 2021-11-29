@@ -1,6 +1,9 @@
 # Grow-Application
 What if all buying and selling of stocks and mutual funds are done with just one click. Just one click will help you to analyze every stock and compare which one is better and will provide the best result in the long run and Just one will help you to explore more stocks.
 
+![grow](https://user-images.githubusercontent.com/81345503/143854716-83f8900c-9aa1-4115-af2a-231d979d6bcd.png)
+
+
 # 🔗Open-Source Library
 
 * [Glide](https://github.com/bumptech/glide)
